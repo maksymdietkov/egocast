@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: weather-advisor-backend
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:weather_advisor}
+    username: ${DB_USER:weather_advisor}
+    password: ${DB_PASSWORD:weather_advisor}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate # миграции руками, как в MyCarLog — без сюрпризов
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+weather:
+  open-meteo:
+    base-url: https://api.open-meteo.com
+
+logging:
+  level:
+    app.egocast.weather: DEBUG

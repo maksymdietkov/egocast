@@ -1,0 +1,18 @@
+# Java / Maven
+backend/target/
+backend/.mvn/
+backend/*.iml
+backend/.idea/
+
+# Env
+.env
+*.local.yml.bak
+
+# Node (заранее, для фронта)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
