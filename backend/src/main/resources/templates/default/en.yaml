@@ -1,0 +1,75 @@
+conditions:
+  frost:
+    intro:
+      - weight: 1
+        text: "Brace yourself —"
+    advice:
+      - weight: 1
+        text: "it's freezing, layer up properly."
+    sting:
+      - weight: 1
+        text: "This is not the day for a light jacket."
+
+  cold:
+    intro:
+      - weight: 3
+        text: "Bundle up —"
+      - weight: 1
+        text: "Heads up —"
+    advice:
+      - weight: 1
+        text: "it's cold out there, grab a warm coat."
+    sting:
+      - weight: 1
+        text: "Coffee helps. Ask me how I know."
+
+  windy_cold:
+    intro:
+      - weight: 1
+        text: "Bundle up —"
+    advice:
+      - weight: 1
+        text: "it's freezing and windy out there."
+    sting:
+      - weight: 1
+        text: "Don't say I didn't warn you."
+
+  cool:
+    intro:
+      - weight: 1
+        text: "Not too bad —"
+    advice:
+      - weight: 1
+        text: "a light jacket should do."
+    sting: []
+
+  comfortable:
+    intro:
+      - weight: 1
+        text: "Nice out —"
+    advice:
+      - weight: 1
+        text: "dress however you like today."
+    sting: []
+
+  hot:
+    intro:
+      - weight: 1
+        text: "Whew —"
+    advice:
+      - weight: 1
+        text: "it's properly hot, stay hydrated."
+    sting:
+      - weight: 1
+        text: "Ice cream is basically a health food today."
+
+expand:
+  trigger:
+    - "not buying it? here's the boring truth"
+  params:
+    temp: "yes, {{value}}°C. not summer."
+    feels_like: "feels like {{value}}°C. even worse."
+    wind: "wind at {{value}} m/s. just accept it."
+    humidity: "humidity {{value}}%. like a sauna."
+    precipitation: "rain chance {{value}}%. umbrella."
+    uv: "UV index {{value}}. sun's not sleeping."
