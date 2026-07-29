@@ -1,0 +1,34 @@
+{
+  "app": {
+    "name": "EgoCast",
+    "tagline": "Weather, translated into human"
+  },
+  "loading": {
+    "location": "Finding you...",
+    "weather": "Reading the sky..."
+  },
+  "error": {
+    "geolocation_denied": "We need your location to give you real advice. Please allow location access.",
+    "geolocation_unavailable": "Couldn't determine your location right now.",
+    "geolocation_timeout": "Location lookup took too long. Try again?",
+    "geolocation_unsupported": "Your browser doesn't support location services.",
+    "generic": "Something went wrong. Try again?"
+  },
+  "period": {
+    "today": "Today",
+    "tomorrow": "Tomorrow"
+  },
+  "expand": {
+    "reveal": "Don't believe it? Here's the boring truth",
+    "temperature": "Temperature",
+    "feelsLike": "Feels like",
+    "wind": "Wind",
+    "humidity": "Humidity",
+    "precipitation": "Chance of rain",
+    "uv": "UV index"
+  },
+  "action": {
+    "retry": "Try again",
+    "share": "Share"
+  }
+}
