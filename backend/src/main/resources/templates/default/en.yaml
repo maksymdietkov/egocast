@@ -1,14 +1,24 @@
 conditions:
   frost:
     intro:
-      - weight: 1
+      - weight: 2
         text: "Brace yourself —"
+      - weight: 1
+        text: "Arctic mode activated —"
+      - weight: 1
+        text: "Nature's fridge is open —"
     advice:
       - weight: 1
-        text: "it's freezing, layer up properly."
+        text: "it's freezing, layer up properly: thermal base, wool sweater, real winter coat."
+      - weight: 1
+        text: "this calls for the heavy coat, insulated gloves, and a hat that actually covers your ears."
+      - weight: 1
+        text: "scarf, gloves, hat — all three, non-negotiable, plus thermal socks if you value your toes."
     sting:
       - weight: 1
         text: "This is not the day for a light jacket."
+      - weight: 1
+        text: "Fashion is cancelled until further notice."
 
   cold:
     intro:
@@ -16,12 +26,112 @@ conditions:
         text: "Bundle up —"
       - weight: 1
         text: "Heads up —"
+      - weight: 1
+        text: "Winter's not done with us —"
     advice:
       - weight: 1
-        text: "it's cold out there, grab a warm coat."
+        text: "it's cold out there, grab a warm coat and don't skip the gloves."
+      - weight: 1
+        text: "a proper coat plus a scarf will do the job — this isn't jacket weather."
+      - weight: 1
+        text: "layer up: thermal shirt under a sweater, topped with a coat that actually closes."
     sting:
       - weight: 1
         text: "Coffee helps. Ask me how I know."
+      - weight: 1
+        text: "Your summer jacket is not invited today."
+
+  chilly:
+    intro:
+      - weight: 2
+        text: "Getting nippy —"
+      - weight: 1
+        text: "A bit brisk —"
+    advice:
+      - weight: 1
+        text: "a mid-weight coat or a thick sweater under a jacket will keep you comfortable."
+      - weight: 1
+        text: "throw on a scarf and a jacket with a bit of insulation — bare hands will regret it."
+      - weight: 1
+        text: "this is scarf-and-jacket territory, maybe gloves if you run cold."
+    sting:
+      - weight: 1
+        text: "Not frost, but your ears will still complain."
+
+  cool:
+    intro:
+      - weight: 2
+        text: "Not too bad —"
+      - weight: 1
+        text: "Mild chill —"
+    advice:
+      - weight: 1
+        text: "a light jacket should do, maybe a scarf if you're sensitive to wind."
+      - weight: 1
+        text: "a hoodie or light jacket is enough — no need for the heavy coat."
+      - weight: 1
+        text: "layer a t-shirt under a jacket, you can always tie it around your waist later."
+    sting: []
+
+  mild:
+    intro:
+      - weight: 2
+        text: "Pleasant enough —"
+      - weight: 1
+        text: "Easy weather —"
+    advice:
+      - weight: 1
+        text: "a light jacket or a long-sleeve shirt is plenty, no need to overthink it."
+      - weight: 1
+        text: "this is cardigan weather — comfortable, no drama, no heavy layers."
+    sting: []
+
+  comfortable:
+    intro:
+      - weight: 2
+        text: "Nice out —"
+      - weight: 1
+        text: "About as good as it gets —"
+    advice:
+      - weight: 1
+        text: "dress however you like today, a t-shirt or light shirt will do fine."
+      - weight: 1
+        text: "short sleeves are safe, maybe keep a light layer nearby for the evening."
+    sting: []
+
+  warm:
+    intro:
+      - weight: 2
+        text: "Warming up —"
+      - weight: 1
+        text: "Summer's knocking —"
+    advice:
+      - weight: 1
+        text: "shorts and a t-shirt are your friends, and sunglasses wouldn't hurt."
+      - weight: 1
+        text: "breathable fabrics only — cotton or linen, and maybe a cap for the sun."
+    sting:
+      - weight: 1
+        text: "Don't forget sunscreen, future you will thank present you."
+
+  hot:
+    intro:
+      - weight: 2
+        text: "Whew —"
+      - weight: 1
+        text: "It's a scorcher —"
+    advice:
+      - weight: 1
+        text: "it's properly hot, stay hydrated, wear the lightest fabrics you own, and grab sunglasses."
+      - weight: 1
+        text: "loose linen clothing, a wide-brim hat, and sunscreen are mandatory equipment today."
+      - weight: 1
+        text: "the lightest, palest clothes you have — dark colors will roast you today."
+    sting:
+      - weight: 1
+        text: "Ice cream is basically a health food today."
+      - weight: 1
+        text: "Your shadow is the only shade you'll get, use it wisely."
 
   windy_cold:
     intro:
@@ -29,39 +139,90 @@ conditions:
         text: "Bundle up —"
     advice:
       - weight: 1
-        text: "it's freezing and windy out there."
+        text: "it's freezing and windy out there, a windproof shell over your coat is worth it."
     sting:
       - weight: 1
         text: "Don't say I didn't warn you."
 
-  cool:
+  windy_frost:
     intro:
       - weight: 1
-        text: "Not too bad —"
+        text: "Wind chill is brutal —"
     advice:
       - weight: 1
-        text: "a light jacket should do."
-    sting: []
-
-  comfortable:
-    intro:
-      - weight: 1
-        text: "Nice out —"
-    advice:
-      - weight: 1
-        text: "dress however you like today."
-    sting: []
-
-  hot:
-    intro:
-      - weight: 1
-        text: "Whew —"
-    advice:
-      - weight: 1
-        text: "it's properly hot, stay hydrated."
+        text: "every gap in your clothing will find the wind, so seal it up: high collar, tucked-in scarf, gloves that actually fit."
     sting:
       - weight: 1
-        text: "Ice cream is basically a health food today."
+        text: "Exposed skin is not on today's agenda."
+
+  windy_hot:
+    intro:
+      - weight: 1
+        text: "At least there's a breeze —"
+    advice:
+      - weight: 1
+        text: "still wear light fabrics, but you might get away without the hat for once."
+    sting: []
+
+  rain:
+    intro:
+      - weight: 2
+        text: "Grab the umbrella —"
+      - weight: 1
+        text: "Bit of a drizzle —"
+    advice:
+      - weight: 1
+        text: "a light raincoat or a jacket with a hood will keep you dry enough."
+      - weight: 1
+        text: "waterproof shoes are worth it, and don't trust that jacket that's 'water-resistant' in name only."
+    sting:
+      - weight: 1
+        text: "Puddles will find your socks. They always do."
+
+  heavy_rain:
+    intro:
+      - weight: 2
+        text: "This isn't a drizzle —"
+      - weight: 1
+        text: "Proper downpour —"
+    advice:
+      - weight: 1
+        text: "full raincoat, waterproof boots, and an umbrella that can survive wind — a poncho isn't overkill today."
+      - weight: 1
+        text: "waterproof everything: jacket, shoes, bag cover if you carry one. Regular umbrellas may lose this fight."
+    sting:
+      - weight: 1
+        text: "Consider this nature's way of telling you to work from home."
+
+  snow:
+    intro:
+      - weight: 2
+        text: "Snow's falling —"
+      - weight: 1
+        text: "Winter wonderland, or just an inconvenience —"
+    advice:
+      - weight: 1
+        text: "waterproof boots with real grip, insulated gloves, and a hat — slush is not your friend."
+      - weight: 1
+        text: "layer up under a waterproof coat, and swap regular shoes for something with actual traction."
+    sting:
+      - weight: 1
+        text: "Pretty from a window, less pretty when it's in your shoe."
+
+  storm:
+    intro:
+      - weight: 2
+        text: "Storm's rolling in —"
+      - weight: 1
+        text: "This is not a walking day —"
+    advice:
+      - weight: 1
+        text: "if you can stay in, stay in. If not, a proper waterproof jacket and sturdy shoes, and skip the umbrella — it'll just turn inside out."
+      - weight: 1
+        text: "secure everything, wear something waterproof and windproof, and avoid open umbrellas entirely — the wind wins that fight."
+    sting:
+      - weight: 1
+        text: "Your umbrella will not survive this. Leave it home."
 
 expand:
   trigger:

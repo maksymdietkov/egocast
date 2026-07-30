@@ -45,9 +45,12 @@ public class ConditionResolver {
     private static String tempTag(WeatherData w) {
         double t = w.temperature();
         if (t < 0) return "frost";
-        if (t < 10) return "cold";
+        if (t < 7) return "cold";
+        if (t < 13) return "chilly";
         if (t < 18) return "cool";
-        if (t < 25) return "comfortable";
+        if (t < 22) return "mild";
+        if (t < 26) return "comfortable";
+        if (t < 30) return "warm";
         return "hot";
     }
 
