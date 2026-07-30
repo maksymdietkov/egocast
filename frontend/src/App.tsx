@@ -38,6 +38,7 @@ function App() {
   if (geoStatus === 'idle' || geoStatus === 'loading') {
     return (
       <main className="screen">
+         <h1 className="brand">EgoCast</h1>
         <p className="status-text">{t('loading.location')}</p>
       </main>
     );
@@ -46,6 +47,7 @@ function App() {
   if (geoStatus === 'error') {
     return (
       <main className="screen">
+        <h1 className="brand">EgoCast</h1>
         <p className="status-text">{t(`error.${geoError}`)}</p>
       </main>
     );
@@ -53,6 +55,7 @@ function App() {
 
   return (
     <main className="screen">
+      <h1 className="brand">EgoCast</h1>
       <div className="period-switch">
         <button
           type="button"
