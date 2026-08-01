@@ -2,10 +2,27 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, ApiError } from './api/client';
-import type { AdviceResponse, Period } from './types/weather';
+import type { AdviceResponse, Period, WeatherData } from './types/weather';
 import './App.css';
 
 const DEFAULT_TONE = 'default';
+
+function capitalizeSentences(text: string): string {
+  return text.replace(/(^|[.!?]\s+)([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
+}
+
+function catMood(w: WeatherData): string {
+  if (w.weatherCode >= 95 && w.weatherCode <= 99) return '🙀'; // storm
+  if (w.weatherCode >= 71 && w.weatherCode <= 77) return '😾'; // snow
+  if (w.precipitation > 5) return '😿'; // heavy rain
+  if (w.precipitation > 1) return '😾'; // rain
+  if (w.temperature < 0) return '🙀'; // frost
+  if (w.temperature < 13) return '😾'; // cold/chilly
+  if (w.temperature < 22) return '😼'; // cool/mild
+  if (w.temperature < 26) return '😺'; // comfortable
+  if (w.temperature < 30) return '😸'; // warm
+  return '😹'; // hot
+}
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -38,7 +55,7 @@ function App() {
   if (geoStatus === 'idle' || geoStatus === 'loading') {
     return (
       <main className="screen">
-         <h1 className="brand">EgoCast</h1>
+        <h1 className="brand">EgoCast</h1>
         <p className="status-text">{t('loading.location')}</p>
       </main>
     );
@@ -74,7 +91,7 @@ function App() {
       </div>
 
       <div className="cat-mascot" aria-hidden="true">
-        🐱
+        {advice ? catMood(advice.rawWeather) : '🐱'}
       </div>
 
       {adviceStatus === 'loading' && <p className="status-text">{t('loading.weather')}</p>}
@@ -93,13 +110,13 @@ function App() {
           <p className="advice-text">{advice.advice}</p>
 
           <button type="button" className="expand-toggle" onClick={() => setExpanded((e) => !e)}>
-            {advice.triggerPhrase}
+            {capitalizeSentences(advice.triggerPhrase)}
           </button>
 
           {expanded && (
             <div className="expand-card">
               {Object.values(advice.expandComments).map((line, i) => (
-                <p key={i}>{line}</p>
+                <p key={i}>{capitalizeSentences(line)}</p>
               ))}
             </div>
           )}

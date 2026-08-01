@@ -228,7 +228,7 @@ expand:
   trigger:
     - "not buying it? here's the boring truth"
   params:
-    temp: "yes, {{value}}°C. not summer."
+    temp: "yes, {{value}}°C. Really."
     feels_like: "feels like {{value}}°C. even worse."
     wind: "wind at {{value}} m/s. just accept it."
     humidity: "humidity {{value}}%. like a sauna."
