@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, ApiError } from './api/client';
-import type { AdviceResponse, Period, WeatherData } from './types/weather';
+import { CitySearch } from './components/CitySearch';
+import type { AdviceResponse, Period, WeatherData, Coordinates } from './types/weather';
 import './App.css';
 
 const DEFAULT_TONE = 'default';
@@ -26,15 +27,19 @@ function catMood(w: WeatherData): string {
 
 function App() {
   const { t, i18n } = useTranslation();
-  const { coords, status: geoStatus, error: geoError } = useGeolocation();
+  const { coords: geoCoords, status: geoStatus, error: geoError } = useGeolocation();
 
+  const [manualCoords, setManualCoords] = useState<Coordinates | null>(null);
   const [period, setPeriod] = useState<Period>('today');
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [expanded, setExpanded] = useState(false);
 
+  const coords = manualCoords ?? geoCoords;
+  const hasLocation = coords !== null;
+
   useEffect(() => {
-    if (geoStatus !== 'success' || !coords) return;
+    if (!hasLocation || !coords) return;
 
     setAdviceStatus('loading');
     setExpanded(false);
@@ -50,9 +55,9 @@ function App() {
         console.error('Failed to fetch advice', err instanceof ApiError ? err.status : err);
         setAdviceStatus('error');
       });
-  }, [coords, geoStatus, period, i18n.language]);
+  }, [coords, hasLocation, period, i18n.language]);
 
-  if (geoStatus === 'idle' || geoStatus === 'loading') {
+  if (!hasLocation && (geoStatus === 'idle' || geoStatus === 'loading')) {
     return (
       <main className="screen">
         <h1 className="brand">EgoCast</h1>
@@ -61,11 +66,12 @@ function App() {
     );
   }
 
-  if (geoStatus === 'error') {
+  if (!hasLocation && geoStatus === 'error') {
     return (
       <main className="screen">
         <h1 className="brand">EgoCast</h1>
         <p className="status-text">{t(`error.${geoError}`)}</p>
+        <CitySearch onSelect={setManualCoords} />
       </main>
     );
   }
