@@ -1,0 +1,39 @@
+temp:
+  frost: "yes, {{value}}°C. Really."
+  cold: "yes, {{value}}°C. That's the actual number."
+  chilly: "yes, {{value}}°C. No rounding up."
+  cool: "yes, {{value}}°C. Take it or leave it."
+  mild: "yes, {{value}}°C. Nothing dramatic here."
+  comfortable: "yes, {{value}}°C. About as boring as it gets."
+  warm: "yes, {{value}}°C. Exactly what it says."
+  hot: "yes, {{value}}°C. No exaggeration needed."
+params:
+  feels_like:
+    frost: "feels like {{value}}°C. genuinely brutal."
+    cold: "feels like {{value}}°C. bundle up more than you think."
+    chilly: "feels like {{value}}°C. bring a layer."
+    cool: "feels like {{value}}°C. a bit sharper than the thermometer says."
+    mild: "feels like {{value}}°C. about what you'd expect."
+    comfortable: "feels like {{value}}°C. no surprises here."
+    warm: "feels like {{value}}°C. even warmer than it looks."
+    hot: "feels like {{value}}°C. and that's before you step into the sun."
+  wind:
+    calm: "wind at {{value}} m/s. barely there."
+    breezy: "wind at {{value}} m/s. you'll notice it."
+    windy: "wind at {{value}} m/s. hold onto your hat."
+    gale: "wind at {{value}} m/s. just accept it."
+  humidity:
+    dry: "humidity {{value}}%. crisp, borderline dry."
+    normal: "humidity {{value}}%. unremarkable, as it should be."
+    humid: "humidity {{value}}%. sticky, you'll feel it."
+    soggy: "humidity {{value}}%. like a sauna."
+  precipitation:
+    unlikely: "rain chance {{value}}%. probably fine."
+    possible: "rain chance {{value}}%. maybe pack an umbrella."
+    likely: "rain chance {{value}}%. umbrella."
+    certain: "rain chance {{value}}%. umbrella, no debate."
+  uv:
+    low: "UV index {{value}}. barely worth mentioning."
+    moderate: "UV index {{value}}. sunscreen wouldn't hurt."
+    high: "UV index {{value}}. sun's not sleeping."
+    extreme: "UV index {{value}}. seek shade, seriously."

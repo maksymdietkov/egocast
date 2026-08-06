@@ -1,5 +1,6 @@
 package app.egocast.weather.template;
 
+import app.egocast.weather.template.model.ExpandTemplate;
 import app.egocast.weather.template.model.TonePackDefinition;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
@@ -13,16 +14,22 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Читает YAML тон-паков из classpath (src/main/resources/templates/{tone}/{lang}.yaml)
  * и кэширует уже распарсенные результаты в памяти.
+ * Отдельно читает tone-neutral expand-параметры (templates/shared/expand.{lang}.yaml).
  */
 @Component
 public class TonePackLoader {
 
     private final ObjectMapper yamlMapper = new ObjectMapper(new YAMLFactory());
     private final Map<String, TonePackDefinition> cache = new ConcurrentHashMap<>();
+    private final Map<String, ExpandTemplate> sharedExpandCache = new ConcurrentHashMap<>();
 
     public TonePackDefinition load(String tone, String lang) {
         String key = tone + ":" + lang;
         return cache.computeIfAbsent(key, k -> loadFromDisk(tone, lang));
+    }
+
+    public ExpandTemplate loadSharedExpand(String lang) {
+        return sharedExpandCache.computeIfAbsent(lang, this::loadSharedExpandFromDisk);
     }
 
     private TonePackDefinition loadFromDisk(String tone, String lang) {
@@ -37,6 +44,21 @@ public class TonePackLoader {
             }
             // если запрошенный тон/язык не найден — тихо откатываемся на default/en
             return loadFromDisk("default", "en");
+        }
+    }
+
+    private ExpandTemplate loadSharedExpandFromDisk(String lang) {
+        String path = "templates/shared/expand.%s.yaml".formatted(lang);
+        try (InputStream is = new ClassPathResource(path).getInputStream()) {
+            return yamlMapper.readValue(is, ExpandTemplate.class);
+        } catch (Exception e) {
+            boolean alreadyDefault = lang.equals("en");
+            if (alreadyDefault) {
+                throw new IllegalStateException(
+                        "Не найден базовый shared-файл templates/shared/expand.en.yaml — без него сервис не может работать", e);
+            }
+            // если перевода для языка нет — откатываемся на en
+            return loadSharedExpandFromDisk("en");
         }
     }
 }

@@ -2,6 +2,7 @@ package app.egocast.weather.template;
 
 import app.egocast.weather.dto.WeatherData;
 import app.egocast.weather.template.model.ConditionTemplate;
+import app.egocast.weather.template.model.ExpandTemplate;
 import app.egocast.weather.template.model.TonePackDefinition;
 import app.egocast.weather.template.model.WeightedText;
 import org.springframework.stereotype.Component;
@@ -16,8 +17,13 @@ import java.util.Random;
 public class TemplateEngine {
 
     private final Random random = new Random();
+    private final TonePackLoader tonePackLoader;
 
-    public AdviceResult build(TonePackDefinition pack, WeatherData data) {
+    public TemplateEngine(TonePackLoader tonePackLoader) {
+        this.tonePackLoader = tonePackLoader;
+    }
+
+    public AdviceResult build(TonePackDefinition pack, WeatherData data, String lang) {
         List<String> candidates = ConditionResolver.resolveCandidates(data);
 
         ConditionTemplate template = candidates.stream()
@@ -35,21 +41,31 @@ public class TemplateEngine {
 
         String trigger = pickFromList(pack.getExpand().getTrigger());
 
-        return new AdviceResult(advice, trigger, buildExpandComments(pack, data));
+        ExpandTemplate sharedExpand = tonePackLoader.loadSharedExpand(lang);
+
+        return new AdviceResult(advice, trigger, buildExpandComments(sharedExpand, data));
     }
 
-    private Map<String, String> buildExpandComments(TonePackDefinition pack, WeatherData data) {
-        Map<String, String> params = pack.getExpand().getParams();
+    private Map<String, String> buildExpandComments(ExpandTemplate sharedExpand, WeatherData data) {
+        Map<String, Map<String, String>> params = sharedExpand.getParams();
         Map<String, String> result = new LinkedHashMap<>();
 
-        result.put("temp", fill(params.get("temp"), data.temperature()));
-        result.put("feels_like", fill(params.get("feels_like"), data.feelsLike()));
-        result.put("wind", fill(params.get("wind"), data.windSpeed()));
-        result.put("humidity", fill(params.get("humidity"), data.humidity()));
-        result.put("precipitation", fill(params.get("precipitation"), data.precipitationProbability()));
-        result.put("uv", fill(params.get("uv"), data.uvIndex()));
+        String tempTier = ConditionResolver.tempTag(data.temperature());
+
+        result.put("temp", fill(sharedExpand.getTemp().get(tempTier), data.temperature()));
+        result.put("feels_like", fill(tierText(params, "feels_like", ExpandTierResolver.feelsLikeTag(data)), data.feelsLike()));
+        result.put("wind", fill(tierText(params, "wind", ExpandTierResolver.windTag(data)), data.windSpeed()));
+        result.put("humidity", fill(tierText(params, "humidity", ExpandTierResolver.humidityTag(data)), data.humidity()));
+        result.put("precipitation", fill(tierText(params, "precipitation", ExpandTierResolver.precipitationTag(data)), data.precipitationProbability()));
+        result.put("uv", fill(tierText(params, "uv", ExpandTierResolver.uvTag(data)), data.uvIndex()));
 
         return result;
+    }
+
+    private String tierText(Map<String, Map<String, String>> params, String param, String tier) {
+        Map<String, String> tiers = params.get(param);
+        if (tiers == null) return null;
+        return tiers.get(tier);
     }
 
     private String fill(String template, Object value) {

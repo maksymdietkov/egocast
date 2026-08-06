@@ -29,7 +29,7 @@ public class ConditionResolver {
             tags.add("windy");
         }
 
-        tags.add(tempTag(w)); // базовый тег температуры — всегда последний, гарантированный fallback
+        tags.add(tempTag(w.temperature())); // базовый тег температуры — всегда последний, гарантированный fallback
 
         return buildCandidateChain(tags);
     }
@@ -42,8 +42,7 @@ public class ConditionResolver {
         return candidates;
     }
 
-    private static String tempTag(WeatherData w) {
-        double t = w.temperature();
+    public static String tempTag(double t) {
         if (t < 0) return "frost";
         if (t < 7) return "cold";
         if (t < 13) return "chilly";

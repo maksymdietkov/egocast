@@ -24,7 +24,7 @@ public class AdviceService {
     public AdviceResponse getAdvice(double lat, double lon, Period period, String tone, String lang) {
         WeatherData weather = weatherService.getWeather(lat, lon, period);
         TonePackDefinition pack = tonePackLoader.load(tone, lang);
-        AdviceResult result = templateEngine.build(pack, weather);
+        AdviceResult result = templateEngine.build(pack, weather, lang);
 
         return new AdviceResponse(
                 result.advice(),
