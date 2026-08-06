@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Globe, ChevronDown, User, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
+import { Globe, ChevronDown, User, Share2, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
@@ -176,10 +176,10 @@ function App() {
 
           <div className="ad-slot">{t('ad.placeholder')}</div>
 
-          <div className="nimbus-line">
-            <span className="nimbus-avatar" aria-hidden="true">🐱</span>
-            <span className="nimbus-quote">{t('nimbus.watching')}</span>
-          </div>
+          <button type="button" className="share-slot" onClick={() => {/* TODO: share via html2canvas */}}>
+            <Share2 size={16} aria-hidden="true" />
+            <span>{t('action.share')}</span>
+          </button>
         </>
       )}
     </main>

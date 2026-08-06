@@ -30,9 +30,6 @@
   "ad": {
     "placeholder": "Ad / Premium slot"
   },
-  "nimbus": {
-    "watching": "Nimbus is watching the clouds for you."
-  },
   "action": {
     "retry": "Try again",
     "share": "Share",
