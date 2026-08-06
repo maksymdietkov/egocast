@@ -176,10 +176,12 @@ function App() {
 
           <div className="ad-slot">{t('ad.placeholder')}</div>
 
-          <button type="button" className="share-slot" onClick={() => {/* TODO: share via html2canvas */}}>
-            <Share2 size={16} aria-hidden="true" />
-            <span>{t('action.share')}</span>
-          </button>
+          <div className="share-toggle-wrap">
+            <button type="button" className="share-toggle" onClick={() => {/* TODO: share via html2canvas */}}>
+              <Share2 size={16} aria-hidden="true" />
+              <span>{t('action.share')}</span>
+            </button>
+          </div>
         </>
       )}
     </main>
