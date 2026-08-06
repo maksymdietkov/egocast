@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
@@ -7,6 +8,15 @@ import type { AdviceResponse, Period, WeatherData, Coordinates } from './types/w
 import './App.css';
 
 const DEFAULT_TONE = 'default';
+
+const EXPAND_ICONS: Record<string, LucideIcon> = {
+  temp: Thermometer,
+  feels_like: Thermometer,
+  wind: Wind,
+  humidity: Droplets,
+  precipitation: CloudRain,
+  uv: Sun,
+};
 
 function capitalizeSentences(text: string): string {
   return text.replace(/(^|[.!?]\s+)([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
@@ -121,9 +131,15 @@ function App() {
 
           {expanded && (
             <div className="expand-card">
-              {Object.values(advice.expandComments).map((line, i) => (
-                <p key={i}>{capitalizeSentences(line)}</p>
-              ))}
+              {Object.entries(advice.expandComments).map(([key, line]) => {
+                const Icon = EXPAND_ICONS[key];
+                return (
+                  <p key={key} className="expand-line">
+                    {Icon && <Icon className="expand-icon" size={16} aria-hidden="true" />}
+                    <span>{capitalizeSentences(line)}</span>
+                  </p>
+                );
+              })}
             </div>
           )}
         </>

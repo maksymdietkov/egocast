@@ -208,3 +208,15 @@ body {
 .city-search-results button:focus-visible {
   background: rgba(232, 163, 61, 0.15);
 }
+.expand-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.expand-icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: var(--paper-ink-dim);
+  opacity: 0.55;
+}
