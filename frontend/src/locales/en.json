@@ -27,8 +27,15 @@
     "precipitation": "Chance of rain",
     "uv": "UV index"
   },
+  "ad": {
+    "placeholder": "Ad / Premium slot"
+  },
+  "nimbus": {
+    "watching": "Nimbus is watching the clouds for you."
+  },
   "action": {
     "retry": "Try again",
-    "share": "Share"
+    "share": "Share",
+    "account": "Account"
   }
 }

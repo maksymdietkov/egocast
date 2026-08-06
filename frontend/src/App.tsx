@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
+import { Globe, ChevronDown, User, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
@@ -8,6 +8,10 @@ import type { AdviceResponse, Period, WeatherData, Coordinates } from './types/w
 import './App.css';
 
 const DEFAULT_TONE = 'default';
+
+const TONE_LABELS: Record<string, string> = {
+  default: 'Classic',
+};
 
 const EXPAND_ICONS: Record<string, LucideIcon> = {
   temp: Thermometer,
@@ -41,6 +45,7 @@ function App() {
 
   const [manualCoords, setManualCoords] = useState<Coordinates | null>(null);
   const [period, setPeriod] = useState<Period>('today');
+  const [tone] = useState<string>(DEFAULT_TONE);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [expanded, setExpanded] = useState(false);
@@ -56,7 +61,7 @@ function App() {
 
     const lang = i18n.language.split('-')[0];
 
-    getAdvice(coords, DEFAULT_TONE, lang, period)
+    getAdvice(coords, tone, lang, period)
       .then((result) => {
         setAdvice(result);
         setAdviceStatus('success');
@@ -65,7 +70,7 @@ function App() {
         console.error('Failed to fetch advice', err instanceof ApiError ? err.status : err);
         setAdviceStatus('error');
       });
-  }, [coords, hasLocation, period, i18n.language]);
+  }, [coords, hasLocation, period, tone, i18n.language]);
 
   if (!hasLocation && (geoStatus === 'idle' || geoStatus === 'loading')) {
     return (
@@ -86,9 +91,35 @@ function App() {
     );
   }
 
+  const currentLangLabel = i18n.language.split('-')[0].toUpperCase();
+  const currentToneLabel = TONE_LABELS[tone] ?? tone;
+
   return (
     <main className="screen">
+      <div className="app-header">
+        <button type="button" className="header-pill" onClick={() => {/* TODO: language picker */}}>
+          <Globe size={14} aria-hidden="true" />
+          {currentLangLabel}
+        </button>
+
+        <div className="header-header-right">
+          <button type="button" className="header-pill" onClick={() => {/* TODO: tone-pack picker */}}>
+            {currentToneLabel}
+            <ChevronDown size={12} aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            className="account-button"
+            aria-label={t('action.account')}
+            onClick={() => {/* TODO: personal account / premium */}}
+          >
+            <User size={14} aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+
       <h1 className="brand">EgoCast</h1>
+
       <div className="period-switch">
         <button
           type="button"
@@ -142,6 +173,13 @@ function App() {
               })}
             </div>
           )}
+
+          <div className="ad-slot">{t('ad.placeholder')}</div>
+
+          <div className="nimbus-line">
+            <span className="nimbus-avatar" aria-hidden="true">🐱</span>
+            <span className="nimbus-quote">{t('nimbus.watching')}</span>
+          </div>
         </>
       )}
     </main>

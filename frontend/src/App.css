@@ -220,3 +220,90 @@ body {
   color: var(--paper-ink-dim);
   opacity: 0.55;
 }
+.app-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  color: var(--ink-light);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.header-pill:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.account-button {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-light-dim);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.account-button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.header-pill:focus-visible,
+.account-button:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 2px;
+}
+
+.ad-slot {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--ink-light-dim);
+}
+
+.nimbus-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--paper);
+  border-radius: 1rem;
+  padding: 0.65rem 1rem;
+}
+
+.nimbus-avatar {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.nimbus-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--paper-ink);
+}
