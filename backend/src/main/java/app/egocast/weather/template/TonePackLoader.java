@@ -4,6 +4,8 @@ import app.egocast.weather.template.model.ExpandTemplate;
 import app.egocast.weather.template.model.TonePackDefinition;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +17,15 @@ import java.util.concurrent.ConcurrentHashMap;
  * Читает YAML тон-паков из classpath (src/main/resources/templates/{tone}/{lang}.yaml)
  * и кэширует уже распарсенные результаты в памяти.
  * Отдельно читает tone-neutral expand-параметры (templates/shared/expand.{lang}.yaml).
+ *
+ * Важно: кэш живёт в памяти всё время работы приложения и не инвалидируется —
+ * если тон/язык один раз не загрузился и откатился на default, это остаётся
+ * закэшированным под исходным ключом до перезапуска приложения.
  */
 @Component
 public class TonePackLoader {
+
+    private static final Logger log = LoggerFactory.getLogger(TonePackLoader.class);
 
     private final ObjectMapper yamlMapper = new ObjectMapper(new YAMLFactory());
     private final Map<String, TonePackDefinition> cache = new ConcurrentHashMap<>();
@@ -42,7 +50,8 @@ public class TonePackLoader {
                 throw new IllegalStateException(
                         "Не найден базовый тон-пак templates/default/en.yaml — без него сервис не может работать", e);
             }
-            // если запрошенный тон/язык не найден — тихо откатываемся на default/en
+            log.warn("Не удалось загрузить тон-пак '{}' (lang={}) из classpath:{} — откатываюсь на default/en. Причина: {}",
+                    tone, lang, path, e.toString());
             return loadFromDisk("default", "en");
         }
     }
@@ -57,7 +66,8 @@ public class TonePackLoader {
                 throw new IllegalStateException(
                         "Не найден базовый shared-файл templates/shared/expand.en.yaml — без него сервис не может работать", e);
             }
-            // если перевода для языка нет — откатываемся на en
+            log.warn("Не удалось загрузить shared expand для lang={} из classpath:{} — откатываюсь на en. Причина: {}",
+                    lang, path, e.toString());
             return loadSharedExpandFromDisk("en");
         }
     }
