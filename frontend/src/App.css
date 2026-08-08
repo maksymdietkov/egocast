@@ -90,6 +90,7 @@ body {
   line-height: 1.45;
   color: var(--ink-light);
   margin: 0;
+  white-space: pre-line;
 }
 
 .expand-toggle {
