@@ -3,20 +3,28 @@ import { useCitySearch } from '../hooks/useCitySearch';
 import type { CityResult, Coordinates } from '../types/weather';
 
 interface CitySearchProps {
-  onSelect: (coords: Coordinates) => void;
+  onSelect: (coords: Coordinates, label: string) => void;
+  onBack?: () => void;
 }
 
-export function CitySearch({ onSelect }: CitySearchProps) {
+export function CitySearch({ onSelect, onBack }: CitySearchProps) {
   const [query, setQuery] = useState('');
   const { results, status } = useCitySearch(query);
 
   function handleSelect(city: CityResult) {
-    onSelect({ lat: city.latitude, lon: city.longitude });
-    setQuery(`${city.name}, ${city.country}`);
+    const label = `${city.name}, ${city.country}`;
+    onSelect({ lat: city.latitude, lon: city.longitude }, label);
+    setQuery(label);
   }
 
   return (
     <div className="city-search">
+      {onBack && (
+        <button type="button" className="city-search-back" onClick={onBack}>
+          ← Back
+        </button>
+      )}
+
       <input
         type="text"
         className="city-search-input"

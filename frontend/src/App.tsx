@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Globe, ChevronDown, User, Share2, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
+import { Globe, ChevronDown, User, MapPin, Share2, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
@@ -44,6 +44,8 @@ function App() {
   const { coords: geoCoords, status: geoStatus, error: geoError } = useGeolocation();
 
   const [manualCoords, setManualCoords] = useState<Coordinates | null>(null);
+  const [locationLabel, setLocationLabel] = useState<string | null>(null);
+  const [locationPickerOpen, setLocationPickerOpen] = useState(false);
   const [period, setPeriod] = useState<Period>('today');
   const [tone] = useState<string>(DEFAULT_TONE);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
@@ -72,6 +74,12 @@ function App() {
       });
   }, [coords, hasLocation, period, tone, i18n.language]);
 
+  function handleManualCitySelect(newCoords: Coordinates, label: string) {
+    setManualCoords(newCoords);
+    setLocationLabel(label);
+    setLocationPickerOpen(false);
+  }
+
   if (!hasLocation && (geoStatus === 'idle' || geoStatus === 'loading')) {
     return (
       <main className="screen">
@@ -86,13 +94,22 @@ function App() {
       <main className="screen">
         <h1 className="brand">EgoCast</h1>
         <p className="status-text">{t(`error.${geoError}`)}</p>
-        <CitySearch onSelect={setManualCoords} />
+        <CitySearch onSelect={handleManualCitySelect} />
+      </main>
+    );
+  }
+
+  if (locationPickerOpen) {
+    return (
+      <main className="screen">
+        <CitySearch onSelect={handleManualCitySelect} onBack={() => setLocationPickerOpen(false)} />
       </main>
     );
   }
 
   const currentLangLabel = i18n.language.split('-')[0].toUpperCase();
   const currentToneLabel = TONE_LABELS[tone] ?? tone;
+  const displayedLocation = locationLabel ?? 'My location';
 
   return (
     <main className="screen">
@@ -119,6 +136,12 @@ function App() {
       </div>
 
       <h1 className="brand">EgoCast</h1>
+
+      <button type="button" className="location-pill" onClick={() => setLocationPickerOpen(true)}>
+        <MapPin size={12} aria-hidden="true" />
+        {displayedLocation}
+        <ChevronDown size={10} aria-hidden="true" />
+      </button>
 
       <div className="period-switch">
         <button
