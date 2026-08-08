@@ -2,16 +2,14 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, ChevronDown, User, MapPin, Share2, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
 import { useGeolocation } from './hooks/useGeolocation';
-import { getAdvice, ApiError } from './api/client';
+import { getAdvice, getTones, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
-import type { AdviceResponse, Period, WeatherData, Coordinates } from './types/weather';
+import { TonePicker } from './components/TonePicker';
+import { toneLabel } from './data/toneMeta';
+import type { AdviceResponse, Period, WeatherData, Coordinates, ToneInfo } from './types/weather';
 import './App.css';
 
 const DEFAULT_TONE = 'default';
-
-const TONE_LABELS: Record<string, string> = {
-  default: 'Classic',
-};
 
 const EXPAND_ICONS: Record<string, LucideIcon> = {
   temp: Thermometer,
@@ -47,13 +45,21 @@ function App() {
   const [locationLabel, setLocationLabel] = useState<string | null>(null);
   const [locationPickerOpen, setLocationPickerOpen] = useState(false);
   const [period, setPeriod] = useState<Period>('today');
-  const [tone] = useState<string>(DEFAULT_TONE);
+  const [tone, setTone] = useState<string>(DEFAULT_TONE);
+  const [tones, setTones] = useState<ToneInfo[]>([{ id: DEFAULT_TONE, premium: false }]);
+  const [tonePickerOpen, setTonePickerOpen] = useState(false);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [expanded, setExpanded] = useState(false);
 
   const coords = manualCoords ?? geoCoords;
   const hasLocation = coords !== null;
+
+  useEffect(() => {
+    getTones()
+      .then(setTones)
+      .catch((err) => console.error('Failed to fetch tones', err));
+  }, []);
 
   useEffect(() => {
     if (!hasLocation || !coords) return;
@@ -78,6 +84,11 @@ function App() {
     setManualCoords(newCoords);
     setLocationLabel(label);
     setLocationPickerOpen(false);
+  }
+
+  function handleToneSelect(toneId: string) {
+    setTone(toneId);
+    setTonePickerOpen(false);
   }
 
   if (!hasLocation && (geoStatus === 'idle' || geoStatus === 'loading')) {
@@ -107,8 +118,21 @@ function App() {
     );
   }
 
+  if (tonePickerOpen) {
+    return (
+      <main className="screen">
+        <TonePicker
+          tones={tones}
+          activeTone={tone}
+          onSelect={handleToneSelect}
+          onBack={() => setTonePickerOpen(false)}
+        />
+      </main>
+    );
+  }
+
   const currentLangLabel = i18n.language.split('-')[0].toUpperCase();
-  const currentToneLabel = TONE_LABELS[tone] ?? tone;
+  const currentToneLabel = toneLabel(tone);
   const displayedLocation = locationLabel ?? 'My location';
 
   return (
@@ -120,7 +144,7 @@ function App() {
         </button>
 
         <div className="header-header-right">
-          <button type="button" className="header-pill" onClick={() => {/* TODO: tone-pack picker */}}>
+          <button type="button" className="header-pill" onClick={() => setTonePickerOpen(true)}>
             {currentToneLabel}
             <ChevronDown size={12} aria-hidden="true" />
           </button>
