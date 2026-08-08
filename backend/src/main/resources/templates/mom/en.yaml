@@ -1,0 +1,345 @@
+conditions:
+  frost:
+    intro:
+      - weight: 2
+        text: "Oh so NOW you'll listen to me —"
+      - weight: 1
+        text: "I've been saying this since October —"
+      - weight: 1
+        text: "This is exactly what I warned you about —"
+      - weight: 1
+        text: "Fine, don't listen to me, see what happens —"
+    advice:
+      - weight: 1
+        text: "The big coat, sweetie, the one you called 'embarrassing.'\nWear it anyway — frostbite is more embarrassing, trust me."
+      - weight: 1
+        text: "Gloves, hat, the works, like I taught you.\nYour cousin Dima wears three layers and he's never once been sick."
+      - weight: 1
+        text: "Everything warm you own, all at once.\nI don't care how you look, I care that you come home with all ten fingers."
+      - weight: 1
+        text: "Thermal layer, sweater, real coat — not negotiable today.\nCall me the second you're inside somewhere warm, I mean it."
+    sting:
+      - weight: 1
+        text: "I'm not saying I told you so. I'm just saying I did tell you so."
+      - weight: 1
+        text: "This is how people end up in the hospital, you know."
+      - weight: 1
+        text: "Your grandmother survived three winters in less clothing than you're about to wear. Wear more anyway."
+      - weight: 1
+        text: "Did you eat? Because cold on an empty stomach is how it really starts."
+
+  cold:
+    intro:
+      - weight: 2
+        text: "It's cold, and I worry, so —"
+      - weight: 1
+        text: "I already texted you twice about this —"
+      - weight: 1
+        text: "Sweetie. Sweetie. Listen —"
+      - weight: 1
+        text: "I'm only going to say this once, probably —"
+    advice:
+      - weight: 1
+        text: "The real coat. Not the 'fashion' one that does nothing.\nGloves too — cold hands are how it starts, then it's a whole thing."
+      - weight: 1
+        text: "Layer up properly, like I've told you a hundred times.\nA scarf isn't optional, it's basic self-preservation."
+      - weight: 1
+        text: "Warm socks, real coat, something on your head.\nI know you hate hats. I don't care. Wear the hat."
+    sting:
+      - weight: 1
+        text: "Call me when you're home. I will worry until you do."
+      - weight: 1
+        text: "You never listen about the scarf, and then guess who gets sick for a week."
+      - weight: 1
+        text: "I made soup just in case. There's always soup."
+
+  chilly:
+    intro:
+      - weight: 2
+        text: "Not frost, but I still worry —"
+      - weight: 1
+        text: "A little chilly, which means bundle up anyway —"
+      - weight: 1
+        text: "This is exactly the kind of weather people underestimate —"
+    advice:
+      - weight: 1
+        text: "A real jacket, please, not that thin one.\nBring a scarf even if you 'probably won't need it.'"
+      - weight: 1
+        text: "Layer a sweater under something warm.\nGloves too — I know you'll say I'm being dramatic. I'm not."
+      - weight: 1
+        text: "Dress warm now so you don't regret it later.\nYour sister always dresses warm and she never complains. Just saying."
+    sting:
+      - weight: 1
+        text: "This is exactly how colds happen, you know."
+      - weight: 1
+        text: "I'm not being dramatic, I'm being a mother."
+      - weight: 1
+        text: "Bring the scarf. Even if you don't wear it. Just bring it."
+
+  cool:
+    intro:
+      - weight: 2
+        text: "Not bad, but I still have opinions —"
+      - weight: 1
+        text: "A little cool, nothing a jacket won't fix —"
+      - weight: 1
+        text: "See, I'm not always telling you to panic —"
+    advice:
+      - weight: 1
+        text: "A light jacket is fine, I won't lecture you today.\nMaybe a scarf anyway, just to make me happy."
+      - weight: 1
+        text: "This is easy weather, wear what you want.\nI'm still going to remind you it can turn on you fast."
+      - weight: 1
+        text: "Layer a shirt under something light.\nText me if it gets colder than expected, please."
+    sting:
+      - weight: 1
+        text: "See, I don't always worry. Just usually."
+      - weight: 1
+        text: "I'll allow this one without a lecture. You're welcome."
+
+  mild:
+    intro:
+      - weight: 2
+        text: "Pleasant, for once —"
+      - weight: 1
+        text: "I have nothing to worry about today, miracle of miracles —"
+      - weight: 1
+        text: "Easy day, don't ruin it by underdressing anyway —"
+    advice:
+      - weight: 1
+        text: "Whatever's comfortable, I'm not going to fight you on this one.\nMaybe a light layer for later, just to be safe."
+      - weight: 1
+        text: "This is cardigan weather, easy and simple.\nNo lecture today, I'm taking the day off."
+      - weight: 1
+        text: "Dress how you like, I trust your judgment today.\nDon't get used to it."
+    sting:
+      - weight: 1
+        text: "I'll let you dress yourself today. Enjoy the freedom."
+      - weight: 1
+        text: "See? I don't always have something to say."
+
+  comfortable:
+    intro:
+      - weight: 2
+        text: "A genuinely nice day, sweetie —"
+      - weight: 1
+        text: "I have literally nothing to complain about —"
+      - weight: 1
+        text: "Go outside and enjoy this, it won't last —"
+    advice:
+      - weight: 1
+        text: "Wear whatever makes you happy today, seriously.\nA t-shirt is perfectly fine, I promise I won't say anything."
+      - weight: 1
+        text: "Short sleeves, no notes.\nMaybe a light layer for later, but that's it from me."
+      - weight: 1
+        text: "Days like this are why I don't worry every single day.\nGo enjoy it, call me later and tell me about your day."
+    sting:
+      - weight: 1
+        text: "I'll stop worrying for one whole day. Savor it."
+      - weight: 1
+        text: "Days like this make my job easy. I could get used to this."
+
+  warm:
+    intro:
+      - weight: 2
+        text: "Warming up, which means new worries —"
+      - weight: 1
+        text: "It's warm, so now I worry about different things —"
+      - weight: 1
+        text: "Summer worries, my favorite kind —"
+    advice:
+      - weight: 1
+        text: "Shorts and a t-shirt, fine.\nBut sunglasses and sunscreen, non-negotiable — your skin isn't getting any younger."
+      - weight: 1
+        text: "Light, breathable fabrics.\nAnd water — actual water, not just coffee, you forget to drink enough."
+      - weight: 1
+        text: "Dress light, stay cool.\nA hat if you'll be out long, I worry about your scalp, don't ask why."
+    sting:
+      - weight: 1
+        text: "Drink water. I mean it, not just coffee."
+      - weight: 1
+        text: "Sunscreen, sweetie. I'm not nagging, I'm saying it because I love your face."
+
+  hot:
+    intro:
+      - weight: 2
+        text: "Oh no, the heat, my other nemesis —"
+      - weight: 1
+        text: "Please be careful, I mean it this time —"
+      - weight: 1
+        text: "This heat has me genuinely worried —"
+    advice:
+      - weight: 1
+        text: "The lightest clothes you own, and drink more water than feels necessary.\nSunglasses and sunscreen — both, no shortcuts, I will ask."
+      - weight: 1
+        text: "A wide hat and something loose and light.\nCome inside the second you feel dizzy, promise me right now."
+      - weight: 1
+        text: "Stay in shade whenever you can.\nAnd for the last time, drink the water, not just the iced coffee."
+    sting:
+      - weight: 1
+        text: "Please don't overdo it in this heat. I mean it."
+      - weight: 1
+        text: "Come inside if you feel unwell. I will actually worry, not the fun kind."
+      - weight: 1
+        text: "Heat scares me more than cold, and I've told you why a hundred times."
+
+  windy_cold:
+    intro:
+      - weight: 2
+        text: "Cold AND windy, be honest with me here —"
+      - weight: 1
+        text: "This is exactly the combination I hate —"
+      - weight: 1
+        text: "Bundle up, the wind means business today —"
+    advice:
+      - weight: 1
+        text: "A windproof coat, not just any coat, I mean it this time.\nZip it all the way — every gap is an invitation for a cold."
+      - weight: 1
+        text: "Cover your ears and your neck, please.\nThe wind makes everything worse than the thermometer says."
+      - weight: 1
+        text: "Layers under something windproof.\nGloves too, your hands get cold faster than you admit."
+    sting:
+      - weight: 1
+        text: "This is exactly the weather people catch colds in, I've seen it happen."
+      - weight: 1
+        text: "Text me the second you're somewhere warm."
+      - weight: 1
+        text: "I told you the thin jacket wasn't enough. I told you."
+
+  windy_frost:
+    intro:
+      - weight: 2
+        text: "This is serious, sweetie, I'm not joking around today —"
+      - weight: 1
+        text: "Please, please be careful in this —"
+      - weight: 1
+        text: "This is the kind of day I actually lose sleep over —"
+    advice:
+      - weight: 1
+        text: "Cover every bit of skin you possibly can.\nHigh collar, real gloves, a hat that actually covers your ears fully."
+      - weight: 1
+        text: "Your warmest coat, no compromises, none, today of all days.\nIf you can stay in for a while, please, for me, do."
+      - weight: 1
+        text: "Layer everything, seal every single gap.\nThis is the kind of cold that sneaks up before you notice."
+    sting:
+      - weight: 1
+        text: "I mean it about staying warm. I really do."
+      - weight: 1
+        text: "Frostbite is real, sweetie, this isn't me being dramatic for once."
+      - weight: 1
+        text: "Call me the second you're inside. I will be watching my phone."
+
+  windy_hot:
+    intro:
+      - weight: 1
+        text: "At least there's a breeze, small mercies —"
+      - weight: 1
+        text: "The wind's helping a little, don't get complacent —"
+      - weight: 1
+        text: "Still hot underneath that breeze, don't be fooled —"
+    advice:
+      - weight: 1
+        text: "Light clothes still, the wind is a trick, not a solution.\nYou might skip the hat for once, but not the sunscreen."
+      - weight: 1
+        text: "The breeze makes it feel cooler than it is — don't fall for it.\nKeep drinking water regardless of how nice it feels outside."
+    sting:
+      - weight: 1
+        text: "Don't let the breeze fool you into skipping sunscreen."
+      - weight: 1
+        text: "Feels cooler than it is — the sun didn't get the memo, and neither should you."
+
+  rain:
+    intro:
+      - weight: 2
+        text: "Take the umbrella, the actual umbrella, not the broken one —"
+      - weight: 1
+        text: "It's raining, please be careful out there —"
+      - weight: 1
+        text: "Wet out there, and you know how you get when you're wet and cold —"
+    advice:
+      - weight: 1
+        text: "A raincoat with a hood, please, not just an umbrella that'll flip inside out.\nWaterproof shoes — wet feet is how a cold starts, I've told you this."
+      - weight: 1
+        text: "Take the good umbrella, the one I gave you, not the flimsy one.\nWalk carefully, please, the ground gets slippery and you're always in a rush."
+      - weight: 1
+        text: "Something with a hood beats an umbrella every time.\nDry socks in your bag, just in case, humor me."
+    sting:
+      - weight: 1
+        text: "Please don't rush and slip, I mean it, I worry about that."
+      - weight: 1
+        text: "Text me when you're home and dry, I'll wait up."
+      - weight: 1
+        text: "I hope you didn't forget the umbrella again. Did you? Be honest."
+
+  heavy_rain:
+    intro:
+      - weight: 2
+        text: "This is not a drizzle, sweetie, this is a Situation —"
+      - weight: 1
+        text: "Please just stay dry today, for my sanity —"
+      - weight: 1
+        text: "I worry about you out in this, genuinely —"
+    advice:
+      - weight: 1
+        text: "Full raincoat, waterproof boots, please, no half-measures today.\nIf you can stay in, sweetie, just stay in, I'm asking nicely."
+      - weight: 1
+        text: "Be extra careful if you absolutely must go out.\nBring a change of clothes, just in case, I mean it."
+      - weight: 1
+        text: "Waterproof everything, and please don't rush.\nAn umbrella won't save you in this, dress like you mean it."
+    sting:
+      - weight: 1
+        text: "Please be careful getting around in this, I mean it."
+      - weight: 1
+        text: "Call me the second you're somewhere dry and safe."
+      - weight: 1
+        text: "I don't like you being out in weather like this. I've said it before, I'll say it again."
+
+  snow:
+    intro:
+      - weight: 2
+        text: "It's snowing, please, please be careful —"
+      - weight: 1
+        text: "Oh, the snow, my favorite thing to worry about —"
+      - weight: 1
+        text: "Dress warm, it's coming down out there —"
+    advice:
+      - weight: 1
+        text: "Boots with real grip, please, not the smooth-soled ones you love so much.\nGloves, a hat — you know the drill by now, we've done this before."
+      - weight: 1
+        text: "Layer up under something waterproof.\nWalk carefully, sweetie, ice hides under snow and you never see it coming."
+      - weight: 1
+        text: "Warm from head to toe today, no shortcuts.\nIf the roads look bad, maybe just stay in — I'll worry less, promise."
+    sting:
+      - weight: 1
+        text: "Please don't fall, I mean it, I really do."
+      - weight: 1
+        text: "Call me when you get where you're going safely, don't make me wait."
+      - weight: 1
+        text: "I still think about when you slipped last winter. Be careful. Please."
+
+  storm:
+    intro:
+      - weight: 2
+        text: "Please stay in if you possibly can, honey —"
+      - weight: 1
+        text: "This storm has me genuinely worried, not the usual kind —"
+      - weight: 1
+        text: "I don't like this weather at all, and I'm telling you that plainly —"
+    advice:
+      - weight: 1
+        text: "If you truly must go out, dress fully waterproof and windproof, no exceptions.\nBut honestly, sweetie, please just stay home if you can, I'm asking you directly."
+      - weight: 1
+        text: "Skip the umbrella, it won't survive this and neither will your dignity.\nA sturdy hood and good shoes, if you absolutely have to go."
+      - weight: 1
+        text: "Secure everything, dress for the worst case.\nAnd please, please be careful out there, I mean every word of this."
+    sting:
+      - weight: 1
+        text: "Please text me the moment you're safe inside. I will be waiting."
+      - weight: 1
+        text: "I really wish you'd just stay in today. Is that so much to ask?"
+      - weight: 1
+        text: "This is exactly the kind of day I worry the most, and you know it."
+
+expand:
+  trigger:
+    - "fine, here's what's actually happening out there — and yes I checked twice"

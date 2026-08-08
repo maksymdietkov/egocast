@@ -12,9 +12,9 @@ export const TONE_META: Record<string, ToneMeta> = {
       'Layer up properly: thermal base, wool sweater, real winter coat.\nSkip the fashion jacket — this is survival gear weather.',
   },
   mom: {
-    label: 'Mom',
-    example:
-      'Wear the big coat, not the cute one.\nAnd gloves — real gloves, not the thin ones you like.',
+  label: 'Mom',
+  example:
+    "The big coat, sweetie, the one you called 'embarrassing.'\nWear it anyway — frostbite is more embarrassing, trust me.",
   },
 };
 
