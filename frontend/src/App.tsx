@@ -138,10 +138,14 @@ function App() {
   return (
     <main className="screen">
       <div className="app-header">
-        <button type="button" className="header-pill" onClick={() => {/* TODO: language picker */}}>
-          <Globe size={14} aria-hidden="true" />
-          {currentLangLabel}
-        </button>
+        <button
+  type="button"
+  className="header-pill"
+  onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')}
+>
+  <Globe size={14} aria-hidden="true" />
+  {currentLangLabel}
+</button>
 
         <div className="header-header-right">
           <button type="button" className="header-pill" onClick={() => setTonePickerOpen(true)}>
