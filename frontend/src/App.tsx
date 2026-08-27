@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, ChevronDown, User, MapPin, Share2, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
+import html2canvas from 'html2canvas';
 import { useGeolocation } from './hooks/useGeolocation';
 import { getAdvice, getTones, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
 import { TonePicker } from './components/TonePicker';
+import { ShareCard } from './components/ShareCard';
 import { toneLabel } from './data/toneMeta';
 import type { AdviceResponse, Period, WeatherData, Coordinates, ToneInfo } from './types/weather';
 import './App.css';
@@ -51,6 +53,8 @@ function App() {
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [expanded, setExpanded] = useState(false);
+  const [sharing, setSharing] = useState(false);
+  const shareCardRef = useRef<HTMLDivElement>(null);
 
   const coords = manualCoords ?? geoCoords;
   const hasLocation = coords !== null;
@@ -89,6 +93,40 @@ function App() {
   function handleToneSelect(toneId: string) {
     setTone(toneId);
     setTonePickerOpen(false);
+  }
+
+  async function handleShare() {
+    if (!shareCardRef.current || sharing) return;
+
+    setSharing(true);
+    try {
+      const canvas = await html2canvas(shareCardRef.current, {
+        backgroundColor: null,
+        scale: 2,
+      });
+      const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));
+      if (!blob) return;
+
+      const file = new File([blob], 'egocast.png', { type: 'image/png' });
+      const shareData = { files: [file], title: 'EgoCast', text: advice?.advice ?? '' };
+
+      if (typeof navigator.canShare === 'function' && navigator.canShare(shareData)) {
+        await navigator.share(shareData);
+      } else {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'egocast.png';
+        link.click();
+        URL.revokeObjectURL(url);
+      }
+    } catch (err) {
+      if ((err as DOMException)?.name !== 'AbortError') {
+        console.error('Failed to share advice card', err);
+      }
+    } finally {
+      setSharing(false);
+    }
   }
 
   if (!hasLocation && (geoStatus === 'idle' || geoStatus === 'loading')) {
@@ -139,13 +177,13 @@ function App() {
     <main className="screen">
       <div className="app-header">
         <button
-  type="button"
-  className="header-pill"
-  onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')}
->
-  <Globe size={14} aria-hidden="true" />
-  {currentLangLabel}
-</button>
+          type="button"
+          className="header-pill"
+          onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')}
+        >
+          <Globe size={14} aria-hidden="true" />
+          {currentLangLabel}
+        </button>
 
         <div className="header-header-right">
           <button type="button" className="header-pill" onClick={() => setTonePickerOpen(true)}>
@@ -228,10 +266,21 @@ function App() {
           <div className="ad-slot">{t('ad.placeholder')}</div>
 
           <div className="share-toggle-wrap">
-            <button type="button" className="share-toggle" onClick={() => {/* TODO: share via html2canvas */}}>
+            <button type="button" className="share-toggle" onClick={handleShare} disabled={sharing}>
               <Share2 size={16} aria-hidden="true" />
-              <span>{t('action.share')}</span>
+              <span>{sharing ? t('action.sharing') : t('action.share')}</span>
             </button>
+          </div>
+
+          <div className="share-card-offscreen">
+            <ShareCard
+              ref={shareCardRef}
+              catEmoji={catMood(advice.rawWeather)}
+              locationLabel={displayedLocation}
+              advice={advice}
+              includeExpand={expanded}
+              capitalize={capitalizeSentences}
+            />
           </div>
         </>
       )}

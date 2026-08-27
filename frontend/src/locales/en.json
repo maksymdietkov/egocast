@@ -33,6 +33,7 @@
   "action": {
     "retry": "Try again",
     "share": "Share",
+    "sharing": "Preparing...",
     "account": "Account"
   }
 }

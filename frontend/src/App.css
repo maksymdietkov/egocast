@@ -538,3 +538,73 @@ body {
   margin: 0;
   white-space: pre-line;
 }
+
+/* Off-screen host for ShareCard — present in the DOM so html2canvas can
+   rasterize it, but never visible and never affects page layout/scroll. */
+.share-card-offscreen {
+  position: fixed;
+  top: 0;
+  left: -10000px;
+  pointer-events: none;
+}
+
+.share-card {
+  width: 600px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  font-family: var(--font-body);
+  color: #f5f3ef;
+  background: linear-gradient(160deg, #1b1f3b 0%, #3a2a52 45%, #6b3a3a 100%);
+}
+
+.share-card-location {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.share-card-cat {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.share-card-advice {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1.4;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.share-card-expand {
+  width: 100%;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(245, 243, 239, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.share-card-expand-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.share-card-brand {
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #e3a94b;
+}
