@@ -11,7 +11,8 @@ public class ToneCatalogService {
     // MVP: хардкод. Когда появятся реальные премиум-тона — заменим на чтение из БД или конфига.
     public List<ToneInfo> getAvailableTones() {
         return List.of(
-                new ToneInfo("default", false)
+                new ToneInfo("default", false),
+                new ToneInfo("mom", false)
         );
     }
 }
