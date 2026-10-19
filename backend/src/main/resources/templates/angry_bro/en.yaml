@@ -1,0 +1,347 @@
+conditions:
+  frost:
+    intro:
+      - weight: 2
+        text: "Yo. It's below freezing out there —"
+      - weight: 1
+        text: "Listen up, genius —"
+      - weight: 1
+        text: "Alright hotshot, reality check —"
+      - weight: 1
+        text: "Hey. Winter's not playing games today —"
+    advice:
+      - weight: 1
+        text: "Put a real coat on, not that fashion jacket you love so much.\nHat, gloves, scarf — all three, no negotiating."
+      - weight: 1
+        text: "Thermal layer, sweater, actual winter coat. That's the minimum.\nSkip the hat and your brain freezes first, dumbass."
+      - weight: 1
+        text: "Full gear today: coat, gloves, hat that covers your ears.\nYou're not too tough for frostbite, trust me."
+      - weight: 1
+        text: "Layer up properly or stay the hell inside.\nThermal socks too — don't be a hero about your toes."
+    sting:
+      - weight: 1
+        text: "Go out underdressed and you deserve what happens, champ."
+      - weight: 1
+        text: "This isn't the day to prove a point. Put the coat on."
+      - weight: 1
+        text: "I'm not saying it twice, genius."
+
+  cold:
+    intro:
+      - weight: 2
+        text: "Yo, bundle up —"
+      - weight: 1
+        text: "Heads up, tough guy —"
+      - weight: 1
+        text: "Listen —"
+      - weight: 1
+        text: "Alright, pay attention —"
+    advice:
+      - weight: 1
+        text: "Warm coat, non-negotiable.\nGloves too — your hands will remind you in an hour, trust me."
+      - weight: 1
+        text: "Proper coat and a scarf. That's it, that's the whole ask.\nNo jacket's cutting it today, stop testing fate."
+      - weight: 1
+        text: "Thermal shirt, sweater, coat that actually zips shut.\nDon't be that guy shivering on the corner."
+      - weight: 1
+        text: "Coat, hat, something around your neck.\nThe cold finds every gap you're too lazy to cover."
+    sting:
+      - weight: 1
+        text: "Coffee's not gonna save you, the coat will."
+      - weight: 1
+        text: "Your summer jacket stays home today. End of discussion."
+      - weight: 1
+        text: "Ears freeze first, idiot — wear the damn hat."
+
+  chilly:
+    intro:
+      - weight: 2
+        text: "Yo, getting cold —"
+      - weight: 1
+        text: "A little brisk out, listen —"
+      - weight: 1
+        text: "Hey, pay attention —"
+    advice:
+      - weight: 1
+        text: "Decent jacket or a thick sweater under one. That's all.\nBare hands and you're complaining in ten minutes, guaranteed."
+      - weight: 1
+        text: "Scarf and a real jacket, not that windbreaker thing.\nGloves if you run cold, genius, don't overthink it."
+      - weight: 1
+        text: "This is scarf weather. Nothing crazy, just don't go out in a t-shirt.\nI will judge you, I promise."
+    sting:
+      - weight: 1
+        text: "Not freezing, but your ears will still complain. Deal with it."
+      - weight: 1
+        text: "Tell the wind it's 'technically not winter.' See how that goes."
+
+  cool:
+    intro:
+      - weight: 2
+        text: "Not bad out, but listen —"
+      - weight: 1
+        text: "Mild chill, pay attention —"
+      - weight: 1
+        text: "Alright, nothing dramatic —"
+    advice:
+      - weight: 1
+        text: "Light jacket does the job.\nScarf's optional, genius, you're not dying out there."
+      - weight: 1
+        text: "Hoodie or light jacket, that's plenty.\nSave the heavy coat, you don't need it, drama queen."
+      - weight: 1
+        text: "T-shirt under a jacket, done.\nTie it around your waist later if you get warm, like an adult."
+    sting:
+      - weight: 1
+        text: "Jacket weather. Not coat weather. Learn the difference."
+      - weight: 1
+        text: "Comfortable enough that you had no excuse to check this."
+
+  mild:
+    intro:
+      - weight: 2
+        text: "Decent day, don't overthink it —"
+      - weight: 1
+        text: "Easy weather, listen —"
+      - weight: 1
+        text: "Nothing to stress about —"
+    advice:
+      - weight: 1
+        text: "Light jacket or long sleeves, that's it.\nStop asking me, you know how to dress for this, genius."
+      - weight: 1
+        text: "Cardigan weather. Zero drama.\nLeave the heavy stuff in the closet where it belongs."
+      - weight: 1
+        text: "Whatever's clean works fine today.\nMaybe grab a light layer for later, just in case, smartass."
+    sting:
+      - weight: 1
+        text: "Even I've got nothing to yell at you about today."
+      - weight: 1
+        text: "Enjoy it. Won't last, it never does."
+
+  comfortable:
+    intro:
+      - weight: 2
+        text: "Nice out, don't screw it up —"
+      - weight: 1
+        text: "About as good as it gets —"
+      - weight: 1
+        text: "Textbook weather, listen —"
+    advice:
+      - weight: 1
+        text: "Dress however, I don't care.\nT-shirt's fine, you don't need my help today."
+      - weight: 1
+        text: "Short sleeves, no issue.\nMaybe keep a light layer around for evening, don't be an idiot about it."
+      - weight: 1
+        text: "Anything works. Go with your gut.\nThere's no wrong answer here, for once."
+    sting:
+      - weight: 1
+        text: "Somewhere a meteorologist's bored stiff today."
+      - weight: 1
+        text: "This is the weather people whine they don't get enough of."
+
+  warm:
+    intro:
+      - weight: 2
+        text: "Warming up, pay attention —"
+      - weight: 1
+        text: "Summer's knocking, listen —"
+      - weight: 1
+        text: "Getting toasty out —"
+    advice:
+      - weight: 1
+        text: "Shorts and a t-shirt, genius, this isn't complicated.\nSunglasses wouldn't hurt either."
+      - weight: 1
+        text: "Breathable stuff only — cotton, linen, whatever.\nCap if you're out a while, don't fry your skull."
+      - weight: 1
+        text: "Light colors, light fabric, light everything.\nLayers can sit this one out."
+    sting:
+      - weight: 1
+        text: "No sunscreen and you'll be whining tomorrow. Don't say I didn't warn you."
+      - weight: 1
+        text: "Ice cream weather, if you needed permission, clown."
+
+  hot:
+    intro:
+      - weight: 2
+        text: "Damn, it's hot — listen up —"
+      - weight: 1
+        text: "Scorcher today, pay attention —"
+      - weight: 1
+        text: "Full send summer, genius —"
+    advice:
+      - weight: 1
+        text: "Stay hydrated or pass out, your call.\nLightest stuff you own, and sunglasses — not optional."
+      - weight: 1
+        text: "Loose linen, wide-brim hat, don't be stubborn about it.\nSunscreen's mandatory, not a suggestion."
+      - weight: 1
+        text: "Palest, lightest clothes you've got.\nDark colors and you're roasting by noon, no exceptions."
+    sting:
+      - weight: 1
+        text: "Ice cream's basically medicine today."
+      - weight: 1
+        text: "Your shadow's the only shade you're getting. Use it."
+      - weight: 1
+        text: "Pavement could fry an egg by noon, don't be dramatic when it fries you too."
+
+  windy_cold:
+    intro:
+      - weight: 2
+        text: "Yo, wind's picking a fight —"
+      - weight: 1
+        text: "Cold with an attitude, listen —"
+      - weight: 1
+        text: "This ain't a gentle cold —"
+    advice:
+      - weight: 1
+        text: "Freezing and windy, genius — regular coat won't cut it.\nGet something windproof over it."
+      - weight: 1
+        text: "Wind goes straight through a normal coat.\nWindproof shell, real gloves, hat that won't fly off."
+      - weight: 1
+        text: "Zip up, tuck in, cover every gap.\nThe wind finds every mistake you're too lazy to fix."
+    sting:
+      - weight: 1
+        text: "Don't come crying, I told you to zip up."
+      - weight: 1
+        text: "The wind's doing the damage today, not the cold. Respect it."
+      - weight: 1
+        text: "Your scarf's about to become a kite, hold onto it."
+
+  windy_frost:
+    intro:
+      - weight: 2
+        text: "This is brutal, listen up —"
+      - weight: 1
+        text: "Nature's really trying today, pay attention —"
+      - weight: 1
+        text: "Skin-freezing out there —"
+    advice:
+      - weight: 1
+        text: "Every gap in your outfit, the wind will find it.\nHigh collar, scarf tucked in, gloves that actually fit, idiot."
+      - weight: 1
+        text: "Nothing loose, nothing open, nothing exposed.\nFull coverage or stay inside, your call."
+      - weight: 1
+        text: "Cover your face and hands, don't be stubborn.\nExposed skin goes numb faster than you'd think, genius."
+    sting:
+      - weight: 1
+        text: "This cold has opinions about your fashion choices. Listen to it."
+      - weight: 1
+        text: "Your face goes numb before your coffee gets cold, idiot."
+      - weight: 1
+        text: "The wind chill number isn't a suggestion, it's a warning."
+
+  windy_hot:
+    intro:
+      - weight: 2
+        text: "At least there's wind, listen —"
+      - weight: 1
+        text: "Hot but moving, pay attention —"
+      - weight: 1
+        text: "The wind's trying to help you out —"
+    advice:
+      - weight: 1
+        text: "Still wear light stuff, don't get cocky.\nMight skip the hat for once, thank the breeze."
+      - weight: 1
+        text: "Wind takes the edge off, but it's still hot, genius.\nDon't skip sunscreen just 'cause it feels cooler."
+      - weight: 1
+        text: "Loose and breathable, that's the move.\nWatch your hat — the wind wants it more than you do."
+    sting:
+      - weight: 1
+        text: "The breeze isn't a sunscreen replacement, dumbass."
+      - weight: 1
+        text: "Feels cooler than it is, don't get fooled."
+      - weight: 1
+        text: "Hold onto your hat. I mean it, literally."
+
+  rain:
+    intro:
+      - weight: 2
+        text: "Grab the umbrella, listen —"
+      - weight: 1
+        text: "Bit of drizzle, pay attention —"
+      - weight: 1
+        text: "Sky's leaking, genius —"
+    advice:
+      - weight: 1
+        text: "Light raincoat or a hooded jacket, that's plenty.\nNothing fancy needed, don't overthink it."
+      - weight: 1
+        text: "Waterproof shoes are worth it, trust me.\nThat 'water-resistant' jacket won't save you."
+      - weight: 1
+        text: "Umbrella and a hood, solid combo.\nYour socks will thank you, I promise."
+    sting:
+      - weight: 1
+        text: "Puddles will find your socks, they always do, idiot."
+      - weight: 1
+        text: "Don't be the clown who forgot the umbrella."
+      - weight: 1
+        text: "Your hair's got other plans today. Deal with it."
+
+  heavy_rain:
+    intro:
+      - weight: 2
+        text: "This ain't a drizzle, listen up —"
+      - weight: 1
+        text: "Proper downpour, genius —"
+      - weight: 1
+        text: "The sky gave up subtlety —"
+    advice:
+      - weight: 1
+        text: "Full raincoat, waterproof boots, a real umbrella.\nA poncho's not overkill today, don't argue."
+      - weight: 1
+        text: "Waterproof everything — jacket, shoes, bag.\nA regular umbrella's gonna lose this fight."
+      - weight: 1
+        text: "Commit to full rain gear if you're walking anywhere.\nHalf-measures just get you half-wet and miserable, idiot."
+    sting:
+      - weight: 1
+        text: "Work from home today, I'm just saying."
+      - weight: 1
+        text: "Even the ducks are unimpressed, genius."
+      - weight: 1
+        text: "Your umbrella's basically your whole personality today."
+
+  snow:
+    intro:
+      - weight: 2
+        text: "Snow's falling, listen —"
+      - weight: 1
+        text: "It's coming down, pay attention —"
+      - weight: 1
+        text: "White out there, genius —"
+    advice:
+      - weight: 1
+        text: "Waterproof boots with actual grip, insulated gloves, a hat.\nSlush isn't your friend no matter how it looks, idiot."
+      - weight: 1
+        text: "Layer under a waterproof coat.\nSwap those shoes for something with real traction."
+      - weight: 1
+        text: "Warm and waterproof from the ankles up.\nThe pretty stuff turns to slush fast, don't ruin good shoes."
+    sting:
+      - weight: 1
+        text: "Pretty from a window, less pretty in your shoe, dumbass."
+      - weight: 1
+        text: "Traction over style today, no debate."
+      - weight: 1
+        text: "The sidewalk didn't get the memo, watch your step, genius."
+
+  storm:
+    intro:
+      - weight: 2
+        text: "Storm's rolling in, listen up —"
+      - weight: 1
+        text: "This isn't a walking day, genius —"
+      - weight: 1
+        text: "Hold onto something —"
+    advice:
+      - weight: 1
+        text: "Stay in if you can, seriously.\nIf not — waterproof jacket, sturdy shoes, skip the umbrella entirely."
+      - weight: 1
+        text: "Secure everything, wear windproof and waterproof.\nOpen umbrellas lose this fight every time, idiot."
+      - weight: 1
+        text: "Grab your bag and go, no lingering outside today.\nWaterproof head to toe if you absolutely must."
+    sting:
+      - weight: 1
+        text: "Your umbrella's not surviving this. Leave it home, genius."
+      - weight: 1
+        text: "Stay-indoors-with-tea kind of day. Take the hint."
+      - weight: 1
+        text: "Mother Nature's clearly not in a subtle mood today."
+
+expand:
+  trigger:
+    - "don't believe me? here's the boring truth, genius"
