@@ -12,7 +12,8 @@ public class ToneCatalogService {
     public List<ToneInfo> getAvailableTones() {
         return List.of(
                 new ToneInfo("default", false),
-                new ToneInfo("mom", false)
+                new ToneInfo("mom", false),
+                new ToneInfo("angry_bro", false)
         );
     }
 }
