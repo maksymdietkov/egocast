@@ -6,40 +6,45 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Превращает WeatherData в цепочку ключей-кандидатов для поиска шаблона —
- * от самого специфичного (storm_windy_cold) до самого общего (cold).
+ * Превращает WeatherData в список ключей-кандидатов для поиска шаблона.
+ * Порядок: явление (с холодной версией для дождя) > ветер+температура > температура.
  */
 public class ConditionResolver {
 
     public static List<String> resolveCandidates(WeatherData w) {
-        List<String> tags = new ArrayList<>();
+        List<String> candidates = new ArrayList<>();
 
-        // особые явления — самый специфичный тег первым
-        if (isStorm(w)) {
-            tags.add("storm");
-        } else if (isSnow(w)) {
-            tags.add("snow");
-        } else if (isHeavyRain(w)) {
-            tags.add("heavy_rain");
-        } else if (isRain(w)) {
-            tags.add("rain");
+        String special = specialTag(w);
+        if (special != null) {
+            // для дождя и ливня при холоде ищем отдельный блок, если его нет - общий
+            if (isColdRain(special, w)) {
+                candidates.add(special + "_cold");
+            }
+            candidates.add(special);
         }
 
+        String temp = tempTag(w.temperature());
         if (isWindy(w)) {
-            tags.add("windy");
+            candidates.add("windy_" + temp);
         }
 
-        tags.add(tempTag(w.temperature())); // базовый тег температуры — всегда последний, гарантированный fallback
+        candidates.add(temp); // гарантированный fallback
 
-        return buildCandidateChain(tags);
+        return candidates;
     }
 
-    private static List<String> buildCandidateChain(List<String> tags) {
-        List<String> candidates = new ArrayList<>();
-        for (int i = 0; i < tags.size(); i++) {
-            candidates.add(String.join("_", tags.subList(i, tags.size())));
-        }
-        return candidates;
+    private static String specialTag(WeatherData w) {
+        if (isStorm(w)) return "storm";
+        if (isSnow(w)) return "snow";
+        if (isHeavyRain(w)) return "heavy_rain";
+        if (isRain(w)) return "rain";
+        return null;
+    }
+
+    /** Холодная версия есть только у rain и heavy_rain, порог: ниже 13 градусов. */
+    private static boolean isColdRain(String special, WeatherData w) {
+        return (special.equals("rain") || special.equals("heavy_rain"))
+                && w.temperature() < 13;
     }
 
     public static String tempTag(double t) {
