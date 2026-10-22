@@ -325,7 +325,51 @@ conditions:
         text: "Your umbrella just became a personality trait for the day."
       - weight: 1
         text: "Somewhere, a basement is quietly regretting its life choices."
+  rain_cold:
+    intro:
+      - weight: 2
+        text: "Cold and wet —"
+      - weight: 1
+        text: "Grab the umbrella —"
+      - weight: 1
+        text: "Dreary out there —"
+    advice:
+      - weight: 1
+        text: "Waterproof jacket over a warm layer, and a hat.\nShoes with real soles, canvas will soak through in minutes."
+      - weight: 1
+        text: "A warm coat with a hood, plus an umbrella.\nWet and cold together feels colder than either alone."
+      - weight: 1
+        text: "Layer up under something waterproof.\nSocks you don't mind changing are a good idea too."
+    sting:
+      - weight: 1
+        text: "Wet socks at this temperature are a bad time."
+      - weight: 1
+        text: "Not a day for the thin jacket."
+      - weight: 1
+        text: "Hot tea is waiting at the end of this walk."
 
+  heavy_rain_cold:
+    intro:
+      - weight: 2
+        text: "Cold downpour —"
+      - weight: 1
+        text: "This isn't a drizzle —"
+      - weight: 1
+        text: "Proper wall of water —"
+    advice:
+      - weight: 1
+        text: "Full waterproof jacket, warm layer underneath, waterproof boots.\nA regular umbrella may not hold up against this."
+      - weight: 1
+        text: "Hooded waterproof coat and a hat.\nIf you can wait it out indoors, do."
+      - weight: 1
+        text: "Waterproof everything: jacket, shoes, bag cover.\nCold and soaked is a rough combination."
+    sting:
+      - weight: 1
+        text: "Consider working from home, seriously."
+      - weight: 1
+        text: "Even the ducks are unimpressed."
+      - weight: 1
+        text: "This is not the day for suede anything."
   snow:
     intro:
       - weight: 2
