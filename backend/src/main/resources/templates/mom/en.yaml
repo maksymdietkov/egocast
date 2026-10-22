@@ -293,7 +293,51 @@ conditions:
         text: "Call me the second you're somewhere dry and safe."
       - weight: 1
         text: "I don't like you being out in weather like this. I've said it before, I'll say it again."
+  rain_cold:
+    intro:
+      - weight: 2
+        text: "Sweetheart, it's cold and wet —"
+      - weight: 1
+        text: "Take an umbrella, honey —"
+      - weight: 1
+        text: "Listen to your mother —"
+    advice:
+      - weight: 1
+        text: "Put on a warm sweater and a waterproof jacket, and don't forget a hat.\nAnd wear proper shoes, not those canvas ones, I'm begging you."
+      - weight: 1
+        text: "A warm coat with a hood, and take the umbrella with you.\nIt's cold and damp, you'll catch something."
+      - weight: 1
+        text: "Layer up under something waterproof.\nAnd take dry socks in your bag, I'm not joking."
+    sting:
+      - weight: 1
+        text: "I'm not going to nag, but I did say so."
+      - weight: 1
+        text: "Wet feet in this weather and then you'll call me sick."
+      - weight: 1
+        text: "Call me when you get there, okay?"
 
+  heavy_rain_cold:
+    intro:
+      - weight: 2
+        text: "Sweetheart, it's pouring and cold —"
+      - weight: 1
+        text: "This is not drizzle, honey —"
+      - weight: 1
+        text: "I'm worried about you out there —"
+    advice:
+      - weight: 1
+        text: "Waterproof jacket, a warm layer underneath, and proper boots.\nA regular umbrella might not survive this, so hold it tight."
+      - weight: 1
+        text: "A hooded coat that really keeps the water out, and a hat.\nIf you can stay home, please stay home."
+      - weight: 1
+        text: "Everything waterproof: jacket, shoes, a cover for your bag.\nCold and soaked is how people get sick."
+    sting:
+      - weight: 1
+        text: "Please don't go out in your good shoes."
+      - weight: 1
+        text: "Text me when you're home safe."
+      - weight: 1
+        text: "I made soup. Just saying."
   snow:
     intro:
       - weight: 2

@@ -295,7 +295,51 @@ conditions:
         text: "Even the ducks are sick of this shit, dumbass."
       - weight: 1
         text: "Your fucking umbrella is doing more work than you are today."
+  rain_cold:
+    intro:
+      - weight: 2
+        text: "It's cold AND wet, dumbass, listen up —"
+      - weight: 1
+        text: "Freezing rain bullshit, pay attention —"
+      - weight: 1
+        text: "Yo, the sky's pissing ice water —"
+    advice:
+      - weight: 1
+        text: "Waterproof jacket over a warm layer, and a fucking hat.\nWear shoes with real soles, canvas sneakers will be soaked in five minutes, genius."
+      - weight: 1
+        text: "Warm hooded coat and an umbrella. Don't argue.\nWet plus cold is how dumbasses end up sick in bed."
+      - weight: 1
+        text: "Layer up under something actually waterproof.\nThrow dry socks in your bag, unless you like squelching around all day."
+    sting:
+      - weight: 1
+        text: "Wet socks at this temperature is a special kind of stupid."
+      - weight: 1
+        text: "Your thin jacket is not invited, and neither is your attitude."
+      - weight: 1
+        text: "Hot tea at the end of this. You earned it, barely."
 
+  heavy_rain_cold:
+    intro:
+      - weight: 2
+        text: "Cold as fuck and pouring, listen up —"
+      - weight: 1
+        text: "This ain't a drizzle, dumbass —"
+      - weight: 1
+        text: "The sky's gone full psycho and it's freezing —"
+    advice:
+      - weight: 1
+        text: "Full waterproof jacket, warm layer under it, waterproof boots.\nA regular umbrella will fold like a cheap lawn chair."
+      - weight: 1
+        text: "Hooded coat that actually keeps water out, plus a hat.\nIf you can stay inside, stay the fuck inside."
+      - weight: 1
+        text: "Waterproof everything: jacket, shoes, bag cover.\nSoaked and freezing is a shitty combo, trust me."
+    sting:
+      - weight: 1
+        text: "Staying inside is looking real smart right now, genius."
+      - weight: 1
+        text: "Suede shoes stay home. No fucking debate."
+      - weight: 1
+        text: "Cold, soaked and stubborn. Great combo, champ."
   snow:
     intro:
       - weight: 2
