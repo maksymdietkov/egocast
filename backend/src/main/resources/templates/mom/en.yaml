@@ -9,6 +9,18 @@ conditions:
         text: "This is exactly what I warned you about —"
       - weight: 1
         text: "Fine, don't listen to me, see what happens —"
+      - weight: 1
+        text: "Come here, let me look at you —"
+      - weight: 1
+        text: "Before you go rushing out the door —"
+      - weight: 1
+        text: "Sweetheart, just humour your mother —"
+      - weight: 1
+        text: "A little advice from someone who loves you —"
+      - weight: 1
+        text: "You know I only fuss because I care —"
+      - weight: 1
+        text: "Right, darling, one last thing —"
     advice:
       - weight: 1
         text: "The big coat, sweetie, the one you called 'embarrassing.'\nWear it anyway — frostbite is more embarrassing, trust me."
@@ -18,6 +30,18 @@ conditions:
         text: "Everything warm you own, all at once.\nI don't care how you look, I care that you come home with all ten fingers."
       - weight: 1
         text: "Thermal layer, sweater, real coat — not negotiable today.\nCall me the second you're inside somewhere warm, I mean it."
+      - weight: 1
+        text: "Lined boots and wool socks, darling.\nMake sure your toes can wiggle — squeezing them in won't keep them warmer."
+      - weight: 1
+        text: "A scarf or neck warmer tucked into your jacket, please.\nCover your nose and cheeks if the cold starts biting."
+      - weight: 1
+        text: "Insulated mittens with cuffs over your sleeves.\nIf your fingers go numb, get indoors — errands can wait."
+      - weight: 1
+        text: "Warm trousers with long johns underneath.\nThat bus stop has no sympathy for bare knees, sweetheart."
+      - weight: 1
+        text: "A fleece under a windproof outer layer.\nUnzip a little if you get sweaty — damp clothes will chill you when you stop."
+      - weight: 1
+        text: "An ear-covering cap and a hood that stays put.\nSave the headphones for indoors so everything fits snugly, love."
     sting:
       - weight: 1
         text: "I'm not saying I told you so. I'm just saying I did tell you so."
@@ -27,6 +51,18 @@ conditions:
         text: "Your grandmother survived three winters in less clothing than you're about to wear. Wear more anyway."
       - weight: 1
         text: "Did you eat? Because cold on an empty stomach is how it really starts."
+      - weight: 1
+        text: "Being a grown-up means you can finally admit your mother was right about long underwear."
+      - weight: 1
+        text: "I've put a tissue in your pocket. No, the other pocket."
+      - weight: 1
+        text: "The kettle's on. That's my emergency response plan."
+      - weight: 1
+        text: "Yes, I'll still be checking the window until you get here."
+      - weight: 1
+        text: "A weather app tells you once. Your mother offers unlimited reminders."
+      - weight: 1
+        text: "You can roll your eyes, sweetheart. I can hear it over the phone."
 
   cold:
     intro:
@@ -38,6 +74,18 @@ conditions:
         text: "Sweetie. Sweetie. Listen —"
       - weight: 1
         text: "I'm only going to say this once, probably —"
+      - weight: 1
+        text: "Before you tell me you've got it handled —"
+      - weight: 1
+        text: "Darling, spare your mother a minute —"
+      - weight: 1
+        text: "You can thank me later, love —"
+      - weight: 1
+        text: "Let me fuss for a moment —"
+      - weight: 1
+        text: "A quick word before you leave —"
+      - weight: 1
+        text: "All right, my independent little grown-up —"
     advice:
       - weight: 1
         text: "The real coat. Not the 'fashion' one that does nothing.\nGloves too — cold hands are how it starts, then it's a whole thing."
@@ -45,6 +93,20 @@ conditions:
         text: "Layer up properly, like I've told you a hundred times.\nA scarf isn't optional, it's basic self-preservation."
       - weight: 1
         text: "Warm socks, real coat, something on your head.\nI know you hate hats. I don't care. Wear the hat."
+      - weight: 1
+        text: "A long jacket that covers your lower back, sweetheart.\nBend down once before leaving — let's check you're still covered."
+      - weight: 1
+        text: "Closed shoes with sturdy soles, please.\nThose thin little flats won't do much between you and the cold pavement."
+      - weight: 1
+        text: "A fleece with a windproof shell over it.\nThat breeze gets straight through a knitted jumper, however lovely it is."
+      - weight: 1
+        text: "Full-length trousers and socks that reach them.\nYour ankles haven't done anything to deserve being left outside."
+      - weight: 1
+        text: "A breathable base layer under your sweater.\nIf you're walking fast, open a zip before you get sweaty, love."
+      - weight: 1
+        text: "An extra cardigan under your outerwear if you'll be sitting outside.\nWatching a match doesn't keep you warm like playing one does."
+      - weight: 1
+        text: "A high-neck top with sleeves that reach your wrists.\nCheck the cuffs aren't damp before you go — use the spare one if they are."
     sting:
       - weight: 1
         text: "Call me when you're home. I will worry until you do."
@@ -52,6 +114,20 @@ conditions:
         text: "You never listen about the scarf, and then guess who gets sick for a week."
       - weight: 1
         text: "I made soup just in case. There's always soup."
+      - weight: 1
+        text: "The forecast said cold. Your mother said it with three exclamation marks."
+      - weight: 1
+        text: "I know you're thirty. I also know where you keep the spare blankets."
+      - weight: 1
+        text: "There's a hot drink in the flask. Try bringing the flask home this time."
+      - weight: 1
+        text: "Your friend being underdressed doesn't make it a group discount on warmth."
+      - weight: 1
+        text: "I've stopped asking whether you're warm. Now I ask why you're shivering."
+      - weight: 1
+        text: "Yes, I packed a snack. Worrying is hungry work for both of us."
+      - weight: 1
+        text: "You used to let me dress you without a debate. Admittedly, you were two."
 
   chilly:
     intro:
@@ -61,6 +137,20 @@ conditions:
         text: "A little chilly, which means bundle up anyway —"
       - weight: 1
         text: "This is exactly the kind of weather people underestimate —"
+      - weight: 1
+        text: "Let your mum have her little say —"
+      - weight: 1
+        text: "Before you give me that look, darling —"
+      - weight: 1
+        text: "One small request from your mother —"
+      - weight: 1
+        text: "You know what I'm going to say, love —"
+      - weight: 1
+        text: "Just a little motherly interference —"
+      - weight: 1
+        text: "I've checked outside for you, sweetheart —"
+      - weight: 1
+        text: "Take a moment before you dash off —"
     advice:
       - weight: 1
         text: "A real jacket, please, not that thin one.\nBring a scarf even if you 'probably won't need it.'"
@@ -68,6 +158,20 @@ conditions:
         text: "Layer a sweater under something warm.\nGloves too — I know you'll say I'm being dramatic. I'm not."
       - weight: 1
         text: "Dress warm now so you don't regret it later.\nYour sister always dresses warm and she never complains. Just saying."
+      - weight: 1
+        text: "A long-sleeved top with a cardigan you can take off.\nYou can adjust when you get there, sweetheart."
+      - weight: 1
+        text: "Full-length trousers today, please.\nSitting on a chilly bench in shorts gets old very quickly."
+      - weight: 1
+        text: "Trainers and socks that cover your ankles.\nSave the sandals for a day your toes can actually enjoy."
+      - weight: 1
+        text: "A fleece with a light windbreaker over it if it's breezy.\nThose lovely knitted sleeves let more air through than you think."
+      - weight: 1
+        text: "A breathable shirt under a zip-up hoodie for a brisk walk.\nOpen it a little if you get hot — no need to arrive all sweaty."
+      - weight: 1
+        text: "A light quilted vest over your sweatshirt if you'll be moving about.\nYour middle stays cosy without making your arms feel bundled up."
+      - weight: 1
+        text: "A rain jacket over your usual layers if showers are coming.\nCheck the hood fits before you leave, love, while there's still a mirror."
     sting:
       - weight: 1
         text: "This is exactly how colds happen, you know."
@@ -75,6 +179,20 @@ conditions:
         text: "I'm not being dramatic, I'm being a mother."
       - weight: 1
         text: "Bring the scarf. Even if you don't wear it. Just bring it."
+      - weight: 1
+        text: "That patch of sunshine has made you terribly confident."
+      - weight: 1
+        text: "I've put an extra layer by the door. What a coincidence, it's your size."
+      - weight: 1
+        text: "Standing in the doorway saying 'it's fine' doesn't count as a weather report."
+      - weight: 1
+        text: "You don't have to admit I was right. A quiet thank-you will do."
+      - weight: 1
+        text: "The dog came straight back inside, and he normally has terrible judgment."
+      - weight: 1
+        text: "I can hear your teeth chattering through that brave little smile."
+      - weight: 1
+        text: "Of course you can make your own decisions. I've left the sensible option on the chair."
 
   cool:
     intro:
@@ -84,6 +202,20 @@ conditions:
         text: "A little cool, nothing a jacket won't fix —"
       - weight: 1
         text: "See, I'm not always telling you to panic —"
+      - weight: 1
+        text: "Here's my little suggestion, sweetheart —"
+      - weight: 1
+        text: "Since you've caught me in a reasonable mood —"
+      - weight: 1
+        text: "Just a thought before you head out —"
+      - weight: 1
+        text: "Come on, love, let's get you ready —"
+      - weight: 1
+        text: "Your mother has considered the situation —"
+      - weight: 1
+        text: "Nothing complicated today, darling —"
+      - weight: 1
+        text: "If I may offer my usual two cents —"
     advice:
       - weight: 1
         text: "A light jacket is fine, I won't lecture you today.\nMaybe a scarf anyway, just to make me happy."
@@ -91,11 +223,41 @@ conditions:
         text: "This is easy weather, wear what you want.\nI'm still going to remind you it can turn on you fast."
       - weight: 1
         text: "Layer a shirt under something light.\nText me if it gets colder than expected, please."
+      - weight: 1
+        text: "A T-shirt with an open cardigan, sweetheart.\nTake it off if you warm up — that's why we invented buttons."
+      - weight: 1
+        text: "A long-sleeved top and jeans should do nicely.\nTry a minute outside before deciding to roll those sleeves up."
+      - weight: 1
+        text: "Trainers with ordinary socks, love.\nPick the comfortable pair if you're walking far, even if they don't match."
+      - weight: 1
+        text: "A breathable tee under a zip-up hoodie for your bike ride.\nLeave room to move your shoulders — give the handlebars a little test."
+      - weight: 1
+        text: "A thin windbreaker over your usual outfit if it's breezy.\nFasten it by the water, darling; it feels cooler along the river."
+      - weight: 1
+        text: "A light pullover with full-length trousers for sitting outdoors.\nYou'll feel the cool more once you stop moving."
+      - weight: 1
+        text: "A cotton blouse under a denim jacket for a day out.\nKeep the outer layer with you if you'll be coming back after sunset."
     sting:
       - weight: 1
         text: "See, I don't always worry. Just usually."
       - weight: 1
         text: "I'll allow this one without a lecture. You're welcome."
+      - weight: 1
+        text: "Look at us, agreeing on an outfit before breakfast."
+      - weight: 1
+        text: "Go enjoy yourself, sweetheart. The washing-up will still be here."
+      - weight: 1
+        text: "My advice is free. The biscuits are conditional on a visit."
+      - weight: 1
+        text: "You look lovely. There, a second opinion you didn't have to ask for."
+      - weight: 1
+        text: "Take the scenic route for once. You can't call the supermarket a day out."
+      - weight: 1
+        text: "I nearly sent you a reminder, then remembered I was standing next to you."
+      - weight: 1
+        text: "If you pass the bakery, you know which one I like."
+      - weight: 1
+        text: "Have a nice time, love. A proper nice time, with your phone in your pocket."
 
   mild:
     intro:
@@ -105,6 +267,20 @@ conditions:
         text: "I have nothing to worry about today, miracle of miracles —"
       - weight: 1
         text: "Easy day, don't ruin it by underdressing anyway —"
+      - weight: 1
+        text: "Well, sweetheart, this looks promising —"
+      - weight: 1
+        text: "A little guidance, since I'm here —"
+      - weight: 1
+        text: "You've picked a lovely day to go out —"
+      - weight: 1
+        text: "All right, love, here's my suggestion —"
+      - weight: 1
+        text: "Before we get on with our day —"
+      - weight: 1
+        text: "Nothing to make a fuss over, darling —"
+      - weight: 1
+        text: "Let's keep things simple today —"
     advice:
       - weight: 1
         text: "Whatever's comfortable, I'm not going to fight you on this one.\nMaybe a light layer for later, just to be safe."
@@ -112,11 +288,41 @@ conditions:
         text: "This is cardigan weather, easy and simple.\nNo lecture today, I'm taking the day off."
       - weight: 1
         text: "Dress how you like, I trust your judgment today.\nDon't get used to it."
+      - weight: 1
+        text: "A cotton T-shirt and light trousers, sweetheart.\nChoose a waistband you can sit down in — we're getting lunch, not taking photographs."
+      - weight: 1
+        text: "A thin long-sleeved shirt with cuffs you can roll back.\nAdjust as you warm up, love; no need to decide for the whole day."
+      - weight: 1
+        text: "Comfortable trainers and breathable socks for a walk.\nWear the pair you've broken in — let's keep the afternoon blister-free."
+      - weight: 1
+        text: "A loose dress with soft leggings if your legs feel cool.\nYou know your own comfort better than the number on the forecast."
+      - weight: 1
+        text: "A polo shirt and chinos will do nicely.\nCheck you can bend and reach comfortably before you leave, darling."
+      - weight: 1
+        text: "A quick-drying top and flexible bottoms for cycling.\nSkip the thick sweatshirt if you're working up a sweat."
+      - weight: 1
+        text: "A breathable blouse with a light overshirt for indoors.\nThat café turns the air conditioning up as if it's storing cheese."
     sting:
       - weight: 1
         text: "I'll let you dress yourself today. Enjoy the freedom."
       - weight: 1
         text: "See? I don't always have something to say."
+      - weight: 1
+        text: "Leave yourself time to sit somewhere nice. Every outing doesn't need a receipt."
+      - weight: 1
+        text: "I've opened the windows. Your father has already started his investigation."
+      - weight: 1
+        text: "Take a picture if you see something lovely. I do enjoy your little updates."
+      - weight: 1
+        text: "The laundry's outside, so naturally I'm feeling rather adventurous."
+      - weight: 1
+        text: "Have your lunch before you leave. A mint from the bottom of your bag doesn't count."
+      - weight: 1
+        text: "You can pop round without an occasion, you know. I don't require a birthday."
+      - weight: 1
+        text: "Don't spend the whole afternoon choosing somewhere to spend the afternoon."
+      - weight: 1
+        text: "Bring that book you keep meaning to read. It deserves a trip out too."
 
   comfortable:
     intro:
@@ -126,6 +332,20 @@ conditions:
         text: "I have literally nothing to complain about —"
       - weight: 1
         text: "Go outside and enjoy this, it won't last —"
+      - weight: 1
+        text: "Well, darling, isn't this lovely —"
+      - weight: 1
+        text: "You've got your mother's blessing today —"
+      - weight: 1
+        text: "Here's a little thought before you go —"
+      - weight: 1
+        text: "Even I can keep this brief, love —"
+      - weight: 1
+        text: "Come on, sweetheart, the day's waiting —"
+      - weight: 1
+        text: "Let's get you out the door, then —"
+      - weight: 1
+        text: "Just between us, I'd say you're all set —"
     advice:
       - weight: 1
         text: "Wear whatever makes you happy today, seriously.\nA t-shirt is perfectly fine, I promise I won't say anything."
@@ -133,11 +353,41 @@ conditions:
         text: "Short sleeves, no notes.\nMaybe a light layer for later, but that's it from me."
       - weight: 1
         text: "Days like this are why I don't worry every single day.\nGo enjoy it, call me later and tell me about your day."
+      - weight: 1
+        text: "A breezy cotton dress and comfortable sandals, sweetheart.\nCheck the straps don't rub before you wander too far."
+      - weight: 1
+        text: "A linen shirt with relaxed trousers will be lovely.\nLet it crease, darling — you're having a day out, not posing in a shop window."
+      - weight: 1
+        text: "A breathable top and stretchy shorts for your bike ride.\nKeep loose hems clear of the chain, please."
+      - weight: 1
+        text: "A polo and lightweight chinos for lunch outside.\nLeave a little room at the waist; you know they do pudding."
+      - weight: 1
+        text: "A sun hat with whatever outfit you've chosen.\nNice temperatures don't stop your nose catching the sun, love."
+      - weight: 1
+        text: "Trainers and moisture-wicking socks if you're walking all afternoon.\nTrim any scratchy labels now, while the scissors are handy."
+      - weight: 1
+        text: "A light overshirt over your usual tee for the office.\nTake it off outside if you like — it's for that chilly air conditioning."
     sting:
       - weight: 1
         text: "I'll stop worrying for one whole day. Savor it."
       - weight: 1
         text: "Days like this make my job easy. I could get used to this."
+      - weight: 1
+        text: "Look at that, you and the weather are both on your best behavior."
+      - weight: 1
+        text: "I've put the good cushions on the garden chairs. Apparently we're entertaining ourselves."
+      - weight: 1
+        text: "Go on, have the ice cream. You don't need a special occasion for two scoops."
+      - weight: 1
+        text: "Your chores have waited this long. I doubt another hour will upset them."
+      - weight: 1
+        text: "I'd join you, but someone has to explain the new bird feeder to your father."
+      - weight: 1
+        text: "Don't just send me a photo of your coffee. Let me see your lovely face."
+      - weight: 1
+        text: "I've packed enough sandwiches for company. Making a friend is now your department."
+      - weight: 1
+        text: "Put your feet up somewhere, love. Being busy isn't a competition you have to win."
 
   warm:
     intro:
@@ -147,6 +397,20 @@ conditions:
         text: "It's warm, so now I worry about different things —"
       - weight: 1
         text: "Summer worries, my favorite kind —"
+      - weight: 1
+        text: "A quick word from your mum, darling —"
+      - weight: 1
+        text: "Before you disappear for the afternoon —"
+      - weight: 1
+        text: "You know me, always thinking ahead —"
+      - weight: 1
+        text: "Let me send you off properly, love —"
+      - weight: 1
+        text: "Just give me a moment, sweetheart —"
+      - weight: 1
+        text: "I've got a little suggestion for you —"
+      - weight: 1
+        text: "Right then, let's see you ready —"
     advice:
       - weight: 1
         text: "Shorts and a t-shirt, fine.\nBut sunglasses and sunscreen, non-negotiable — your skin isn't getting any younger."
@@ -154,11 +418,41 @@ conditions:
         text: "Light, breathable fabrics.\nAnd water — actual water, not just coffee, you forget to drink enough."
       - weight: 1
         text: "Dress light, stay cool.\nA hat if you'll be out long, I worry about your scalp, don't ask why."
+      - weight: 1
+        text: "A loose linen shirt with airy trousers, sweetheart.\nLeave the tight jeans at home if you'll be sitting outside all afternoon."
+      - weight: 1
+        text: "A breezy dress and sandals with secure straps.\nGive your feet a little room — they can swell when it's warm."
+      - weight: 1
+        text: "A quick-drying top and running shorts for exercise.\nTake your breaks in the shade, love; you don't owe anyone a personal best."
+      - weight: 1
+        text: "A thin long-sleeved overshirt for a sunny walk.\nKeep your shoulders covered, especially if they haven't seen daylight since last August."
+      - weight: 1
+        text: "An unlined cotton blouse and a light skirt for errands.\nCheck the label, darling — some of those pretty fabrics barely let any air through."
+      - weight: 1
+        text: "Walking shoes with breathable socks for a day on your feet.\nTry those new shoes on a shorter outing first; I can't collect you from every blister."
+      - weight: 1
+        text: "A relaxed tee with soft, longer shorts for sightseeing.\nChoose smooth seams if your thighs rub — let's keep you comfortable past lunchtime."
     sting:
       - weight: 1
         text: "Drink water. I mean it, not just coffee."
       - weight: 1
         text: "Sunscreen, sweetie. I'm not nagging, I'm saying it because I love your face."
+      - weight: 1
+        text: "The chocolate in your bag would like a decision about its future."
+      - weight: 1
+        text: "I've claimed the shady chair. Seniority has to count for something."
+      - weight: 1
+        text: "Take your lunch out of the car when you arrive. It isn't a slow cooker."
+      - weight: 1
+        text: "Your father has brought out the barbecue tongs. We're all apparently on standby."
+      - weight: 1
+        text: "Put a towel on that bench before you sit, love. Bare legs make a very honest thermometer."
+      - weight: 1
+        text: "You can come in for a rest without admitting you're tired."
+      - weight: 1
+        text: "I bought melon. Come over before I decide cutting it up was enough exercise for today."
+      - weight: 1
+        text: "Enjoy yourself, darling. You don't have to fit the whole summer into one afternoon."
 
   hot:
     intro:
@@ -168,6 +462,20 @@ conditions:
         text: "Please be careful, I mean it this time —"
       - weight: 1
         text: "This heat has me genuinely worried —"
+      - weight: 1
+        text: "Sweetheart, a moment before you go —"
+      - weight: 1
+        text: "Let your mother make one suggestion —"
+      - weight: 1
+        text: "I've had a look outside, darling —"
+      - weight: 1
+        text: "You know I like you properly prepared —"
+      - weight: 1
+        text: "A little planning first, love —"
+      - weight: 1
+        text: "Bear with me while I fuss —"
+      - weight: 1
+        text: "Here's what I'm thinking, sweetheart —"
     advice:
       - weight: 1
         text: "The lightest clothes you own, and drink more water than feels necessary.\nSunglasses and sunscreen — both, no shortcuts, I will ask."
@@ -175,6 +483,20 @@ conditions:
         text: "A wide hat and something loose and light.\nCome inside the second you feel dizzy, promise me right now."
       - weight: 1
         text: "Stay in shade whenever you can.\nAnd for the last time, drink the water, not just the iced coffee."
+      - weight: 1
+        text: "A pale linen shirt and roomy shorts, darling.\nSave the thick denim for another day; it can manage without you."
+      - weight: 1
+        text: "A loose cotton dress with flat, adjustable sandals.\nLoosen the straps if your feet swell — no suffering for a pretty buckle."
+      - weight: 1
+        text: "A breathable sports top and quick-drying bottoms if you must exercise.\nGo in the cooler hours and ease the pace, love."
+      - weight: 1
+        text: "An airy long-sleeved shirt with UV protection for time outdoors.\nCover your arms without wrapping yourself in anything heavy."
+      - weight: 1
+        text: "Light mesh trainers with thin, moisture-wicking socks for walking.\nTake a spare pair if you'll be out all day; damp feet rub."
+      - weight: 1
+        text: "A relaxed sleeveless top with soft shorts long enough to prevent chafing.\nCheck the seams before a long outing, sweetheart."
+      - weight: 1
+        text: "An unlined blouse with a flowing skirt for work.\nKeep a spare top handy if your commute leaves you soaked in sweat."
     sting:
       - weight: 1
         text: "Please don't overdo it in this heat. I mean it."
@@ -182,6 +504,20 @@ conditions:
         text: "Come inside if you feel unwell. I will actually worry, not the fun kind."
       - weight: 1
         text: "Heat scares me more than cold, and I've told you why a hundred times."
+      - weight: 1
+        text: "I'm serving something cold for dinner. The oven and I aren't speaking."
+      - weight: 1
+        text: "Leave the gardening, sweetheart. The weeds haven't got an appointment."
+      - weight: 1
+        text: "Check the car seat before you sit down. Those buckles hold grudges."
+      - weight: 1
+        text: "The fan is for everyone, darling. Try not to establish a private residence in front of it."
+      - weight: 1
+        text: "Ring your gran later. She'll say she's fine, then admit she's been ironing."
+      - weight: 1
+        text: "There's fresh fruit in the fridge. Open the drawer, not just the fridge door."
+      - weight: 1
+        text: "You don't have to finish every errand today. I'll still be proud of you tomorrow."
 
   windy_cold:
     intro:
@@ -191,6 +527,20 @@ conditions:
         text: "This is exactly the combination I hate —"
       - weight: 1
         text: "Bundle up, the wind means business today —"
+      - weight: 1
+        text: "Hold on, sweetheart, a little preparation —"
+      - weight: 1
+        text: "Your mum has checked the forecast —"
+      - weight: 1
+        text: "Before you tell me you'll be fine —"
+      - weight: 1
+        text: "Let's think this through, darling —"
+      - weight: 1
+        text: "A bit of motherly guidance for you —"
+      - weight: 1
+        text: "Give me a minute at the door, love —"
+      - weight: 1
+        text: "You know I like to see you sorted —"
     advice:
       - weight: 1
         text: "A windproof coat, not just any coat, I mean it this time.\nZip it all the way — every gap is an invitation for a cold."
@@ -198,6 +548,20 @@ conditions:
         text: "Cover your ears and your neck, please.\nThe wind makes everything worse than the thermometer says."
       - weight: 1
         text: "Layers under something windproof.\nGloves too, your hands get cold faster than you admit."
+      - weight: 1
+        text: "A fleece-lined cap with a hood secured over it, sweetheart.\nAdjust it so you can still see to either side before crossing roads."
+      - weight: 1
+        text: "Full-length, tightly woven trousers over a thermal base if you're out for long.\nSave the ripped jeans for somewhere with walls, love."
+      - weight: 1
+        text: "Closed boots and wool-blend socks with room for your toes.\nCheck the forecast for rain too before choosing that lovely suede pair."
+      - weight: 1
+        text: "A fitted neck warmer tucked inside your collar.\nNo trailing scarf ends near your bicycle wheels, please."
+      - weight: 1
+        text: "A breathable undershirt beneath a warm midlayer and shell.\nEase a zip open if you start sweating uphill, then close it when you stop."
+      - weight: 1
+        text: "Insulated mittens with cuffs that overlap your sleeves.\nTry using your keys before leaving so you won't need bare fingers at the door."
+      - weight: 1
+        text: "A longer parka with the waist and hem adjusted snugly.\nYou want room to move, darling, without a draft up your back."
     sting:
       - weight: 1
         text: "This is exactly the weather people catch colds in, I've seen it happen."
@@ -205,6 +569,20 @@ conditions:
         text: "Text me the second you're somewhere warm."
       - weight: 1
         text: "I told you the thin jacket wasn't enough. I told you."
+      - weight: 1
+        text: "Hold the car door when you open it, love. The wind hasn't offered to pay for repairs."
+      - weight: 1
+        text: "Your hair can have its own plans today. Let it."
+      - weight: 1
+        text: "Take the sheltered route. The shortcut isn't handing out medals."
+      - weight: 1
+        text: "I've moved the flowerpots inside. They're being very good about it."
+      - weight: 1
+        text: "Put those receipts away before your handbag starts distributing them to the neighborhood."
+      - weight: 1
+        text: "A hot lunch is waiting whenever you get here. No need to rush."
+      - weight: 1
+        text: "Keep your distance from loose signs, sweetheart. You can read the specials another day."
 
   windy_frost:
     intro:
@@ -214,6 +592,20 @@ conditions:
         text: "Please, please be careful in this —"
       - weight: 1
         text: "This is the kind of day I actually lose sleep over —"
+      - weight: 1
+        text: "Let me help you get ready, darling —"
+      - weight: 1
+        text: "A moment of your attention, love —"
+      - weight: 1
+        text: "We're taking our time with this, sweetheart —"
+      - weight: 1
+        text: "Here's your mother's advice for today —"
+      - weight: 1
+        text: "Before you put your hand on that door —"
+      - weight: 1
+        text: "Let's make a sensible plan, you and me —"
+      - weight: 1
+        text: "I'm asking you to hear me out, darling —"
     advice:
       - weight: 1
         text: "Cover every bit of skin you possibly can.\nHigh collar, real gloves, a hat that actually covers your ears fully."
@@ -221,6 +613,20 @@ conditions:
         text: "Your warmest coat, no compromises, none, today of all days.\nIf you can stay in for a while, please, for me, do."
       - weight: 1
         text: "Layer everything, seal every single gap.\nThis is the kind of cold that sneaks up before you notice."
+      - weight: 1
+        text: "Insulated boots with thick wool socks that don't squeeze your toes.\nTight footwear won't help, sweetheart — leave room for circulation."
+      - weight: 1
+        text: "A fleece face covering beneath a secured, insulated hood.\nReplace it if your breath makes it damp, love."
+      - weight: 1
+        text: "Liner gloves inside windproof mittens with long cuffs.\nKeep them on for photos; I can imagine the scenery perfectly well."
+      - weight: 1
+        text: "Thermal leggings under insulated, wind-resistant trousers.\nYour legs need protection too, even if they're further from your worried mother."
+      - weight: 1
+        text: "A moisture-wicking base beneath wool or fleece and a protective shell.\nSlow down before you get sweaty — damp layers will chill you when you stop."
+      - weight: 1
+        text: "A long insulated parka with a snug collar and overlapping fastenings.\nTest the closures indoors, darling, while your fingers can still cooperate."
+      - weight: 1
+        text: "A close-fitting winter cap with goggles that leave no gap above your face covering.\nIf your skin goes numb or pale, get somewhere warm immediately."
     sting:
       - weight: 1
         text: "I mean it about staying warm. I really do."
@@ -228,6 +634,20 @@ conditions:
         text: "Frostbite is real, sweetie, this isn't me being dramatic for once."
       - weight: 1
         text: "Call me the second you're inside. I will be watching my phone."
+      - weight: 1
+        text: "Missing one outing won't undo your entire social life, darling."
+      - weight: 1
+        text: "Tell someone your route before you leave. Yes, your mother counts as someone."
+      - weight: 1
+        text: "Charge your phone before heading out. Twelve percent is a cliffhanger I don't need."
+      - weight: 1
+        text: "Come round and we'll complain about the weather from the correct side of the window."
+      - weight: 1
+        text: "Being sensible doesn't make you less adventurous. It lets you have another adventure."
+      - weight: 1
+        text: "Keep your keys somewhere easy to reach, love. The doorstep is no place for a handbag excavation."
+      - weight: 1
+        text: "If you need a lift, ask. You don't have to earn a ride home by being miserable first."
 
   windy_hot:
     intro:
@@ -237,16 +657,62 @@ conditions:
         text: "The wind's helping a little, don't get complacent —"
       - weight: 1
         text: "Still hot underneath that breeze, don't be fooled —"
+      - weight: 1
+        text: "A little thought before you head out, love —"
+      - weight: 1
+        text: "Your mother has a suggestion, naturally —"
+      - weight: 1
+        text: "Let's get you sorted, sweetheart —"
+      - weight: 1
+        text: "Before you wave me off, darling —"
+      - weight: 1
+        text: "Give me a moment to fuss over you —"
+      - weight: 1
+        text: "Here's what I'd pick for you today —"
+      - weight: 1
+        text: "One small bit of motherly advice —"
     advice:
       - weight: 1
         text: "Light clothes still, the wind is a trick, not a solution.\nYou might skip the hat for once, but not the sunscreen."
       - weight: 1
         text: "The breeze makes it feel cooler than it is — don't fall for it.\nKeep drinking water regardless of how nice it feels outside."
+      - weight: 1
+        text: "A pale linen shirt and roomy cotton shorts, sweetheart.\nLeave the heavy jacket at home — you don't need to block every puff of air."
+      - weight: 1
+        text: "A ventilated sun hat with an adjustable chin strap.\nSecure it before leaving, love; chasing it is optional exercise nobody asked for."
+      - weight: 1
+        text: "Close-fitting sunglasses with UV protection for dusty paths.\nIf grit gets in your eye, don't rub it with sandy fingers."
+      - weight: 1
+        text: "A lightweight jumpsuit instead of a loose wrap skirt.\nYou'll have both hands free without holding your outfit together."
+      - weight: 1
+        text: "An airy long-sleeved top with UV protection for a long outing.\nCheck exposed wrists and the back of your neck when applying sunscreen."
+      - weight: 1
+        text: "Secure sandals with heel straps for walking around town.\nChoose soles with some grip if your route crosses loose sand."
+      - weight: 1
+        text: "A breathable exercise shirt and fitted cycling shorts for your ride.\nKeep dangling ties away from the wheels, darling."
+      - weight: 1
+        text: "A quick-drying cover-up over your swimsuit at the beach.\nChange out of wet things before the journey home; pack the spare now."
     sting:
       - weight: 1
         text: "Don't let the breeze fool you into skipping sunscreen."
       - weight: 1
         text: "Feels cooler than it is — the sun didn't get the memo, and neither should you."
+      - weight: 1
+        text: "Put something on those napkins before lunch becomes a neighborhood event."
+      - weight: 1
+        text: "Tie your hair back, love. You've ordered a sandwich, not a mouthful of fringe."
+      - weight: 1
+        text: "Pick a shaded seat away from loose branches. I like my family without surprise timber."
+      - weight: 1
+        text: "A beach umbrella needs a proper anchor, sweetheart. Optimism isn't a fastening."
+      - weight: 1
+        text: "Bring the washing in before you leave. I'd rather not identify our towels three gardens over."
+      - weight: 1
+        text: "No outdoor flames if there's a fire warning. We can manage lunch without a barbecue."
+      - weight: 1
+        text: "Close the window before the door starts slamming. Your father will blame the hinges."
+      - weight: 1
+        text: "Take a proper break somewhere cool, darling. You don't have to wait until you're exhausted."
 
   rain:
     intro:
@@ -256,6 +722,20 @@ conditions:
         text: "It's raining, please be careful out there —"
       - weight: 1
         text: "Wet out there, and you know how you get when you're wet and cold —"
+      - weight: 1
+        text: "Let's get you ready for this, sweetheart —"
+      - weight: 1
+        text: "A little preparation before you leave, love —"
+      - weight: 1
+        text: "Your mother has checked outside —"
+      - weight: 1
+        text: "Before you dash off, darling —"
+      - weight: 1
+        text: "Just give me a minute to help —"
+      - weight: 1
+        text: "Here's my suggestion for today —"
+      - weight: 1
+        text: "You know I like you properly sorted —"
     advice:
       - weight: 1
         text: "A raincoat with a hood, please, not just an umbrella that'll flip inside out.\nWaterproof shoes — wet feet is how a cold starts, I've told you this."
@@ -263,6 +743,20 @@ conditions:
         text: "Take the good umbrella, the one I gave you, not the flimsy one.\nWalk carefully, please, the ground gets slippery and you're always in a rush."
       - weight: 1
         text: "Something with a hood beats an umbrella every time.\nDry socks in your bag, just in case, humor me."
+      - weight: 1
+        text: "Quick-drying trousers with hems clear of the pavement.\nYou don't want to carry half the puddles home in your cuffs, sweetheart."
+      - weight: 1
+        text: "Rubber boots with grippy soles for muddy paths.\nCheck the water isn't deeper than the tops before stepping in."
+      - weight: 1
+        text: "A breathable waterproof shell over a light top if it's mild.\nOpen the vents if you get warm, love; no need to arrive sweaty as well."
+      - weight: 1
+        text: "A longer rain jacket with the front fully fastened.\nEmpty those outside pockets of anything that must stay dry."
+      - weight: 1
+        text: "Waterproof overtrousers over your usual clothes for cycling.\nSecure the ankles away from the chain before setting off, please."
+      - weight: 1
+        text: "A bright outer layer with reflective details for walking near roads.\nDrivers have rain on their windows too, darling — give them a chance to see you."
+      - weight: 1
+        text: "A peaked cap beneath your rain hood.\nAdjust both so the drips stay off your glasses without blocking your view."
     sting:
       - weight: 1
         text: "Please don't rush and slip, I mean it, I worry about that."
@@ -270,6 +764,20 @@ conditions:
         text: "Text me when you're home and dry, I'll wait up."
       - weight: 1
         text: "I hope you didn't forget the umbrella again. Did you? Be honest."
+      - weight: 1
+        text: "Put your phone in a waterproof pouch, love. Rice has enough to do being dinner."
+      - weight: 1
+        text: "Leave yourself extra time. I'd rather keep lunch warm than have you hurry."
+      - weight: 1
+        text: "Keep back from the curb, sweetheart. That approaching bus has quite a bow wave."
+      - weight: 1
+        text: "Hang things up when you get in. A wet heap on the chair isn't a drying system."
+      - weight: 1
+        text: "The dog needs a towel by the door. He considers shaking himself a group activity."
+      - weight: 1
+        text: "Don't wade through floodwater, darling. Finding another route is perfectly sensible."
+      - weight: 1
+        text: "There's room to shelter here until it eases. I've always got room for you."
 
   heavy_rain:
     intro:
@@ -279,6 +787,20 @@ conditions:
         text: "Please just stay dry today, for my sanity —"
       - weight: 1
         text: "I worry about you out in this, genuinely —"
+      - weight: 1
+        text: "Let's give this a little thought, darling —"
+      - weight: 1
+        text: "Before you tell me it's only a short trip —"
+      - weight: 1
+        text: "Your mother would like a word, sweetheart —"
+      - weight: 1
+        text: "A bit of preparation first, please —"
+      - weight: 1
+        text: "Let me help you get sorted, love —"
+      - weight: 1
+        text: "Here's what I'd suggest before you leave —"
+      - weight: 1
+        text: "We can spare a minute for this, darling —"
     advice:
       - weight: 1
         text: "Full raincoat, waterproof boots, please, no half-measures today.\nIf you can stay in, sweetie, just stay in, I'm asking nicely."
@@ -286,6 +808,20 @@ conditions:
         text: "Be extra careful if you absolutely must go out.\nBring a change of clothes, just in case, I mean it."
       - weight: 1
         text: "Waterproof everything, and please don't rush.\nAn umbrella won't save you in this, dress like you mean it."
+      - weight: 1
+        text: "Seam-sealed overtrousers with the legs outside your boot tops.\nLet's send the water onto the pavement, sweetheart, rather than into your socks."
+      - weight: 1
+        text: "A rain shell with a proper storm flap over the zip.\nFasten it before stepping outside; the doorway is your last convenient dressing room."
+      - weight: 1
+        text: "Grippy waterproof footwear with secure ankle support.\nAvoid flooded steps, love — you can't judge the footing through muddy water."
+      - weight: 1
+        text: "A bright waterproof jacket with reflective strips.\nUse the crossing even if it's further away; drivers need more time to stop."
+      - weight: 1
+        text: "A peaked hood adjusted snugly around your face.\nMake sure you can look both ways without turning your whole body, darling."
+      - weight: 1
+        text: "A quick-drying base layer beneath breathable rain gear.\nUse the covered vents if you get warm, so you're not soaking yourself from inside."
+      - weight: 1
+        text: "Waterproof cycling trousers with snug cuffs and a helmet-compatible hood.\nCheck you can hear traffic and turn your head freely before riding."
     sting:
       - weight: 1
         text: "Please be careful getting around in this, I mean it."
@@ -293,6 +829,21 @@ conditions:
         text: "Call me the second you're somewhere dry and safe."
       - weight: 1
         text: "I don't like you being out in weather like this. I've said it before, I'll say it again."
+      - weight: 1
+        text: "If the road is flooded, turn around, sweetheart. Dinner can wait."
+      - weight: 1
+        text: "Check the travel updates before leaving. I'd rather you wait here than on a platform."
+      - weight: 1
+        text: "Keep away from swollen streams, love. You don't need a closer photo."
+      - weight: 1
+        text: "Put your spare clothes in a dry bag. Otherwise you're just packing more wet laundry."
+      - weight: 1
+        text: "Don't go down to a flooding basement. Nothing stored there is worth getting trapped for."
+      - weight: 1
+        text: "I've left a towel by the door. The nice one, so you know I mean business."
+      - weight: 1
+        text: "Cancel if you need to, darling. Anyone worth visiting will understand."
+
   rain_cold:
     intro:
       - weight: 2
@@ -301,6 +852,20 @@ conditions:
         text: "Take an umbrella, honey —"
       - weight: 1
         text: "Listen to your mother —"
+      - weight: 1
+        text: "Let me have a look before you leave —"
+      - weight: 1
+        text: "A little care now, darling —"
+      - weight: 1
+        text: "I've been thinking about your journey —"
+      - weight: 1
+        text: "Let's sort you out, love —"
+      - weight: 1
+        text: "One practical suggestion, sweetheart —"
+      - weight: 1
+        text: "Before you say you've got everything —"
+      - weight: 1
+        text: "Give your mum a moment here —"
     advice:
       - weight: 1
         text: "Put on a warm sweater and a waterproof jacket, and don't forget a hat.\nAnd wear proper shoes, not those canvas ones, I'm begging you."
@@ -308,6 +873,20 @@ conditions:
         text: "A warm coat with a hood, and take the umbrella with you.\nIt's cold and damp, you'll catch something."
       - weight: 1
         text: "Layer up under something waterproof.\nAnd take dry socks in your bag, I'm not joking."
+      - weight: 1
+        text: "Wool-blend socks inside waterproof boots with grippy soles.\nLeave room to wiggle your toes, darling; an extra pair isn't helpful if it makes them tight."
+      - weight: 1
+        text: "A fleece neck warmer tucked beneath your collar.\nKeep it inside the rain cover, love, so it doesn't soak up every drip."
+      - weight: 1
+        text: "Water-resistant insulated gloves with cuffs under your jacket sleeves.\nCold fingers shouldn't have to fish bare-handed for keys, so choose an easy pocket."
+      - weight: 1
+        text: "Waterproof overtrousers over warm, full-length bottoms.\nKeep the hems outside your footwear so the runoff stays out of your boots."
+      - weight: 1
+        text: "A moisture-wicking undershirt beneath fleece and a rain shell.\nEase your pace before you get sweaty, sweetheart; you still need dry layers when you stop."
+      - weight: 1
+        text: "A snug beanie beneath a properly adjusted hood.\nCheck you can see sideways before crossing, even with your chin tucked down."
+      - weight: 1
+        text: "A long insulated raincoat with a covered front fastening.\nSit down in it before leaving to check it still covers your lower back."
     sting:
       - weight: 1
         text: "I'm not going to nag, but I did say so."
@@ -315,6 +894,20 @@ conditions:
         text: "Wet feet in this weather and then you'll call me sick."
       - weight: 1
         text: "Call me when you get there, okay?"
+      - weight: 1
+        text: "Check the bus times indoors, love. The shelter has a roof, but it hasn't got heating."
+      - weight: 1
+        text: "The kettle can be ready in minutes. Getting you to accept a lift takes considerably longer."
+      - weight: 1
+        text: "Put your bag on a chair when you arrive, sweetheart. That puddle under the table isn't reserved seating."
+      - weight: 1
+        text: "Come straight in when you get here. We can admire the garden through the glass."
+      - weight: 1
+        text: "You've nothing to prove to a puddle, darling. Go around it."
+      - weight: 1
+        text: "There's a dry towel waiting. Please use it before greeting me with your entire raincoat."
+      - weight: 1
+        text: "If you're shivering, stop somewhere warm. Being nearly there isn't the same as being indoors."
 
   heavy_rain_cold:
     intro:
@@ -324,6 +917,20 @@ conditions:
         text: "This is not drizzle, honey —"
       - weight: 1
         text: "I'm worried about you out there —"
+      - weight: 1
+        text: "Let's think ahead for a moment, love —"
+      - weight: 1
+        text: "Before you tell me it's only ten minutes —"
+      - weight: 1
+        text: "Your mother would like your attention —"
+      - weight: 1
+        text: "A little preparation first, darling —"
+      - weight: 1
+        text: "Let me help before you head off —"
+      - weight: 1
+        text: "Here's what I'd suggest, sweetheart —"
+      - weight: 1
+        text: "We can take a minute to get this right —"
     advice:
       - weight: 1
         text: "Waterproof jacket, a warm layer underneath, and proper boots.\nA regular umbrella might not survive this, so hold it tight."
@@ -331,6 +938,20 @@ conditions:
         text: "A hooded coat that really keeps the water out, and a hat.\nIf you can stay home, please stay home."
       - weight: 1
         text: "Everything waterproof: jacket, shoes, a cover for your bag.\nCold and soaked is how people get sick."
+      - weight: 1
+        text: "Seam-sealed overtrousers over fleece-lined bottoms.\nKeep the legs outside your boot tops, love, unless you're collecting rainwater."
+      - weight: 1
+        text: "Wool-blend socks inside roomy, insulated waterproof footwear.\nCheck the soles still have grip before you meet those wet steps."
+      - weight: 1
+        text: "A thin thermal base beneath a fleece and breathable rain shell.\nSlow down before you get sweaty; we need those inner layers dry, sweetheart."
+      - weight: 1
+        text: "Waterproof mittens with warm liners and covered cuffs.\nTuck the cuffs under your sleeves so runoff doesn't sneak inside."
+      - weight: 1
+        text: "A close-fitting beanie beneath an adjustable peaked hood.\nMake sure you can turn your head and see traffic, darling."
+      - weight: 1
+        text: "A bright insulated raincoat with reflective details.\nUse the proper crossing even if it adds a few minutes; I'll keep dinner warm."
+      - weight: 1
+        text: "A fleece neck warmer tucked fully inside a high, fastened collar.\nChange it if it gets soaked, love — don't leave wet fabric against your skin."
     sting:
       - weight: 1
         text: "Please don't go out in your good shoes."
@@ -338,6 +959,21 @@ conditions:
         text: "Text me when you're home safe."
       - weight: 1
         text: "I made soup. Just saying."
+      - weight: 1
+        text: "Pack a complete dry outfit in a sealed bag. Underwear too, darling; let's finish the thought."
+      - weight: 1
+        text: "If water covers the road, turn back. The appointment can be rearranged."
+      - weight: 1
+        text: "Check for cancellations before leaving. No sense getting drenched for a handwritten sign on a locked door."
+      - weight: 1
+        text: "Come in and change before telling me the whole story. I'll listen just as well once you're dry."
+      - weight: 1
+        text: "Shivering is your cue to find shelter, sweetheart, not to walk faster past it."
+      - weight: 1
+        text: "Keep your phone somewhere dry and reachable. The bottom of your bag is neither."
+      - weight: 1
+        text: "Ask for a lift if you need one. You don't become a burden just because the weather's awful."
+
   snow:
     intro:
       - weight: 2
@@ -346,6 +982,20 @@ conditions:
         text: "Oh, the snow, my favorite thing to worry about —"
       - weight: 1
         text: "Dress warm, it's coming down out there —"
+      - weight: 1
+        text: "Let me see you before you leave, sweetheart —"
+      - weight: 1
+        text: "A little thought now, darling —"
+      - weight: 1
+        text: "Your mum has a few suggestions —"
+      - weight: 1
+        text: "Before you tell me you've handled it —"
+      - weight: 1
+        text: "Let's get you properly ready, love —"
+      - weight: 1
+        text: "Spare a moment for your mother —"
+      - weight: 1
+        text: "Here's what I'd choose for you today —"
     advice:
       - weight: 1
         text: "Boots with real grip, please, not the smooth-soled ones you love so much.\nGloves, a hat — you know the drill by now, we've done this before."
@@ -353,6 +1003,20 @@ conditions:
         text: "Layer up under something waterproof.\nWalk carefully, sweetie, ice hides under snow and you never see it coming."
       - weight: 1
         text: "Warm from head to toe today, no shortcuts.\nIf the roads look bad, maybe just stay in — I'll worry less, promise."
+      - weight: 1
+        text: "Wool-blend socks inside insulated boots with room for your toes.\nTuck a spare pair in your bag, darling; slush has a way of finding an entrance."
+      - weight: 1
+        text: "Water-resistant mittens with long cuffs over your sleeves.\nKeep the snow out when you make that first snowball — I know you."
+      - weight: 1
+        text: "A thermal top beneath a fleece and your winter jacket.\nOpen a vent before you get sweaty uphill, then close it when you stop."
+      - weight: 1
+        text: "Snow trousers or waterproof overtrousers for playing outside.\nJeans won't stay cosy once you've sat in a snowdrift, sweetheart."
+      - weight: 1
+        text: "An ear-covering beanie beneath an adjustable hood.\nMake sure you can still see sideways before crossing the road."
+      - weight: 1
+        text: "A snug neck warmer tucked inside your collar.\nLeave the long scarf at home if you're sledding, love; loose ends can catch."
+      - weight: 1
+        text: "A bright outer layer with reflective details for the walk home.\nDrivers need extra stopping room, so wait until they've fully stopped before crossing."
     sting:
       - weight: 1
         text: "Please don't fall, I mean it, I really do."
@@ -360,6 +1024,20 @@ conditions:
         text: "Call me when you get where you're going safely, don't make me wait."
       - weight: 1
         text: "I still think about when you slipped last winter. Be careful. Please."
+      - weight: 1
+        text: "Hands out of your pockets on slippery paths, sweetheart. You'll want them free for balance."
+      - weight: 1
+        text: "Leave early. The pavement hasn't promised to cooperate with your schedule."
+      - weight: 1
+        text: "Check the buses before setting off. I'd rather you waited by my biscuit tin."
+      - weight: 1
+        text: "Brush yourself off before coming in, love. The hallway doesn't need its own thaw."
+      - weight: 1
+        text: "Choose a sledding spot away from roads. A good hill has a safe ending."
+      - weight: 1
+        text: "Enjoy how pretty it is, darling. You can admire it without testing how deep every drift goes."
+      - weight: 1
+        text: "Send me a picture of your snowman. I still like seeing what you've made."
 
   storm:
     intro:
@@ -369,6 +1047,20 @@ conditions:
         text: "This storm has me genuinely worried, not the usual kind —"
       - weight: 1
         text: "I don't like this weather at all, and I'm telling you that plainly —"
+      - weight: 1
+        text: "Give me your attention for a moment, love —"
+      - weight: 1
+        text: "Let's think this through together, darling —"
+      - weight: 1
+        text: "Before you reach for your keys, sweetheart —"
+      - weight: 1
+        text: "Your mother has something to say —"
+      - weight: 1
+        text: "A little preparation first, please —"
+      - weight: 1
+        text: "Let me help you make a sensible plan —"
+      - weight: 1
+        text: "Hear me out before you decide, honey —"
     advice:
       - weight: 1
         text: "If you truly must go out, dress fully waterproof and windproof, no exceptions.\nBut honestly, sweetie, please just stay home if you can, I'm asking you directly."
@@ -376,6 +1068,20 @@ conditions:
         text: "Skip the umbrella, it won't survive this and neither will your dignity.\nA sturdy hood and good shoes, if you absolutely have to go."
       - weight: 1
         text: "Secure everything, dress for the worst case.\nAnd please, please be careful out there, I mean every word of this."
+      - weight: 1
+        text: "A bright rain jacket with reflective details if travel is unavoidable.\nDrivers may struggle to see you, darling; wait somewhere sheltered for your lift."
+      - weight: 1
+        text: "Waterproof trousers with hems secured clear of the ground.\nDon't walk through floodwater, love, even if home is just across the street."
+      - weight: 1
+        text: "Closed footwear with deeply treaded soles for an essential trip.\nWatch for loose debris rather than rushing with your head down."
+      - weight: 1
+        text: "A breathable base layer under a rain shell suited to the temperature.\nHeavy padding isn't helpful if it's warm, sweetheart; you need to avoid overheating too."
+      - weight: 1
+        text: "A close-fitting hood adjusted to leave your side vision clear.\nIf you hear thunder, get into a substantial building; a bus shelter won't do."
+      - weight: 1
+        text: "A jacket with snug cuffs and covered, zipped pockets.\nKeep your phone dry and reachable, not buried beneath everything else."
+      - weight: 1
+        text: "Fitted outerwear with drawstrings tucked away and no trailing scarf.\nAvoid loose signs and damaged branches, darling; give anything unstable plenty of room."
     sting:
       - weight: 1
         text: "Please text me the moment you're safe inside. I will be waiting."
@@ -383,6 +1089,20 @@ conditions:
         text: "I really wish you'd just stay in today. Is that so much to ask?"
       - weight: 1
         text: "This is exactly the kind of day I worry the most, and you know it."
+      - weight: 1
+        text: "Check the local weather alerts, sweetheart. The family group chat isn't an official forecast."
+      - weight: 1
+        text: "Charge your phone while the power's on. Scrolling can wait until the battery has had its dinner."
+      - weight: 1
+        text: "Leave fallen cables alone, love. Even a quiet one can be dangerous."
+      - weight: 1
+        text: "The garden furniture can stay where it is until it's safe. I happen to be much fonder of you."
+      - weight: 1
+        text: "Keep away from the windows if debris is flying. We can inspect the flowerbeds later."
+      - weight: 1
+        text: "Use a torch if the lights go out, darling. Let's not add candles to today's excitement."
+      - weight: 1
+        text: "Cancel the visit if you need to. Loving me doesn't require arriving through a storm."
 
 expand:
   trigger:
