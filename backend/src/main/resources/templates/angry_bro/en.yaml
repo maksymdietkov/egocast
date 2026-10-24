@@ -9,6 +9,18 @@ conditions:
         text: "Alright, you cocky bastard, here's your reality check —"
       - weight: 1
         text: "Hey. Winter's here to kick your ass today —"
+      - weight: 1
+        text: "Oi, dipshit, weather briefing —"
+      - weight: 1
+        text: "Right, motherfucker, pay attention —"
+      - weight: 1
+        text: "Quick word, you reckless fuck —"
+      - weight: 1
+        text: "Heads up, shithead —"
+      - weight: 1
+        text: "Bro, here's the fucking deal —"
+      - weight: 1
+        text: "Hold up, you magnificent dickhead —"
     advice:
       - weight: 1
         text: "Put a fucking proper coat on, not that useless fashion jacket you love so much.\nHat, gloves, scarf — all three. Don't be a stubborn idiot about it."
@@ -18,6 +30,18 @@ conditions:
         text: "Full fucking gear today: coat, gloves, hat over your ears.\nYou're not some invincible badass. Frostbite doesn't give a shit."
       - weight: 1
         text: "Layer the fuck up or stay inside.\nThermal socks too — don't lose feeling in your toes just to look tough, idiot."
+      - weight: 1
+        text: "Wear insulated boots with grippy soles and your winter kit.\nSmooth soles on frozen pavement? Enjoy getting folded by the fucking sidewalk."
+      - weight: 1
+        text: "Pull thermal leggings under your trousers and wear a warm parka.\nThose ripped jeans have fucking ventilation holes, genius."
+      - weight: 1
+        text: "Get a windproof outer layer over fleece and thermals.\nA draft straight through your clothes is a shit way to discover they're useless."
+      - weight: 1
+        text: "Wear mittens, an insulated jacket and a snug beanie.\nBare fingers won't earn you shit except a miserable walk."
+      - weight: 1
+        text: "Put on a neck gaiter with your padded coat and lined trousers.\nCover the gaps at your collar, you walking fucking heat leak."
+      - weight: 1
+        text: "Choose a moisture-wicking base layer under warm, removable layers.\nUnzip before you sweat through the lot, you soggy bastard."
     sting:
       - weight: 1
         text: "Go out underdressed and freeze your stupid ass off, champ."
@@ -25,6 +49,20 @@ conditions:
         text: "This isn't the day to prove what a hardass you are. Put the fucking coat on."
       - weight: 1
         text: "I'm not repeating myself, you stubborn dumbass."
+      - weight: 1
+        text: "Your nipples aren't supposed to cut fucking glass."
+      - weight: 1
+        text: "That little jog from the door to the car looked real fucking athletic, bro."
+      - weight: 1
+        text: "Even your bad decisions want to stay the fuck indoors."
+      - weight: 1
+        text: "You checked your hair three times and the forecast zero times, you vain prick."
+      - weight: 1
+        text: "Weather app says frost; your last brain cell says shorts. Tough fucking choice."
+      - weight: 1
+        text: "If complaining generated heat, you'd be a fucking blast furnace."
+      - weight: 1
+        text: "You wanted fresh air, motherfucker. Here's the freezer aisle."
 
   cold:
     intro:
@@ -36,6 +74,18 @@ conditions:
         text: "Listen the fuck up —"
       - weight: 1
         text: "Alright, pay attention for once, dumbass —"
+      - weight: 1
+        text: "Bro, engage your fucking brain —"
+      - weight: 1
+        text: "Okay, you chaotic little shit —"
+      - weight: 1
+        text: "Here's the deal, dickhead —"
+      - weight: 1
+        text: "Oi, quit fucking around a second —"
+      - weight: 1
+        text: "Your weather briefing, you clueless bastard —"
+      - weight: 1
+        text: "Right, let's make this fucking simple —"
     advice:
       - weight: 1
         text: "Warm coat. No fucking excuses.\nGloves too — unless you want your hands to hurt like hell in an hour."
@@ -45,6 +95,18 @@ conditions:
         text: "Thermal shirt, sweater, coat that actually zips shut.\nDon't be the dumbass shivering on the corner pretending you're fine."
       - weight: 1
         text: "Coat, hat, something around your neck.\nCold gets into every gap you were too lazy to cover, genius."
+      - weight: 1
+        text: "Wear lined trousers with your warm jacket.\nThin chinos are a shit choice for standing at a bus stop."
+      - weight: 1
+        text: "Put on closed shoes and wool-blend socks under your usual warm layers.\nCover your ankles, you fucking trouser model."
+      - weight: 1
+        text: "Wear a fleece under a windproof jacket.\nThat chunky knit lets gusts straight through, the draughty bastard."
+      - weight: 1
+        text: "Choose a long insulated coat for a slow walk.\nYour backside deserves better than being the only uncovered fucker."
+      - weight: 1
+        text: "Pull a thin thermal top under a zip-up midlayer and jacket.\nOpen a layer when you warm up, before you sweat through the fucking lot."
+      - weight: 1
+        text: "Wear a roomy outer layer over a sweatshirt, with light gloves.\nIf the sleeves squeeze your arms, size up instead of dressing like a vacuum-packed dickhead."
     sting:
       - weight: 1
         text: "Coffee won't save your ass. The fucking coat will."
@@ -52,6 +114,20 @@ conditions:
         text: "Your shitty summer jacket stays home today. End of fucking discussion."
       - weight: 1
         text: "Your ears freeze first, dumbass — put the fucking hat on."
+      - weight: 1
+        text: "Nobody's impressed by your ability to be fucking uncomfortable."
+      - weight: 1
+        text: "You dress for the weather you want, then bitch about the weather you get."
+      - weight: 1
+        text: "That clenched-jaw mumbling had better be a thank-you, you ungrateful shit."
+      - weight: 1
+        text: "Looking out the window isn't a fucking temperature measurement."
+      - weight: 1
+        text: "You spent twenty minutes choosing a playlist and twelve seconds getting dressed, dickhead."
+      - weight: 1
+        text: "Apparently your entire winter strategy is walking faster. Fucking brilliant."
+      - weight: 1
+        text: "Your dating profile says outdoorsy; your face says fuck this."
 
   chilly:
     intro:
@@ -61,6 +137,20 @@ conditions:
         text: "It's a bit fucking nippy, listen up —"
       - weight: 1
         text: "Hey, pay the fuck attention —"
+      - weight: 1
+        text: "Bro, a quick fucking heads-up —"
+      - weight: 1
+        text: "Alright, you distracted bastard —"
+      - weight: 1
+        text: "One useful thought for your dumb ass —"
+      - weight: 1
+        text: "Oi, put the fucking phone down —"
+      - weight: 1
+        text: "Let's sort you out, shithead —"
+      - weight: 1
+        text: "Right, here's today's fucking briefing —"
+      - weight: 1
+        text: "A moment of your attention, you glorious prick —"
     advice:
       - weight: 1
         text: "Decent jacket or a thick sweater under one. That's all.\nGo barehanded and you'll be whining like a little bitch in ten minutes."
@@ -68,11 +158,41 @@ conditions:
         text: "Scarf and a real jacket, not that flimsy windbreaker bullshit.\nWear gloves if you get cold, dumbass. This isn't rocket science."
       - weight: 1
         text: "This is scarf weather. Nothing fucking complicated — just don't go out in a damn T-shirt.\nDo that and I'll judge the hell out of you."
+      - weight: 1
+        text: "Wear a sweatshirt under a light padded jacket.\nUnzip when you warm up instead of marinating in your own fucking sweat."
+      - weight: 1
+        text: "Pull on full-length trousers and closed shoes with socks.\nYour ankles don't need their own fucking outdoor seating area."
+      - weight: 1
+        text: "Choose a fleece with a wind-resistant shell over it.\nThat breeze will stroll through bare fleece like it owns the fucking place."
+      - weight: 1
+        text: "Wear a long-sleeved top and a zip-up hoodie beneath your jacket.\nKeep the hood handy if your ears start lodging a fucking complaint."
+      - weight: 1
+        text: "Put a thin base layer under your shirt and add an overshirt.\nFor a brisk walk, removable layers beat one sweaty fucking lump."
+      - weight: 1
+        text: "Wear a close-knit jumper with a light coat for sitting outside.\nYou cool down when you stop moving, you clueless bastard."
+      - weight: 1
+        text: "Choose a jacket with snug cuffs and a collar you can close.\nLeave them flapping open and you're basically paying to ventilate your fucking torso."
     sting:
       - weight: 1
         text: "It's not freezing, but your ears will still get their asses kicked. Deal with it."
       - weight: 1
         text: "Go tell the wind it's 'technically not winter,' smartass. See how quickly it gives a shit."
+      - weight: 1
+        text: "Your goosebumps have better situational awareness than you do, dipshit."
+      - weight: 1
+        text: "Sure, have another beer outside. Maybe the next one comes with fucking central heating."
+      - weight: 1
+        text: "The sun showed up for decoration, you gullible bastard."
+      - weight: 1
+        text: "You said five minutes outside forty fucking minutes ago."
+      - weight: 1
+        text: "That folded-arm sulk is a bold replacement for checking the forecast."
+      - weight: 1
+        text: "Your mate saying it's lovely out isn't a fucking warranty."
+      - weight: 1
+        text: "Congratulations, you've turned a perfectly decent walk into a personal grievance."
+      - weight: 1
+        text: "You packed three chargers and no extra layer, you spectacularly prepared fuckwit."
 
   cool:
     intro:
@@ -82,6 +202,20 @@ conditions:
         text: "There's a bit of a chill, so pay attention, dumbass —"
       - weight: 1
         text: "Alright, no need to be a dramatic little shit —"
+      - weight: 1
+        text: "Bro, here's your fucking update —"
+      - weight: 1
+        text: "A quick word, you indecisive bastard —"
+      - weight: 1
+        text: "Okay, get your shit together —"
+      - weight: 1
+        text: "Oi, tune in for a second, dickhead —"
+      - weight: 1
+        text: "Let's settle this, you fussy fuck —"
+      - weight: 1
+        text: "Right, a little guidance for your clueless ass —"
+      - weight: 1
+        text: "Your daily briefing, motherfucker —"
     advice:
       - weight: 1
         text: "A light jacket will do the job.\nScarf's optional, dumbass — you're not trekking across fucking Siberia."
@@ -89,11 +223,41 @@ conditions:
         text: "Hoodie or light jacket. That's plenty.\nLeave the heavy coat at home, drama queen — nobody's trying to freeze your ass off."
       - weight: 1
         text: "T-shirt under a jacket. Done.\nTie the jacket around your waist if you get warm — try acting like a fucking adult."
+      - weight: 1
+        text: "Wear a long-sleeved top with chinos and trainers.\nAdd a thin layer if you run cold, you know your own fucking body."
+      - weight: 1
+        text: "Put an open overshirt over a cotton tee.\nButton it up in the shade instead of declaring a fucking climate emergency."
+      - weight: 1
+        text: "Choose a fine-knit jumper and your usual trousers.\nSkip the thermal underwear unless your plans involve standing fucking motionless."
+      - weight: 1
+        text: "Wear a breathable windbreaker over a thin base for cycling.\nOpen the zip on climbs before your back turns into a fucking swamp."
+      - weight: 1
+        text: "Pull on a cardigan over a short-sleeved shirt.\nTake it off indoors, you stubborn bastard, that's why it opens."
+      - weight: 1
+        text: "Wear a lightweight sweatshirt with jeans and socks.\nBare ankles aren't compulsory just because a shop mannequin had them, dipshit."
+      - weight: 1
+        text: "Choose a thin fleece over a tee for sitting outside.\nA café chair generates precisely fuck-all body heat."
     sting:
       - weight: 1
         text: "It's jacket weather, not fucking parka weather. Learn the difference."
       - weight: 1
         text: "It's so fucking comfortable you had no business asking me what to wear."
+      - weight: 1
+        text: "You've made harder decisions ordering a fucking sandwich."
+      - weight: 1
+        text: "The weather's being reasonable; give it a fucking try yourself."
+      - weight: 1
+        text: "Somewhere there's a dog ready to walk, waiting for your indecisive ass."
+      - weight: 1
+        text: "You checked four weather apps hoping one would dress you, you lazy fuck."
+      - weight: 1
+        text: "Your wardrobe has twelve options and apparently you're the thirteenth fucking problem."
+      - weight: 1
+        text: "At this rate, your outdoor plans will qualify as historical fiction."
+      - weight: 1
+        text: "Nobody needs a fucking outfit reveal for taking the bins out."
+      - weight: 1
+        text: "The door still works, dickhead. Give it a go."
 
   mild:
     intro:
@@ -103,6 +267,20 @@ conditions:
         text: "Easy weather, so listen the fuck up —"
       - weight: 1
         text: "Nothing to stress about, for fuck's sake —"
+      - weight: 1
+        text: "Alright, you lovable fucking liability —"
+      - weight: 1
+        text: "Bro, here's the situation —"
+      - weight: 1
+        text: "Briefing time, you impatient prick —"
+      - weight: 1
+        text: "Let's get your ass out the door —"
+      - weight: 1
+        text: "One second, you absent-minded fuck —"
+      - weight: 1
+        text: "Okay, dipshit, here's what we're doing —"
+      - weight: 1
+        text: "A word from your favourite bastard —"
     advice:
       - weight: 1
         text: "Light jacket or long sleeves. That's fucking it.\nQuit asking me, you know how to dress for this, you useless smartass."
@@ -110,11 +288,41 @@ conditions:
         text: "Cardigan weather. Zero fucking drama.\nLeave the heavy shit in the closet where it belongs."
       - weight: 1
         text: "Whatever the fuck is clean will work today.\nGrab a light layer for later, just in case, smartass."
+      - weight: 1
+        text: "Wear a cotton tee with chinos and comfortable trainers.\nA walk shouldn't require peeling your fucking shoes off halfway through."
+      - weight: 1
+        text: "Put a thin overshirt over a short-sleeved top.\nRoll the sleeves when you warm up, you adaptable little shit."
+      - weight: 1
+        text: "Choose a breathable polo and lightweight trousers.\nSave the thick fleece for a day that actually fucking needs it."
+      - weight: 1
+        text: "Wear a loose long-sleeved shirt with jeans.\nLeave yourself room to move instead of dressing like a fucking sausage."
+      - weight: 1
+        text: "Pull on a moisture-wicking tee and flexible walking trousers.\nIf you're heading uphill, skip the heavy cotton that hoards your fucking sweat."
+      - weight: 1
+        text: "Wear a thin jumper over a vest with your usual bottoms.\nLose the jumper indoors before you start blaming the fucking heating."
+      - weight: 1
+        text: "Choose a tee, cropped trousers and canvas shoes with socks.\nBreak in those stiff new shoes another time, you blister-seeking dumbass."
     sting:
       - weight: 1
         text: "Even I haven't got a damn thing to yell at you about today."
       - weight: 1
         text: "Enjoy the nice weather, you lucky bastard. It won't fucking last."
+      - weight: 1
+        text: "For once, the forecast is less complicated than your fucking lunch order."
+      - weight: 1
+        text: "Perfect conditions for that walk you've been postponing since fucking February."
+      - weight: 1
+        text: "Try enjoying something without immediately checking how long you've got left, you anxious prick."
+      - weight: 1
+        text: "Your sofa has had custody of your ass long enough."
+      - weight: 1
+        text: "A whole decent day, and you'll spend it arguing with some fucker in the comments."
+      - weight: 1
+        text: "Take the scenic route, bastard. The dishes aren't going anywhere."
+      - weight: 1
+        text: "Look at that, nature managed pleasant without a fucking subscription."
+      - weight: 1
+        text: "You've got ideal weather and a full battery; let's see what excuse your ass invents now."
 
   comfortable:
     intro:
@@ -124,6 +332,20 @@ conditions:
         text: "About as fucking good as it gets —"
       - weight: 1
         text: "Textbook weather, so listen the fuck up —"
+      - weight: 1
+        text: "Right, you jammy bastard —"
+      - weight: 1
+        text: "Bro, a word before you fuck off outside —"
+      - weight: 1
+        text: "Here's the score, dickhead —"
+      - weight: 1
+        text: "Okay, pause your bullshit a second —"
+      - weight: 1
+        text: "A quick update for your wandering ass —"
+      - weight: 1
+        text: "Check this out, motherfucker —"
+      - weight: 1
+        text: "Oi, front and centre, you scruffy prick —"
     advice:
       - weight: 1
         text: "Wear whatever the fuck you want.\nA T-shirt is fine. Even you can't screw this up today."
@@ -131,11 +353,41 @@ conditions:
         text: "Short sleeves are fine.\nKeep a light layer for the evening, though — don't be a complete dumbass about it."
       - weight: 1
         text: "Anything works. Use your fucking judgment.\nThere's no wrong answer today, for once in your life."
+      - weight: 1
+        text: "Pull on a cotton tee, shorts and comfortable trainers.\nWear socks unless you want your shoes smelling like a fucking crime scene."
+      - weight: 1
+        text: "Choose a loose linen shirt with lightweight trousers.\nGive your armpits some breathing room, you sweaty bastard."
+      - weight: 1
+        text: "Wear a breathable polo with chinos.\nSkip the thermal undershirt, you overprepared fuck."
+      - weight: 1
+        text: "Put on a quick-drying top and flexible shorts for a long walk.\nCheck that the seams don't rub before your thighs file a fucking grievance."
+      - weight: 1
+        text: "Wear a light long-sleeved shirt and airy bottoms if you prefer more coverage.\nComfort doesn't require flashing skin, so quit treating shorts like a fucking uniform."
+      - weight: 1
+        text: "Choose a tee, relaxed jeans and walking shoes for a day in town.\nLeave the stiff fashion footwear behind unless sore feet are your fucking hobby."
+      - weight: 1
+        text: "Wear a thin sports top and unpadded cycling shorts for an easy ride.\nSecure loose trouser cuffs if you choose trousers instead, you chain-feeding dumbass."
     sting:
       - weight: 1
         text: "Somewhere a meteorologist is bored as fuck today."
       - weight: 1
         text: "This is the weather people bitch and moan they never get enough of."
+      - weight: 1
+        text: "The forecast did its job; your lazy ass is the remaining variable."
+      - weight: 1
+        text: "You can stop refreshing now, dipshit. Nice hasn't been cancelled."
+      - weight: 1
+        text: "Even the pigeons look like they've got their shit together."
+      - weight: 1
+        text: "Your work calendar picked a spectacular fucking day to be an asshole."
+      - weight: 1
+        text: "Step outside before someone turns this into a mandatory team activity."
+      - weight: 1
+        text: "If you find a reason to complain, keep that fucking achievement to yourself."
+      - weight: 1
+        text: "Today's biggest outdoor hazard is getting cornered by a chatty fucker."
+      - weight: 1
+        text: "Go make a memory that isn't your fucking password."
 
   warm:
     intro:
@@ -145,6 +397,20 @@ conditions:
         text: "Summer's knocking, so listen the fuck up —"
       - weight: 1
         text: "It's getting fucking toasty out —"
+      - weight: 1
+        text: "Bro, here's your fucking forecast —"
+      - weight: 1
+        text: "Alright, you restless bastard —"
+      - weight: 1
+        text: "Oi, spare me a second, shithead —"
+      - weight: 1
+        text: "A little direction for your chaotic ass —"
+      - weight: 1
+        text: "Right, let's get you sorted, motherfucker —"
+      - weight: 1
+        text: "Quick briefing, you impatient dick —"
+      - weight: 1
+        text: "Clock this before you head out, fuckwit —"
     advice:
       - weight: 1
         text: "Shorts and a T-shirt, dumbass. This isn't fucking rocket science.\nSunglasses wouldn't hurt either."
@@ -152,11 +418,41 @@ conditions:
         text: "Breathable shit only — cotton, linen, whatever.\nWear a cap if you're out a while. Don't fry your fucking skull."
       - weight: 1
         text: "Light colors, light fabric, light fucking everything.\nLayers can stay in the closet today."
+      - weight: 1
+        text: "Wear a loose linen shirt and airy trousers.\nGive your legs some airflow instead of shrink-wrapping your fucking bollocks."
+      - weight: 1
+        text: "Put on a moisture-wicking sports top and running shorts for exercise.\nChange out of the sweaty kit afterwards, you mobile fucking laundry basket."
+      - weight: 1
+        text: "Choose secure sandals or mesh trainers with thin socks.\nBreak in new footwear before a long outing, you blister-collecting bastard."
+      - weight: 1
+        text: "Wear a lightweight UPF shirt and a broad-brimmed hat for hours outside.\nCover your neck too, unless uneven sunburn is your next fucking fashion project."
+      - weight: 1
+        text: "Pull on a relaxed polo and unlined chinos for work.\nSkip the undershirt if you don't need it, you self-steaming dumbass."
+      - weight: 1
+        text: "Choose smooth-seamed shorts and breathable underwear for a long walk.\nSort out rubbing early instead of finishing bow-legged and fucking furious."
+      - weight: 1
+        text: "Wear a sleeveless top with lightweight bottoms if that's comfortable for you.\nPut SPF 30 or higher on exposed skin, including those neglected fucking shoulders."
     sting:
       - weight: 1
         text: "Skip sunscreen and you'll be whining like a little bitch tomorrow. Don't say I didn't fucking warn you."
       - weight: 1
         text: "It's ice cream weather, you absolute clown. Didn't think you'd need permission for that."
+      - weight: 1
+        text: "Your car's been parked in the sun rehearsing its role as a fucking pizza oven."
+      - weight: 1
+        text: "Deodorant, motherfucker. Public transport is a shared experience."
+      - weight: 1
+        text: "That bench has been in direct sunlight all afternoon; approach with respect for your ass."
+      - weight: 1
+        text: "Drink some water before your piss starts looking like fucking apple juice."
+      - weight: 1
+        text: "A cold beer isn't a personality, but apparently you're giving it another fucking audition."
+      - weight: 1
+        text: "Your chocolate bar is now a beverage, you unlucky bastard."
+      - weight: 1
+        text: "Stop slapping your neck like the mosquito owes you fucking money."
+      - weight: 1
+        text: "Whoever suggested eating outside clearly doesn't have to chase the fucking napkins."
 
   hot:
     intro:
@@ -166,6 +462,20 @@ conditions:
         text: "It's a fucking scorcher today, pay attention —"
       - weight: 1
         text: "Full-blown summer, you sun-baked dumbass —"
+      - weight: 1
+        text: "Bro, get this through your fucking head —"
+      - weight: 1
+        text: "Oi, weather update, you reckless prick —"
+      - weight: 1
+        text: "Right, a word with your sweaty ass —"
+      - weight: 1
+        text: "Pay attention, you distracted motherfucker —"
+      - weight: 1
+        text: "Here's the situation, you absolute menace —"
+      - weight: 1
+        text: "Quick check-in, you daft bastard —"
+      - weight: 1
+        text: "Alright, let's sort your shit out —"
     advice:
       - weight: 1
         text: "Drink some fucking water or risk passing out. Your call, dumbass.\nWear the lightest clothes you own and sunglasses — neither is optional."
@@ -173,6 +483,20 @@ conditions:
         text: "Loose linen, a wide-brim hat — quit being a stubborn asshole about it.\nSunscreen is fucking mandatory, not a suggestion."
       - weight: 1
         text: "Wear the palest, lightest clothes you've got.\nGo out in dark colors and you'll roast your ass off by noon. No exceptions."
+      - weight: 1
+        text: "Wear an airy long-sleeved UPF shirt with lightweight trousers.\nCovered skin can stay comfortable without you basting your bare fucking shoulders."
+      - weight: 1
+        text: "Choose a quick-drying sports tee and relaxed shorts for exercise.\nMove the workout to a cooler hour, you overambitious fuckwit."
+      - weight: 1
+        text: "Put on ventilated walking shoes and thin moisture-wicking socks.\nLoosen the fit if your feet swell instead of crushing them like a fucking idiot."
+      - weight: 1
+        text: "Wear a loose cotton top and shorts with smooth inner seams.\nProtect against chafing before your thighs start a fucking friction fire."
+      - weight: 1
+        text: "Choose an unlined shirt and roomy summer trousers for work.\nDitch the tie where you can, then take breaks somewhere cool, you corporate hostage."
+      - weight: 1
+        text: "Wear a breathable top, airy bottoms and UV-protective sunglasses.\nDark lenses alone don't guarantee UV protection, you label-ignoring dumbass."
+      - weight: 1
+        text: "Pull on a light tunic or loose summer dress with secure sandals.\nIf you feel dizzy or sick, get somewhere cool instead of trying to tough it the fuck out."
     sting:
       - weight: 1
         text: "Ice cream is basically fucking medicine today."
@@ -180,6 +504,20 @@ conditions:
         text: "Your shadow's the only fucking shade you're getting. Make use of it."
       - weight: 1
         text: "The pavement could fry an egg by noon, so don't act fucking shocked when you're roasting too."
+      - weight: 1
+        text: "Your weather app needs a fucking oven mitt."
+      - weight: 1
+        text: "That first blast of air conditioning might be the healthiest relationship you've had all year."
+      - weight: 1
+        text: "The seatbelt buckle has chosen fucking violence."
+      - weight: 1
+        text: "You've showered, got dressed and already need another shower. Efficient as fuck."
+      - weight: 1
+        text: "Whoever invited you to a midday fun run is a sadistic fucking liar."
+      - weight: 1
+        text: "Your fan's doing its best, so stop staring at it like it owes you fucking rent."
+      - weight: 1
+        text: "Nothing humbles a cocky bastard faster than peeling himself off a plastic chair."
 
   windy_cold:
     intro:
@@ -189,6 +527,20 @@ conditions:
         text: "Cold with a fucking attitude, listen up —"
       - weight: 1
         text: "This ain't some gentle little fucking chill —"
+      - weight: 1
+        text: "Bro, here's what you're fucking dealing with —"
+      - weight: 1
+        text: "Oi, listen here, you stubborn prick —"
+      - weight: 1
+        text: "Today's briefing, you windswept bastard —"
+      - weight: 1
+        text: "Right, engage that fucking brain —"
+      - weight: 1
+        text: "Hold up, you careless motherfucker —"
+      - weight: 1
+        text: "A quick word before you charge outside, dipshit —"
+      - weight: 1
+        text: "Alright, here's the fucking situation —"
     advice:
       - weight: 1
         text: "It's freezing and windy, dumbass — your regular coat won't cut it.\nPut something fucking windproof over it."
@@ -196,6 +548,20 @@ conditions:
         text: "The wind cuts straight through a normal coat.\nGet a windproof shell, proper gloves, and a hat that won't fuck off into the distance."
       - weight: 1
         text: "Zip up, tuck in, cover every fucking gap.\nThe wind finds every hole you were too lazy to cover, genius."
+      - weight: 1
+        text: "Wear a thermal base, fleece and a wind-resistant parka.\nLeave room between layers instead of squeezing the warmth out, you vacuum-packed fuckwit."
+      - weight: 1
+        text: "Pull a snug neck gaiter up over your chin beneath an insulated jacket.\nLoose scarf ends belong inside the coat, you flapping fucking liability."
+      - weight: 1
+        text: "Choose lined trousers with a wind-blocking outer fabric.\nYour legs aren't magically exempt from this shit just because they're under a table at work."
+      - weight: 1
+        text: "Put on insulated mittens with long cuffs over your sleeves.\nKeep your fingers together for warmth, you individually refrigerated dumbass."
+      - weight: 1
+        text: "Wear warm boots and wool-blend socks under your winter layers.\nMake sure you can wiggle your toes, tight footwear is a fucking own goal."
+      - weight: 1
+        text: "Choose a padded jacket with an adjustable hood over an ear-covering beanie.\nTighten it without blocking your view, you still need to see where the fuck you're going."
+      - weight: 1
+        text: "Wear a moisture-wicking undershirt beneath a warm midlayer and protective shell.\nVent before you sweat on a climb, then close up when you stop, you soggy bastard."
     sting:
       - weight: 1
         text: "Don't come fucking crying to me — I told you to zip up."
@@ -203,6 +569,20 @@ conditions:
         text: "The wind's kicking your ass today, not the cold. Show it some fucking respect."
       - weight: 1
         text: "Your scarf's about to become a fucking kite. Hold onto the damn thing."
+      - weight: 1
+        text: "That headwind has a personal fucking problem with your face."
+      - weight: 1
+        text: "You wanted a refreshing walk, and apparently nature heard hostile fucking interrogation."
+      - weight: 1
+        text: "Your haircut's been reassigned to a different postcode."
+      - weight: 1
+        text: "Walking into this shit counts as resistance training in my book."
+      - weight: 1
+        text: "Even your swear words are getting blown back down your fucking throat."
+      - weight: 1
+        text: "That bus shelter with three missing panels is taking the fucking piss."
+      - weight: 1
+        text: "You've been leaning forward for ten minutes and travelled approximately fuck-all."
 
   windy_frost:
     intro:
@@ -212,6 +592,20 @@ conditions:
         text: "Nature's trying to fuck you over today, pay attention —"
       - weight: 1
         text: "It's cold enough to freeze your fucking skin —"
+      - weight: 1
+        text: "Bro, take this shit seriously —"
+      - weight: 1
+        text: "Right, you reckless bastard, focus —"
+      - weight: 1
+        text: "Oi, here's your fucking wake-up call —"
+      - weight: 1
+        text: "A word before you leave, bonehead —"
+      - weight: 1
+        text: "Listen carefully, you overconfident prick —"
+      - weight: 1
+        text: "Today's forecast has fucking teeth —"
+      - weight: 1
+        text: "Alright, motherfucker, here's the deal —"
     advice:
       - weight: 1
         text: "The wind will find every fucking gap in your outfit.\nHigh collar, scarf tucked in, gloves that actually fit — don't be a dumbass."
@@ -219,6 +613,20 @@ conditions:
         text: "Nothing loose, nothing open, nothing exposed.\nCover the fuck up or stay inside. Your call."
       - weight: 1
         text: "Cover your face and hands. Quit being a stubborn asshole.\nExposed skin goes numb faster than you think, dumbass."
+      - weight: 1
+        text: "Wear thermal underwear, an insulating midlayer and a windproof winter parka.\nA shell alone won't keep you warm, you underpacked fuckwit."
+      - weight: 1
+        text: "Pull a balaclava over your ears and nose beneath an adjustable hood.\nSwap it if your breath soaks it, wet fabric against your face is a shit deal."
+      - weight: 1
+        text: "Put on liner gloves beneath insulated windproof mittens.\nKeep them on when using your phone, no message deserves a fucking frostbitten finger."
+      - weight: 1
+        text: "Choose insulated boots with grippy soles and dry wool-blend socks.\nLeave toe room and watch for ice, you stiff-legged bastard."
+      - weight: 1
+        text: "Wear thermal leggings under lined wind-resistant trousers.\nCover your lower back when you bend, nobody ordered a fucking arctic ass crack."
+      - weight: 1
+        text: "Choose wraparound protective eyewear with your full winter kit.\nKeep blowing snow out of your eyes without fogging yourself fucking blind."
+      - weight: 1
+        text: "Wear a roomy insulated coat with overlapping cuffs, collar and boot tops.\nIf skin goes numb or pale, get indoors and warm up, don't tough it out, dickhead."
     sting:
       - weight: 1
         text: "This cold thinks your fashion choices are fucking stupid. Listen to it."
@@ -226,6 +634,20 @@ conditions:
         text: "Your face will go fucking numb before your coffee gets cold, dumbass."
       - weight: 1
         text: "That wind-chill number isn't a fucking suggestion. It's a warning."
+      - weight: 1
+        text: "Your tough-guy reputation can wait somewhere with fucking heating."
+      - weight: 1
+        text: "The shortcut across that open field is looking like a spectacularly shit idea."
+      - weight: 1
+        text: "Even the fucking snow is trying to leave sideways."
+      - weight: 1
+        text: "You don't get a medal for making the walk home a fucking survival exercise."
+      - weight: 1
+        text: "That weather station deserves fucking hazard pay."
+      - weight: 1
+        text: "Your dog took one look outside and suddenly respects the fucking carpet."
+      - weight: 1
+        text: "Whoever named that street Pleasant View can get fucked today."
 
   windy_hot:
     intro:
@@ -235,6 +657,20 @@ conditions:
         text: "It's hot as hell but at least the air's moving — pay attention —"
       - weight: 1
         text: "The wind's doing its best to save your sweaty ass —"
+      - weight: 1
+        text: "Bro, here's your fucking briefing —"
+      - weight: 1
+        text: "Oi, pay attention, you sun-dazed bastard —"
+      - weight: 1
+        text: "Right, a quick word, dickhead —"
+      - weight: 1
+        text: "Before you wander off, you careless fuck —"
+      - weight: 1
+        text: "Let's get you sorted, smartass —"
+      - weight: 1
+        text: "Weather report, motherfucker, ears open —"
+      - weight: 1
+        text: "Alright, here's what you need to fucking know —"
     advice:
       - weight: 1
         text: "Wear light clothes anyway, don't get cocky.\nYou might get away without a hat for once, so thank the fucking breeze."
@@ -242,6 +678,20 @@ conditions:
         text: "The wind takes the edge off, but it's still fucking hot, dumbass.\nDon't skip sunscreen just because the breeze feels nice."
       - weight: 1
         text: "Loose and breathable. That's the fucking move.\nHang onto your hat — the wind's trying to steal the damn thing."
+      - weight: 1
+        text: "Wear a lightweight UPF shirt and airy trousers.\nFabric coverage still matters when the sun's being a relentless fucking asshole."
+      - weight: 1
+        text: "Choose wraparound UV-protective sunglasses with your summer kit.\nBlowing grit doesn't give a shit how expensive your contact lenses were."
+      - weight: 1
+        text: "Put on a ventilated sun hat with an adjustable chin strap.\nSecure it before you spend the afternoon chasing that bastard through traffic."
+      - weight: 1
+        text: "Wear a quick-drying sports top and flexible shorts for a brisk walk.\nSweat can evaporate fast, so drink water before you feel like fucking sandpaper."
+      - weight: 1
+        text: "Choose secure sandals or breathable trainers with thin socks.\nLoose flip-flops are a shit choice for dusty, uneven paths."
+      - weight: 1
+        text: "Wear a light button-up shirt with the hem secured for cycling.\nKeep dangling fabric away from the drivetrain, you chain-jamming fuckwit."
+      - weight: 1
+        text: "Pull on a breathable tee and well-fitting shorts without trailing ties.\nFasten your pockets before a gust redistributes your fucking belongings."
     sting:
       - weight: 1
         text: "A fucking breeze isn't a substitute for sunscreen, you dumbass."
@@ -249,6 +699,20 @@ conditions:
         text: "It feels cooler than it fucking is. Don't fall for it."
       - weight: 1
         text: "Hold onto your fucking hat. I'm not kidding."
+      - weight: 1
+        text: "Nature switched the hair dryer on and called it fucking ventilation."
+      - weight: 1
+        text: "Your picnic now comes with airborne fucking seasoning."
+      - weight: 1
+        text: "That empty crisp packet is covering more ground than your lazy ass."
+      - weight: 1
+        text: "Good luck looking mysterious with your own fucking hair in your mouth."
+      - weight: 1
+        text: "The café umbrella's making noises that weren't in the fucking brochure."
+      - weight: 1
+        text: "You've ordered an iced coffee with a complimentary receipt in the next postcode."
+      - weight: 1
+        text: "Your beach towel has apparently booked a separate fucking holiday."
 
   rain:
     intro:
@@ -258,6 +722,20 @@ conditions:
         text: "It's drizzling, so pay the fuck attention —"
       - weight: 1
         text: "The sky's pissing all over us, dumbass —"
+      - weight: 1
+        text: "Bro, here's your fucking weather update —"
+      - weight: 1
+        text: "Oi, a word before you leave, shithead —"
+      - weight: 1
+        text: "Right, focus for a second, you distracted bastard —"
+      - weight: 1
+        text: "Let's sort this out, you clueless fuck —"
+      - weight: 1
+        text: "Your daily briefing, you impatient prick —"
+      - weight: 1
+        text: "Alright, here's the deal, smartass —"
+      - weight: 1
+        text: "Listen closely, you magnificent fucking liability —"
     advice:
       - weight: 1
         text: "A light raincoat or hooded jacket will do.\nNothing fancy needed, so don't overthink the shit out of it."
@@ -265,6 +743,20 @@ conditions:
         text: "Waterproof shoes are worth it, trust me.\nThat 'water-resistant' jacket won't save your wet ass."
       - weight: 1
         text: "Umbrella and a hood — solid combo.\nUnless you enjoy soggy socks, get your shit together."
+      - weight: 1
+        text: "Wear a waterproof shell with an adjustable hood over your usual clothes.\nKeep your side vision clear, you still need to see the fucking traffic."
+      - weight: 1
+        text: "Choose quick-drying trousers with hems above the ground.\nDragging denim through puddles is a fucking stupid way to mop the pavement."
+      - weight: 1
+        text: "Put on shoes with grippy soles and a rain jacket.\nWet tiles can drop your ass faster than an offended bouncer."
+      - weight: 1
+        text: "Wear a breathable rain layer over a thin top for a brisk walk.\nUse the vents when you warm up instead of steaming yourself like a fucking dumpling."
+      - weight: 1
+        text: "Choose a knee-length waterproof coat for a slower outing.\nSit on a wet bench and your coat had better cover your fucking backside."
+      - weight: 1
+        text: "Wear waterproof overtrousers and secure your jacket cuffs for cycling.\nKeep loose fabric away from the chain, you pedal-powered dumbass."
+      - weight: 1
+        text: "Pull on ankle boots and keep your trouser cuffs outside the boot tops.\nDon't funnel runoff straight into your footwear, you plumbing disaster."
     sting:
       - weight: 1
         text: "Puddles will soak your socks. They always fucking do, dumbass."
@@ -272,6 +764,20 @@ conditions:
         text: "Don't be the fucking clown who forgot the umbrella."
       - weight: 1
         text: "Your hair's fucked today. Deal with it."
+      - weight: 1
+        text: "That passing bus is about to introduce your trousers to the entire fucking gutter."
+      - weight: 1
+        text: "Your dog has scheduled a full-body shake directly beside your clean fucking laundry."
+      - weight: 1
+        text: "The forecast said showers, and your dumb ass heard optional."
+      - weight: 1
+        text: "Lovely day for ducks, smug little waterproof bastards."
+      - weight: 1
+        text: "That cardboard shopping bag has about three fucking minutes left."
+      - weight: 1
+        text: "The one day you cleaned your glasses, the sky starts fucking spitting."
+      - weight: 1
+        text: "Every car door now comes with a complimentary lapful of fucking water."
 
   heavy_rain:
     intro:
@@ -281,6 +787,20 @@ conditions:
         text: "It's a proper fucking downpour, dumbass —"
       - weight: 1
         text: "The sky's gone full fucking psycho —"
+      - weight: 1
+        text: "Bro, take this shit seriously —"
+      - weight: 1
+        text: "Right, here's your briefing, you reckless prick —"
+      - weight: 1
+        text: "Oi, stop fucking about and listen —"
+      - weight: 1
+        text: "A word before you head out, bonehead —"
+      - weight: 1
+        text: "Alright, you stubborn bastard, focus —"
+      - weight: 1
+        text: "Here's what you're dealing with, motherfucker —"
+      - weight: 1
+        text: "Pay attention for ten fucking seconds —"
     advice:
       - weight: 1
         text: "Full raincoat, waterproof boots, a real umbrella.\nA poncho isn't fucking overkill today, so don't argue."
@@ -288,6 +808,20 @@ conditions:
         text: "Waterproof fucking everything — jacket, shoes, bag.\nA regular umbrella is about to get its ass handed to it."
       - weight: 1
         text: "Wear the full fucking rain gear if you're walking anywhere.\nHalf-ass it and you'll end up soaked and miserable, dumbass."
+      - weight: 1
+        text: "Wear a hooded shell with sealed seams and a covered front zip.\nClose the storm flap, that dangling strip isn't there for fucking decoration."
+      - weight: 1
+        text: "Pull waterproof overtrousers over quick-drying bottoms.\nKeep the hems outside your boot tops unless you're collecting fucking roof runoff."
+      - weight: 1
+        text: "Choose waterproof footwear with deep tread and secure fastenings.\nWalk around flooded stretches, no pair of boots makes your ass floodproof."
+      - weight: 1
+        text: "Put on a brimmed cap beneath an adjustable rain hood.\nKeep the fabric out of your eyes so you can see where the fuck you're stepping."
+      - weight: 1
+        text: "Wear a breathable waterproof jacket over a moisture-wicking shirt.\nVent under shelter before sweat finishes the soaking the fucking rain started."
+      - weight: 1
+        text: "Choose a long raincoat with overlapping front closures for waiting outside.\nKeep your phone in a sealed pouch, wet pockets aren't a fucking insurance policy."
+      - weight: 1
+        text: "Wear bright waterproof outerwear with reflective details near roads.\nGive drivers a chance to spot you through the spray, you soggy fucking ninja."
     sting:
       - weight: 1
         text: "Work from home today, for fuck's sake. Just saying."
@@ -295,6 +829,21 @@ conditions:
         text: "Even the ducks are sick of this shit, dumbass."
       - weight: 1
         text: "Your fucking umbrella is doing more work than you are today."
+      - weight: 1
+        text: "The gutter's making noises like it's choking on a fucking sofa."
+      - weight: 1
+        text: "Your doorstep now has waterfront views, you lucky bastard."
+      - weight: 1
+        text: "That delivery driver's tip had better reflect this fucking bullshit."
+      - weight: 1
+        text: "Apparently the sky found the pressure-washer setting."
+      - weight: 1
+        text: "Your five-minute walk now includes a fucking rinse cycle."
+      - weight: 1
+        text: "The café doormat has absorbed enough misery to write a fucking novel."
+      - weight: 1
+        text: "That dramatic window stare finally has an appropriate fucking soundtrack."
+
   rain_cold:
     intro:
       - weight: 2
@@ -303,6 +852,20 @@ conditions:
         text: "Freezing rain bullshit, pay attention —"
       - weight: 1
         text: "Yo, the sky's pissing ice water —"
+      - weight: 1
+        text: "Bro, here's your fucking situation report —"
+      - weight: 1
+        text: "Oi, concentrate, you careless bastard —"
+      - weight: 1
+        text: "Right, a word with you, shit-for-brains —"
+      - weight: 1
+        text: "Before you leave, get this through your fucking skull —"
+      - weight: 1
+        text: "Alright, you walking bad decision —"
+      - weight: 1
+        text: "Weather briefing, you miserable prick —"
+      - weight: 1
+        text: "Listen closely, motherfucker, this matters —"
     advice:
       - weight: 1
         text: "Waterproof jacket over a warm layer, and a fucking hat.\nWear shoes with real soles, canvas sneakers will be soaked in five minutes, genius."
@@ -310,6 +873,20 @@ conditions:
         text: "Warm hooded coat and an umbrella. Don't argue.\nWet plus cold is how dumbasses end up sick in bed."
       - weight: 1
         text: "Layer up under something actually waterproof.\nThrow dry socks in your bag, unless you like squelching around all day."
+      - weight: 1
+        text: "Wear a wool-blend base layer, fleece and sealed-seam rain shell.\nSkip the cotton undershirt if you'll be active, that fucker stays clammy once soaked."
+      - weight: 1
+        text: "Pull waterproof overtrousers over warm walking trousers.\nWet denim clinging to your knees is a fucking punishment you can avoid."
+      - weight: 1
+        text: "Put on insulated waterproof boots with grippy soles.\nWatch for ice if temperatures drop, your tread isn't a fucking force field."
+      - weight: 1
+        text: "Choose water-resistant insulated gloves with cuffs tucked beneath your rain sleeves.\nKeep runoff outside instead of filling your fucking hands like buckets."
+      - weight: 1
+        text: "Wear a thin beanie beneath a properly adjusted waterproof hood.\nKeep the opening clear of your eyes, you still need to dodge the fucking puddles."
+      - weight: 1
+        text: "Choose a synthetic-insulated coat with a waterproof outer fabric.\nCheck the closures before leaving, an open zip defeats the whole fucking operation."
+      - weight: 1
+        text: "Wear a fleece neck gaiter tucked inside a high rain collar.\nReplace it if it gets soaked, a cold wet rag around your neck helps fuck-all."
     sting:
       - weight: 1
         text: "Wet socks at this temperature is a special kind of stupid."
@@ -317,6 +894,20 @@ conditions:
         text: "Your thin jacket is not invited, and neither is your attitude."
       - weight: 1
         text: "Hot tea at the end of this. You earned it, barely."
+      - weight: 1
+        text: "This is the weather equivalent of stepping in something disgusting while answering a fucking work call."
+      - weight: 1
+        text: "That drop down the back of your neck had fucking sniper training."
+      - weight: 1
+        text: "Your keys have picked a spectacular time to play hide-and-seek, the little bastards."
+      - weight: 1
+        text: "The bus app says due, which apparently means go fuck yourself."
+      - weight: 1
+        text: "Nature couldn't choose between unpleasant and fucking miserable, so you got both."
+      - weight: 1
+        text: "Whoever left that shop door open deserves the full fucking briefing."
+      - weight: 1
+        text: "Getting your sleeve wet while washing your hands now feels like a fucking preview."
 
   heavy_rain_cold:
     intro:
@@ -326,6 +917,20 @@ conditions:
         text: "This ain't a drizzle, dumbass —"
       - weight: 1
         text: "The sky's gone full psycho and it's freezing —"
+      - weight: 1
+        text: "Bro, get your fucking head in the game —"
+      - weight: 1
+        text: "Oi, here's the situation, you reckless bastard —"
+      - weight: 1
+        text: "Right, listen carefully, dickhead —"
+      - weight: 1
+        text: "A quick briefing for your unprepared ass —"
+      - weight: 1
+        text: "Before you head out, you stubborn fuck —"
+      - weight: 1
+        text: "Alright, motherfucker, pay attention —"
+      - weight: 1
+        text: "Here's what you need to fucking know —"
     advice:
       - weight: 1
         text: "Full waterproof jacket, warm layer under it, waterproof boots.\nA regular umbrella will fold like a cheap lawn chair."
@@ -333,6 +938,20 @@ conditions:
         text: "Hooded coat that actually keeps water out, plus a hat.\nIf you can stay inside, stay the fuck inside."
       - weight: 1
         text: "Waterproof everything: jacket, shoes, bag cover.\nSoaked and freezing is a shitty combo, trust me."
+      - weight: 1
+        text: "Wear thermal leggings and warm trousers beneath waterproof overtrousers.\nKeep the outer hems over your boots, don't build a fucking drainage system into them."
+      - weight: 1
+        text: "Put on a moisture-wicking base, fleece and a sealed-seam shell.\nLeave enough room to move without crushing the insulation, you overstuffed bastard."
+      - weight: 1
+        text: "Choose insulated waterproof gloves with long cuffs beneath your rain sleeves.\nKeep a dry replacement pair sealed in your bag, numb hands are fucking useless."
+      - weight: 1
+        text: "Wear a thin wool beanie under a hood with a stiff brim.\nAdjust it so you can see sideways, traffic won't pause for your fucking tunnel vision."
+      - weight: 1
+        text: "Pull on wool-blend socks and roomy waterproof boots with deep tread.\nWalk around standing water, no footwear makes an unseen hole less of a fucking problem."
+      - weight: 1
+        text: "Choose a waterproof insulated coat with a high collar and covered zip.\nGet under shelter if you start shivering hard, this isn't a fucking endurance audition."
+      - weight: 1
+        text: "Wear bright rain gear with reflective patches over your warm clothes.\nMake yourself visible through the spray, you low-contrast dumbass."
     sting:
       - weight: 1
         text: "Staying inside is looking real smart right now, genius."
@@ -340,6 +959,21 @@ conditions:
         text: "Suede shoes stay home. No fucking debate."
       - weight: 1
         text: "Cold, soaked and stubborn. Great combo, champ."
+      - weight: 1
+        text: "Your front door has never made a more convincing fucking argument."
+      - weight: 1
+        text: "That weather icon needs a middle finger and a fucking refund button."
+      - weight: 1
+        text: "The office radiator is about to become everyone's emotional support bastard."
+      - weight: 1
+        text: "Every handshake today feels like meeting a fucking fishmonger."
+      - weight: 1
+        text: "Your pockets are somehow cold soup now, you unlucky fuck."
+      - weight: 1
+        text: "That cheerful little step counter can shut the fuck up today."
+      - weight: 1
+        text: "Whoever called this character-building can come outside and build some fucking character themselves."
+
   snow:
     intro:
       - weight: 2
@@ -348,6 +982,20 @@ conditions:
         text: "It's coming down hard, so pay the fuck attention —"
       - weight: 1
         text: "Everything's fucking white out there, dumbass —"
+      - weight: 1
+        text: "Bro, here's your fucking briefing —"
+      - weight: 1
+        text: "Oi, focus up, you reckless bastard —"
+      - weight: 1
+        text: "Right, a word before you leave, dipshit —"
+      - weight: 1
+        text: "Let's get your shit sorted —"
+      - weight: 1
+        text: "Alright, you distracted motherfucker —"
+      - weight: 1
+        text: "Quick update for your clueless ass —"
+      - weight: 1
+        text: "Listen closely, you cocky prick —"
     advice:
       - weight: 1
         text: "Waterproof boots with actual grip, insulated gloves, and a hat.\nSlush is nasty fucking garbage, no matter how pretty it looks, dumbass."
@@ -355,6 +1003,20 @@ conditions:
         text: "Layer up under a waterproof coat.\nPut on shoes that can fucking grip the ground."
       - weight: 1
         text: "Keep yourself warm and waterproof from the ankles up.\nThat pretty shit turns to slush fast — don't wreck good shoes for nothing."
+      - weight: 1
+        text: "Wear thermal leggings beneath water-resistant winter trousers.\nTuck away dangling hems before they collect half the fucking street."
+      - weight: 1
+        text: "Put on wool-blend socks inside roomy insulated boots.\nLeave your toes space to move, squeezing them senseless is a fucking own goal."
+      - weight: 1
+        text: "Choose a moisture-wicking base and fleece beneath your outer shell.\nOpen the vents while shovelling before you sweat like a bastard."
+      - weight: 1
+        text: "Pull a snug beanie over your ears beneath an adjustable hood.\nBrush snow off before going indoors unless you fancy a fucking meltwater neck massage."
+      - weight: 1
+        text: "Wear insulated mittens with long cuffs overlapping your sleeves.\nPack a dry spare pair if you're handling snow, soggy hands are a shit reward for effort."
+      - weight: 1
+        text: "Choose bright outerwear with reflective details over your warm layers.\nGive drivers a chance to spot you through the flakes, you camouflaged fuckwit."
+      - weight: 1
+        text: "Wear gaiters over waterproof boots for deeper snow.\nClose them properly before every step starts stuffing your footwear with fucking ice."
     sting:
       - weight: 1
         text: "Looks pretty through a window. Feels like shit in your shoe, dumbass."
@@ -362,6 +1024,20 @@ conditions:
         text: "Grip over style today. No fucking debate."
       - weight: 1
         text: "The fucking sidewalk is still slippery, genius. Watch your step before you eat pavement."
+      - weight: 1
+        text: "That innocent white mound might be a kerb, dog shit or your next bad decision."
+      - weight: 1
+        text: "Congratulations, your car's been replaced by a fucking excavation project."
+      - weight: 1
+        text: "The first snowball is friendship; the one down your collar is a fucking declaration of war."
+      - weight: 1
+        text: "Your footprints suggest confidence your balance hasn't fucking earned."
+      - weight: 1
+        text: "Lovely crunch underfoot, followed by the sound of your neighbour swearing his fucking head off."
+      - weight: 1
+        text: "That snowman's got a carrot for a brain and still looks better prepared than your ass."
+      - weight: 1
+        text: "The shovel's by the door, you lazy bastard; staring won't clear the path."
 
   storm:
     intro:
@@ -371,6 +1047,20 @@ conditions:
         text: "This is no fucking day for a stroll, dumbass —"
       - weight: 1
         text: "Hold onto something, for fuck's sake —"
+      - weight: 1
+        text: "Bro, take this shit seriously —"
+      - weight: 1
+        text: "Right, focus, you reckless bastard —"
+      - weight: 1
+        text: "Oi, here's your fucking briefing —"
+      - weight: 1
+        text: "Listen carefully, you stubborn prick —"
+      - weight: 1
+        text: "Before you do anything stupid, motherfucker —"
+      - weight: 1
+        text: "Alright, get your head out of your ass —"
+      - weight: 1
+        text: "Here's what you need to fucking know —"
     advice:
       - weight: 1
         text: "Stay the fuck inside if you can. Seriously.\nIf you can't — waterproof jacket, sturdy shoes, and leave the umbrella at home."
@@ -378,6 +1068,20 @@ conditions:
         text: "Tie down your shit and wear windproof, waterproof gear.\nAn open umbrella will get wrecked, so don't be a dumbass."
       - weight: 1
         text: "Grab your shit and get moving — don't hang around outside today.\nGo waterproof from head to toe if you absolutely have to."
+      - weight: 1
+        text: "Wear a fitted rain shell with an adjustable hood and secure footwear.\nIf you hear thunder, get into a substantial building or enclosed car, not under a fucking tree."
+      - weight: 1
+        text: "Choose waterproof trousers and boots with deep tread if travel is unavoidable.\nTurn around at floodwater, your outfit doesn't make you a fucking rescue vehicle."
+      - weight: 1
+        text: "Put on bright outerwear with reflective details and grippy shoes.\nKeep clear of roadside spray and moving traffic, you hard-to-spot bastard."
+      - weight: 1
+        text: "Wear a hooded waterproof jacket with snug cuffs and tucked-away drawcords.\nAvoid scaffolding and loose signs, no coat stops falling fucking debris."
+      - weight: 1
+        text: "Choose a breathable storm shell over a quick-drying top and weather-appropriate layers.\nCheck local warnings before leaving instead of trusting your fucking window inspection."
+      - weight: 1
+        text: "Pull on secure boots and a raincoat with a hood that leaves your vision clear.\nKeep your hands free for balance, your phone can shut the fuck up for once."
+      - weight: 1
+        text: "Wear close-fitting waterproof outerwear without loose capes or trailing scarves.\nStay away from exposed ridges and waterfronts, you adventure-seeking dumbass."
     sting:
       - weight: 1
         text: "Your umbrella's not surviving this shit. Leave it the fuck at home, genius."
@@ -385,6 +1089,20 @@ conditions:
         text: "It's a stay-the-fuck-inside-with-tea kind of day. Take the hint."
       - weight: 1
         text: "Mother Nature's clearly pissed the fuck off today."
+      - weight: 1
+        text: "Your garden furniture has apparently applied for fucking air miles."
+      - weight: 1
+        text: "The wheelie bin's halfway down the street living its best fucking life."
+      - weight: 1
+        text: "That thunderclap just ended your argument about whether it's really that fucking bad."
+      - weight: 1
+        text: "The trees are doing enough waving; they don't need your dumb ass waving back."
+      - weight: 1
+        text: "Your balcony wind chime has become a fucking alarm system."
+      - weight: 1
+        text: "Whoever suggested a rooftop drink can explain their fucking thought process indoors."
+      - weight: 1
+        text: "Even your doorbell camera looks like it wants to clock the fuck out."
 
 expand:
   trigger:
