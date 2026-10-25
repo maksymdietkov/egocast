@@ -13,6 +13,7 @@ import './App.css';
 
 const DEFAULT_TONE = 'default';
 const TONE_STORAGE_KEY = 'egocast.tone';
+const LOCATION_STORAGE_KEY = 'egocast.location';
 
 const EXPAND_ICONS: Record<string, LucideIcon> = {
   temp: Thermometer,
@@ -22,6 +23,11 @@ const EXPAND_ICONS: Record<string, LucideIcon> = {
   precipitation: CloudRain,
   uv: Sun,
 };
+
+interface SavedLocation {
+  coords: Coordinates;
+  label: string;
+}
 
 function loadSavedTone(): string {
   try {
@@ -36,6 +42,28 @@ function saveTone(toneId: string): void {
     localStorage.setItem(TONE_STORAGE_KEY, toneId);
   } catch {
     // хранилище недоступно (приватный режим и т.п.) — просто не сохраняем
+  }
+}
+
+function loadSavedLocation(): SavedLocation | null {
+  try {
+    const raw = localStorage.getItem(LOCATION_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === 'object' && parsed.coords && typeof parsed.label === 'string') {
+      return parsed as SavedLocation;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+function saveLocation(location: SavedLocation): void {
+  try {
+    localStorage.setItem(LOCATION_STORAGE_KEY, JSON.stringify(location));
+  } catch {
+    // хранилище недоступно — просто не сохраняем
   }
 }
 
@@ -60,8 +88,9 @@ function App() {
   const { t, i18n } = useTranslation();
   const { coords: geoCoords, status: geoStatus, error: geoError } = useGeolocation();
 
-  const [manualCoords, setManualCoords] = useState<Coordinates | null>(null);
-  const [locationLabel, setLocationLabel] = useState<string | null>(null);
+  const [savedLocation] = useState<SavedLocation | null>(loadSavedLocation);
+  const [manualCoords, setManualCoords] = useState<Coordinates | null>(savedLocation?.coords ?? null);
+  const [locationLabel, setLocationLabel] = useState<string | null>(savedLocation?.label ?? null);
   const [locationPickerOpen, setLocationPickerOpen] = useState(false);
   const [period, setPeriod] = useState<Period>('today');
   const [tone, setTone] = useState<string>(loadSavedTone);
@@ -114,6 +143,7 @@ function App() {
     setManualCoords(newCoords);
     setLocationLabel(label);
     setLocationPickerOpen(false);
+    saveLocation({ coords: newCoords, label });
   }
 
   function handleToneSelect(toneId: string) {
