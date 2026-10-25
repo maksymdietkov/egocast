@@ -2,25 +2,25 @@ conditions:
   frost:
     intro:
       - weight: 2
-        text: "Yo. It's fucking below freezing out there —"
+        text: "Yo. It's fucking below freezing out there."
       - weight: 1
-        text: "Listen up, dumbass —"
+        text: "Listen up, dumbass."
       - weight: 1
-        text: "Alright, you cocky bastard, here's your reality check —"
+        text: "Alright, you cocky bastard, here's your reality check."
       - weight: 1
-        text: "Hey. Winter's here to kick your ass today —"
+        text: "Hey. Winter's here to kick your ass today."
       - weight: 1
-        text: "Oi, dipshit, weather briefing —"
+        text: "Oi, dipshit, weather briefing."
       - weight: 1
-        text: "Right, motherfucker, pay attention —"
+        text: "Right, motherfucker, pay attention."
       - weight: 1
-        text: "Quick word, you reckless fuck —"
+        text: "Quick word, you reckless fuck."
       - weight: 1
-        text: "Heads up, shithead —"
+        text: "Heads up, shithead."
       - weight: 1
-        text: "Bro, here's the fucking deal —"
+        text: "Bro, here's the fucking deal."
       - weight: 1
-        text: "Hold up, you magnificent dickhead —"
+        text: "Hold up, you magnificent dickhead."
     advice:
       - weight: 1
         text: "Put a fucking proper coat on, not that useless fashion jacket you love so much.\nHat, gloves, scarf — all three. Don't be a stubborn idiot about it."
@@ -67,25 +67,25 @@ conditions:
   cold:
     intro:
       - weight: 2
-        text: "Yo, bundle the fuck up —"
+        text: "Yo, bundle the fuck up."
       - weight: 1
-        text: "Heads up, tough guy — unless you're all mouth and no brains —"
+        text: "Heads up, tough guy — unless you're all mouth and no brains."
       - weight: 1
-        text: "Listen the fuck up —"
+        text: "Listen the fuck up."
       - weight: 1
-        text: "Alright, pay attention for once, dumbass —"
+        text: "Alright, pay attention for once, dumbass."
       - weight: 1
-        text: "Bro, engage your fucking brain —"
+        text: "Bro, engage your fucking brain."
       - weight: 1
-        text: "Okay, you chaotic little shit —"
+        text: "Okay, you chaotic little shit."
       - weight: 1
-        text: "Here's the deal, dickhead —"
+        text: "Here's the deal, dickhead."
       - weight: 1
-        text: "Oi, quit fucking around a second —"
+        text: "Oi, quit fucking around a second."
       - weight: 1
-        text: "Your weather briefing, you clueless bastard —"
+        text: "Your weather briefing, you clueless bastard."
       - weight: 1
-        text: "Right, let's make this fucking simple —"
+        text: "Right, let's make this fucking simple."
     advice:
       - weight: 1
         text: "Warm coat. No fucking excuses.\nGloves too — unless you want your hands to hurt like hell in an hour."
@@ -132,25 +132,25 @@ conditions:
   chilly:
     intro:
       - weight: 2
-        text: "Yo, it's getting fucking cold —"
+        text: "Yo, it's getting fucking cold."
       - weight: 1
-        text: "It's a bit fucking nippy, listen up —"
+        text: "It's a bit fucking nippy, listen up."
       - weight: 1
-        text: "Hey, pay the fuck attention —"
+        text: "Hey, pay the fuck attention."
       - weight: 1
-        text: "Bro, a quick fucking heads-up —"
+        text: "Bro, a quick fucking heads-up."
       - weight: 1
-        text: "Alright, you distracted bastard —"
+        text: "Alright, you distracted bastard."
       - weight: 1
-        text: "One useful thought for your dumb ass —"
+        text: "One useful thought for your dumb ass."
       - weight: 1
-        text: "Oi, put the fucking phone down —"
+        text: "Oi, put the fucking phone down."
       - weight: 1
-        text: "Let's sort you out, shithead —"
+        text: "Let's sort you out, shithead."
       - weight: 1
-        text: "Right, here's today's fucking briefing —"
+        text: "Right, here's today's fucking briefing."
       - weight: 1
-        text: "A moment of your attention, you glorious prick —"
+        text: "A moment of your attention, you glorious prick."
     advice:
       - weight: 1
         text: "Decent jacket or a thick sweater under one. That's all.\nGo barehanded and you'll be whining like a little bitch in ten minutes."
@@ -197,25 +197,25 @@ conditions:
   cool:
     intro:
       - weight: 2
-        text: "Weather's not bad, but listen the fuck up —"
+        text: "Weather's not bad, but listen the fuck up."
       - weight: 1
-        text: "There's a bit of a chill, so pay attention, dumbass —"
+        text: "There's a bit of a chill, so pay attention, dumbass."
       - weight: 1
-        text: "Alright, no need to be a dramatic little shit —"
+        text: "Alright, no need to be a dramatic little shit."
       - weight: 1
-        text: "Bro, here's your fucking update —"
+        text: "Bro, here's your fucking update."
       - weight: 1
-        text: "A quick word, you indecisive bastard —"
+        text: "A quick word, you indecisive bastard."
       - weight: 1
-        text: "Okay, get your shit together —"
+        text: "Okay, get your shit together."
       - weight: 1
-        text: "Oi, tune in for a second, dickhead —"
+        text: "Oi, tune in for a second, dickhead."
       - weight: 1
-        text: "Let's settle this, you fussy fuck —"
+        text: "Let's settle this, you fussy fuck."
       - weight: 1
-        text: "Right, a little guidance for your clueless ass —"
+        text: "Right, a little guidance for your clueless ass."
       - weight: 1
-        text: "Your daily briefing, motherfucker —"
+        text: "Your daily briefing, motherfucker."
     advice:
       - weight: 1
         text: "A light jacket will do the job.\nScarf's optional, dumbass — you're not trekking across fucking Siberia."
@@ -262,25 +262,25 @@ conditions:
   mild:
     intro:
       - weight: 2
-        text: "Decent fucking day. Don't overthink it —"
+        text: "Decent fucking day. Don't overthink it."
       - weight: 1
-        text: "Easy weather, so listen the fuck up —"
+        text: "Easy weather, so listen the fuck up."
       - weight: 1
-        text: "Nothing to stress about, for fuck's sake —"
+        text: "Nothing to stress about, for fuck's sake."
       - weight: 1
-        text: "Alright, you lovable fucking liability —"
+        text: "Alright, you lovable fucking liability."
       - weight: 1
-        text: "Bro, here's the situation —"
+        text: "Bro, here's the situation."
       - weight: 1
-        text: "Briefing time, you impatient prick —"
+        text: "Briefing time, you impatient prick."
       - weight: 1
-        text: "Let's get your ass out the door —"
+        text: "Let's get your ass out the door."
       - weight: 1
-        text: "One second, you absent-minded fuck —"
+        text: "One second, you absent-minded fuck."
       - weight: 1
-        text: "Okay, dipshit, here's what we're doing —"
+        text: "Okay, dipshit, here's what we're doing."
       - weight: 1
-        text: "A word from your favourite bastard —"
+        text: "A word from your favourite bastard."
     advice:
       - weight: 1
         text: "Light jacket or long sleeves. That's fucking it.\nQuit asking me, you know how to dress for this, you useless smartass."
@@ -327,25 +327,25 @@ conditions:
   comfortable:
     intro:
       - weight: 2
-        text: "It's fucking nice out. Don't screw it up —"
+        text: "It's fucking nice out. Don't screw it up."
       - weight: 1
-        text: "About as fucking good as it gets —"
+        text: "About as fucking good as it gets."
       - weight: 1
-        text: "Textbook weather, so listen the fuck up —"
+        text: "Textbook weather, so listen the fuck up."
       - weight: 1
-        text: "Right, you jammy bastard —"
+        text: "Right, you jammy bastard."
       - weight: 1
-        text: "Bro, a word before you fuck off outside —"
+        text: "Bro, a word before you fuck off outside."
       - weight: 1
-        text: "Here's the score, dickhead —"
+        text: "Here's the score, dickhead."
       - weight: 1
-        text: "Okay, pause your bullshit a second —"
+        text: "Okay, pause your bullshit a second."
       - weight: 1
-        text: "A quick update for your wandering ass —"
+        text: "A quick update for your wandering ass."
       - weight: 1
-        text: "Check this out, motherfucker —"
+        text: "Check this out, motherfucker."
       - weight: 1
-        text: "Oi, front and centre, you scruffy prick —"
+        text: "Oi, front and centre, you scruffy prick."
     advice:
       - weight: 1
         text: "Wear whatever the fuck you want.\nA T-shirt is fine. Even you can't screw this up today."
@@ -392,25 +392,25 @@ conditions:
   warm:
     intro:
       - weight: 2
-        text: "It's heating the fuck up, pay attention —"
+        text: "It's heating the fuck up, pay attention."
       - weight: 1
-        text: "Summer's knocking, so listen the fuck up —"
+        text: "Summer's knocking, so listen the fuck up."
       - weight: 1
-        text: "It's getting fucking toasty out —"
+        text: "It's getting fucking toasty out."
       - weight: 1
-        text: "Bro, here's your fucking forecast —"
+        text: "Bro, here's your fucking forecast."
       - weight: 1
-        text: "Alright, you restless bastard —"
+        text: "Alright, you restless bastard."
       - weight: 1
-        text: "Oi, spare me a second, shithead —"
+        text: "Oi, spare me a second, shithead."
       - weight: 1
-        text: "A little direction for your chaotic ass —"
+        text: "A little direction for your chaotic ass."
       - weight: 1
-        text: "Right, let's get you sorted, motherfucker —"
+        text: "Right, let's get you sorted, motherfucker."
       - weight: 1
-        text: "Quick briefing, you impatient dick —"
+        text: "Quick briefing, you impatient dick."
       - weight: 1
-        text: "Clock this before you head out, fuckwit —"
+        text: "Clock this before you head out, fuckwit."
     advice:
       - weight: 1
         text: "Shorts and a T-shirt, dumbass. This isn't fucking rocket science.\nSunglasses wouldn't hurt either."
@@ -457,25 +457,25 @@ conditions:
   hot:
     intro:
       - weight: 2
-        text: "It's fucking hot — listen the fuck up —"
+        text: "It's fucking hot — listen the fuck up."
       - weight: 1
-        text: "It's a fucking scorcher today, pay attention —"
+        text: "It's a fucking scorcher today, pay attention."
       - weight: 1
-        text: "Full-blown summer, you sun-baked dumbass —"
+        text: "Full-blown summer, you sun-baked dumbass."
       - weight: 1
-        text: "Bro, get this through your fucking head —"
+        text: "Bro, get this through your fucking head."
       - weight: 1
-        text: "Oi, weather update, you reckless prick —"
+        text: "Oi, weather update, you reckless prick."
       - weight: 1
-        text: "Right, a word with your sweaty ass —"
+        text: "Right, a word with your sweaty ass."
       - weight: 1
-        text: "Pay attention, you distracted motherfucker —"
+        text: "Pay attention, you distracted motherfucker."
       - weight: 1
-        text: "Here's the situation, you absolute menace —"
+        text: "Here's the situation, you absolute menace."
       - weight: 1
-        text: "Quick check-in, you daft bastard —"
+        text: "Quick check-in, you daft bastard."
       - weight: 1
-        text: "Alright, let's sort your shit out —"
+        text: "Alright, let's sort your shit out."
     advice:
       - weight: 1
         text: "Drink some fucking water or risk passing out. Your call, dumbass.\nWear the lightest clothes you own and sunglasses — neither is optional."
@@ -522,25 +522,25 @@ conditions:
   windy_cold:
     intro:
       - weight: 2
-        text: "Yo, the wind's trying to kick your ass —"
+        text: "Yo, the wind's trying to kick your ass."
       - weight: 1
-        text: "Cold with a fucking attitude, listen up —"
+        text: "Cold with a fucking attitude, listen up."
       - weight: 1
-        text: "This ain't some gentle little fucking chill —"
+        text: "This ain't some gentle little fucking chill."
       - weight: 1
-        text: "Bro, here's what you're fucking dealing with —"
+        text: "Bro, here's what you're fucking dealing with."
       - weight: 1
-        text: "Oi, listen here, you stubborn prick —"
+        text: "Oi, listen here, you stubborn prick."
       - weight: 1
-        text: "Today's briefing, you windswept bastard —"
+        text: "Today's briefing, you windswept bastard."
       - weight: 1
-        text: "Right, engage that fucking brain —"
+        text: "Right, engage that fucking brain."
       - weight: 1
-        text: "Hold up, you careless motherfucker —"
+        text: "Hold up, you careless motherfucker."
       - weight: 1
-        text: "A quick word before you charge outside, dipshit —"
+        text: "A quick word before you charge outside, dipshit."
       - weight: 1
-        text: "Alright, here's the fucking situation —"
+        text: "Alright, here's the fucking situation."
     advice:
       - weight: 1
         text: "It's freezing and windy, dumbass — your regular coat won't cut it.\nPut something fucking windproof over it."
@@ -587,25 +587,25 @@ conditions:
   windy_frost:
     intro:
       - weight: 2
-        text: "This is fucking brutal, so listen up —"
+        text: "This is fucking brutal, so listen up."
       - weight: 1
-        text: "Nature's trying to fuck you over today, pay attention —"
+        text: "Nature's trying to fuck you over today, pay attention."
       - weight: 1
-        text: "It's cold enough to freeze your fucking skin —"
+        text: "It's cold enough to freeze your fucking skin."
       - weight: 1
-        text: "Bro, take this shit seriously —"
+        text: "Bro, take this shit seriously."
       - weight: 1
-        text: "Right, you reckless bastard, focus —"
+        text: "Right, you reckless bastard, focus."
       - weight: 1
-        text: "Oi, here's your fucking wake-up call —"
+        text: "Oi, here's your fucking wake-up call."
       - weight: 1
-        text: "A word before you leave, bonehead —"
+        text: "A word before you leave, bonehead."
       - weight: 1
-        text: "Listen carefully, you overconfident prick —"
+        text: "Listen carefully, you overconfident prick."
       - weight: 1
-        text: "Today's forecast has fucking teeth —"
+        text: "Today's forecast has fucking teeth."
       - weight: 1
-        text: "Alright, motherfucker, here's the deal —"
+        text: "Alright, motherfucker, here's the deal."
     advice:
       - weight: 1
         text: "The wind will find every fucking gap in your outfit.\nHigh collar, scarf tucked in, gloves that actually fit — don't be a dumbass."
@@ -652,25 +652,25 @@ conditions:
   windy_hot:
     intro:
       - weight: 2
-        text: "At least there's some fucking wind, listen up —"
+        text: "At least there's some fucking wind, listen up."
       - weight: 1
-        text: "It's hot as hell but at least the air's moving — pay attention —"
+        text: "It's hot as hell but at least the air's moving — pay attention."
       - weight: 1
-        text: "The wind's doing its best to save your sweaty ass —"
+        text: "The wind's doing its best to save your sweaty ass."
       - weight: 1
-        text: "Bro, here's your fucking briefing —"
+        text: "Bro, here's your fucking briefing."
       - weight: 1
-        text: "Oi, pay attention, you sun-dazed bastard —"
+        text: "Oi, pay attention, you sun-dazed bastard."
       - weight: 1
-        text: "Right, a quick word, dickhead —"
+        text: "Right, a quick word, dickhead."
       - weight: 1
-        text: "Before you wander off, you careless fuck —"
+        text: "Before you wander off, you careless fuck."
       - weight: 1
-        text: "Let's get you sorted, smartass —"
+        text: "Let's get you sorted, smartass."
       - weight: 1
-        text: "Weather report, motherfucker, ears open —"
+        text: "Weather report, motherfucker, ears open."
       - weight: 1
-        text: "Alright, here's what you need to fucking know —"
+        text: "Alright, here's what you need to fucking know."
     advice:
       - weight: 1
         text: "Wear light clothes anyway, don't get cocky.\nYou might get away without a hat for once, so thank the fucking breeze."
@@ -717,25 +717,25 @@ conditions:
   rain:
     intro:
       - weight: 2
-        text: "Grab the fucking umbrella, listen up —"
+        text: "Grab the fucking umbrella, listen up."
       - weight: 1
-        text: "It's drizzling, so pay the fuck attention —"
+        text: "It's drizzling, so pay the fuck attention."
       - weight: 1
-        text: "The sky's pissing all over us, dumbass —"
+        text: "The sky's pissing all over us, dumbass."
       - weight: 1
-        text: "Bro, here's your fucking weather update —"
+        text: "Bro, here's your fucking weather update."
       - weight: 1
-        text: "Oi, a word before you leave, shithead —"
+        text: "Oi, a word before you leave, shithead."
       - weight: 1
-        text: "Right, focus for a second, you distracted bastard —"
+        text: "Right, focus for a second, you distracted bastard."
       - weight: 1
-        text: "Let's sort this out, you clueless fuck —"
+        text: "Let's sort this out, you clueless fuck."
       - weight: 1
-        text: "Your daily briefing, you impatient prick —"
+        text: "Your daily briefing, you impatient prick."
       - weight: 1
-        text: "Alright, here's the deal, smartass —"
+        text: "Alright, here's the deal, smartass."
       - weight: 1
-        text: "Listen closely, you magnificent fucking liability —"
+        text: "Listen closely, you magnificent fucking liability."
     advice:
       - weight: 1
         text: "A light raincoat or hooded jacket will do.\nNothing fancy needed, so don't overthink the shit out of it."
@@ -782,25 +782,25 @@ conditions:
   heavy_rain:
     intro:
       - weight: 2
-        text: "This ain't a fucking drizzle, listen up —"
+        text: "This ain't a fucking drizzle, listen up."
       - weight: 1
-        text: "It's a proper fucking downpour, dumbass —"
+        text: "It's a proper fucking downpour, dumbass."
       - weight: 1
-        text: "The sky's gone full fucking psycho —"
+        text: "The sky's gone full fucking psycho."
       - weight: 1
-        text: "Bro, take this shit seriously —"
+        text: "Bro, take this shit seriously."
       - weight: 1
-        text: "Right, here's your briefing, you reckless prick —"
+        text: "Right, here's your briefing, you reckless prick."
       - weight: 1
-        text: "Oi, stop fucking about and listen —"
+        text: "Oi, stop fucking about and listen."
       - weight: 1
-        text: "A word before you head out, bonehead —"
+        text: "A word before you head out, bonehead."
       - weight: 1
-        text: "Alright, you stubborn bastard, focus —"
+        text: "Alright, you stubborn bastard, focus."
       - weight: 1
-        text: "Here's what you're dealing with, motherfucker —"
+        text: "Here's what you're dealing with, motherfucker."
       - weight: 1
-        text: "Pay attention for ten fucking seconds —"
+        text: "Pay attention for ten fucking seconds."
     advice:
       - weight: 1
         text: "Full raincoat, waterproof boots, a real umbrella.\nA poncho isn't fucking overkill today, so don't argue."
@@ -847,25 +847,25 @@ conditions:
   rain_cold:
     intro:
       - weight: 2
-        text: "It's cold AND wet, dumbass, listen up —"
+        text: "It's cold AND wet, dumbass, listen up."
       - weight: 1
-        text: "Freezing rain bullshit, pay attention —"
+        text: "Freezing rain bullshit, pay attention."
       - weight: 1
-        text: "Yo, the sky's pissing ice water —"
+        text: "Yo, the sky's pissing ice water."
       - weight: 1
-        text: "Bro, here's your fucking situation report —"
+        text: "Bro, here's your fucking situation report."
       - weight: 1
-        text: "Oi, concentrate, you careless bastard —"
+        text: "Oi, concentrate, you careless bastard."
       - weight: 1
-        text: "Right, a word with you, shit-for-brains —"
+        text: "Right, a word with you, shit-for-brains."
       - weight: 1
-        text: "Before you leave, get this through your fucking skull —"
+        text: "Before you leave, get this through your fucking skull."
       - weight: 1
-        text: "Alright, you walking bad decision —"
+        text: "Alright, you walking bad decision."
       - weight: 1
-        text: "Weather briefing, you miserable prick —"
+        text: "Weather briefing, you miserable prick."
       - weight: 1
-        text: "Listen closely, motherfucker, this matters —"
+        text: "Listen closely, motherfucker, this matters."
     advice:
       - weight: 1
         text: "Waterproof jacket over a warm layer, and a fucking hat.\nWear shoes with real soles, canvas sneakers will be soaked in five minutes, genius."
@@ -912,25 +912,25 @@ conditions:
   heavy_rain_cold:
     intro:
       - weight: 2
-        text: "Cold as fuck and pouring, listen up —"
+        text: "Cold as fuck and pouring, listen up."
       - weight: 1
-        text: "This ain't a drizzle, dumbass —"
+        text: "This ain't a drizzle, dumbass."
       - weight: 1
-        text: "The sky's gone full psycho and it's freezing —"
+        text: "The sky's gone full psycho and it's freezing."
       - weight: 1
-        text: "Bro, get your fucking head in the game —"
+        text: "Bro, get your fucking head in the game."
       - weight: 1
-        text: "Oi, here's the situation, you reckless bastard —"
+        text: "Oi, here's the situation, you reckless bastard."
       - weight: 1
-        text: "Right, listen carefully, dickhead —"
+        text: "Right, listen carefully, dickhead."
       - weight: 1
-        text: "A quick briefing for your unprepared ass —"
+        text: "A quick briefing for your unprepared ass."
       - weight: 1
-        text: "Before you head out, you stubborn fuck —"
+        text: "Before you head out, you stubborn fuck."
       - weight: 1
-        text: "Alright, motherfucker, pay attention —"
+        text: "Alright, motherfucker, pay attention."
       - weight: 1
-        text: "Here's what you need to fucking know —"
+        text: "Here's what you need to fucking know."
     advice:
       - weight: 1
         text: "Full waterproof jacket, warm layer under it, waterproof boots.\nA regular umbrella will fold like a cheap lawn chair."
@@ -977,25 +977,25 @@ conditions:
   snow:
     intro:
       - weight: 2
-        text: "It's fucking snowing, listen up —"
+        text: "It's fucking snowing, listen up."
       - weight: 1
-        text: "It's coming down hard, so pay the fuck attention —"
+        text: "It's coming down hard, so pay the fuck attention."
       - weight: 1
-        text: "Everything's fucking white out there, dumbass —"
+        text: "Everything's fucking white out there, dumbass."
       - weight: 1
-        text: "Bro, here's your fucking briefing —"
+        text: "Bro, here's your fucking briefing."
       - weight: 1
-        text: "Oi, focus up, you reckless bastard —"
+        text: "Oi, focus up, you reckless bastard."
       - weight: 1
-        text: "Right, a word before you leave, dipshit —"
+        text: "Right, a word before you leave, dipshit."
       - weight: 1
-        text: "Let's get your shit sorted —"
+        text: "Let's get your shit sorted."
       - weight: 1
-        text: "Alright, you distracted motherfucker —"
+        text: "Alright, you distracted motherfucker."
       - weight: 1
-        text: "Quick update for your clueless ass —"
+        text: "Quick update for your clueless ass."
       - weight: 1
-        text: "Listen closely, you cocky prick —"
+        text: "Listen closely, you cocky prick."
     advice:
       - weight: 1
         text: "Waterproof boots with actual grip, insulated gloves, and a hat.\nSlush is nasty fucking garbage, no matter how pretty it looks, dumbass."
@@ -1042,25 +1042,25 @@ conditions:
   storm:
     intro:
       - weight: 2
-        text: "A fucking storm's rolling in, listen up —"
+        text: "A fucking storm's rolling in, listen up."
       - weight: 1
-        text: "This is no fucking day for a stroll, dumbass —"
+        text: "This is no fucking day for a stroll, dumbass."
       - weight: 1
-        text: "Hold onto something, for fuck's sake —"
+        text: "Hold onto something, for fuck's sake."
       - weight: 1
-        text: "Bro, take this shit seriously —"
+        text: "Bro, take this shit seriously."
       - weight: 1
-        text: "Right, focus, you reckless bastard —"
+        text: "Right, focus, you reckless bastard."
       - weight: 1
-        text: "Oi, here's your fucking briefing —"
+        text: "Oi, here's your fucking briefing."
       - weight: 1
-        text: "Listen carefully, you stubborn prick —"
+        text: "Listen carefully, you stubborn prick."
       - weight: 1
-        text: "Before you do anything stupid, motherfucker —"
+        text: "Before you do anything stupid, motherfucker."
       - weight: 1
-        text: "Alright, get your head out of your ass —"
+        text: "Alright, get your head out of your ass."
       - weight: 1
-        text: "Here's what you need to fucking know —"
+        text: "Here's what you need to fucking know."
     advice:
       - weight: 1
         text: "Stay the fuck inside if you can. Seriously.\nIf you can't — waterproof jacket, sturdy shoes, and leave the umbrella at home."

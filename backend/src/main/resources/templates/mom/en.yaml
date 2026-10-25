@@ -2,25 +2,25 @@ conditions:
   frost:
     intro:
       - weight: 2
-        text: "Oh so NOW you'll listen to me —"
+        text: "Oh so NOW you'll listen to me."
       - weight: 1
-        text: "I've been saying this since October —"
+        text: "I've been saying this since October."
       - weight: 1
-        text: "This is exactly what I warned you about —"
+        text: "This is exactly what I warned you about."
       - weight: 1
-        text: "Fine, don't listen to me, see what happens —"
+        text: "Fine, don't listen to me, see what happens."
       - weight: 1
-        text: "Come here, let me look at you —"
+        text: "Come here, let me look at you."
       - weight: 1
-        text: "Before you go rushing out the door —"
+        text: "Before you go rushing out the door."
       - weight: 1
-        text: "Sweetheart, just humour your mother —"
+        text: "Sweetheart, just humour your mother."
       - weight: 1
-        text: "A little advice from someone who loves you —"
+        text: "A little advice from someone who loves you."
       - weight: 1
-        text: "You know I only fuss because I care —"
+        text: "You know I only fuss because I care."
       - weight: 1
-        text: "Right, darling, one last thing —"
+        text: "Right, darling, one last thing."
     advice:
       - weight: 1
         text: "The big coat, sweetie, the one you called 'embarrassing.'\nWear it anyway — frostbite is more embarrassing, trust me."
@@ -67,25 +67,25 @@ conditions:
   cold:
     intro:
       - weight: 2
-        text: "It's cold, and I worry, so —"
+        text: "It's cold, and I worry, so."
       - weight: 1
-        text: "I already texted you twice about this —"
+        text: "I already texted you twice about this."
       - weight: 1
-        text: "Sweetie. Sweetie. Listen —"
+        text: "Sweetie. Sweetie. Listen."
       - weight: 1
-        text: "I'm only going to say this once, probably —"
+        text: "I'm only going to say this once, probably."
       - weight: 1
-        text: "Before you tell me you've got it handled —"
+        text: "Before you tell me you've got it handled."
       - weight: 1
-        text: "Darling, spare your mother a minute —"
+        text: "Darling, spare your mother a minute."
       - weight: 1
-        text: "You can thank me later, love —"
+        text: "You can thank me later, love."
       - weight: 1
-        text: "Let me fuss for a moment —"
+        text: "Let me fuss for a moment."
       - weight: 1
-        text: "A quick word before you leave —"
+        text: "A quick word before you leave."
       - weight: 1
-        text: "All right, my independent little grown-up —"
+        text: "All right, my independent little grown-up."
     advice:
       - weight: 1
         text: "The real coat. Not the 'fashion' one that does nothing.\nGloves too — cold hands are how it starts, then it's a whole thing."
@@ -132,25 +132,25 @@ conditions:
   chilly:
     intro:
       - weight: 2
-        text: "Not frost, but I still worry —"
+        text: "Not frost, but I still worry."
       - weight: 1
-        text: "A little chilly, which means bundle up anyway —"
+        text: "A little chilly, which means bundle up anyway."
       - weight: 1
-        text: "This is exactly the kind of weather people underestimate —"
+        text: "This is exactly the kind of weather people underestimate."
       - weight: 1
-        text: "Let your mum have her little say —"
+        text: "Let your mum have her little say."
       - weight: 1
-        text: "Before you give me that look, darling —"
+        text: "Before you give me that look, darling."
       - weight: 1
-        text: "One small request from your mother —"
+        text: "One small request from your mother."
       - weight: 1
-        text: "You know what I'm going to say, love —"
+        text: "You know what I'm going to say, love."
       - weight: 1
-        text: "Just a little motherly interference —"
+        text: "Just a little motherly interference."
       - weight: 1
-        text: "I've checked outside for you, sweetheart —"
+        text: "I've checked outside for you, sweetheart."
       - weight: 1
-        text: "Take a moment before you dash off —"
+        text: "Take a moment before you dash off."
     advice:
       - weight: 1
         text: "A real jacket, please, not that thin one.\nBring a scarf even if you 'probably won't need it.'"
@@ -197,25 +197,25 @@ conditions:
   cool:
     intro:
       - weight: 2
-        text: "Not bad, but I still have opinions —"
+        text: "Not bad, but I still have opinions."
       - weight: 1
-        text: "A little cool, nothing a jacket won't fix —"
+        text: "A little cool, nothing a jacket won't fix."
       - weight: 1
-        text: "See, I'm not always telling you to panic —"
+        text: "See, I'm not always telling you to panic."
       - weight: 1
-        text: "Here's my little suggestion, sweetheart —"
+        text: "Here's my little suggestion, sweetheart."
       - weight: 1
-        text: "Since you've caught me in a reasonable mood —"
+        text: "Since you've caught me in a reasonable mood."
       - weight: 1
-        text: "Just a thought before you head out —"
+        text: "Just a thought before you head out."
       - weight: 1
-        text: "Come on, love, let's get you ready —"
+        text: "Come on, love, let's get you ready."
       - weight: 1
-        text: "Your mother has considered the situation —"
+        text: "Your mother has considered the situation."
       - weight: 1
-        text: "Nothing complicated today, darling —"
+        text: "Nothing complicated today, darling."
       - weight: 1
-        text: "If I may offer my usual two cents —"
+        text: "If I may offer my usual two cents."
     advice:
       - weight: 1
         text: "A light jacket is fine, I won't lecture you today.\nMaybe a scarf anyway, just to make me happy."
@@ -262,25 +262,25 @@ conditions:
   mild:
     intro:
       - weight: 2
-        text: "Pleasant, for once —"
+        text: "Pleasant, for once."
       - weight: 1
-        text: "I have nothing to worry about today, miracle of miracles —"
+        text: "I have nothing to worry about today, miracle of miracles."
       - weight: 1
-        text: "Easy day, don't ruin it by underdressing anyway —"
+        text: "Easy day, don't ruin it by underdressing anyway."
       - weight: 1
-        text: "Well, sweetheart, this looks promising —"
+        text: "Well, sweetheart, this looks promising."
       - weight: 1
-        text: "A little guidance, since I'm here —"
+        text: "A little guidance, since I'm here."
       - weight: 1
-        text: "You've picked a lovely day to go out —"
+        text: "You've picked a lovely day to go out."
       - weight: 1
-        text: "All right, love, here's my suggestion —"
+        text: "All right, love, here's my suggestion."
       - weight: 1
-        text: "Before we get on with our day —"
+        text: "Before we get on with our day."
       - weight: 1
-        text: "Nothing to make a fuss over, darling —"
+        text: "Nothing to make a fuss over, darling."
       - weight: 1
-        text: "Let's keep things simple today —"
+        text: "Let's keep things simple today."
     advice:
       - weight: 1
         text: "Whatever's comfortable, I'm not going to fight you on this one.\nMaybe a light layer for later, just to be safe."
@@ -327,25 +327,25 @@ conditions:
   comfortable:
     intro:
       - weight: 2
-        text: "A genuinely nice day, sweetie —"
+        text: "A genuinely nice day, sweetie."
       - weight: 1
-        text: "I have literally nothing to complain about —"
+        text: "I have literally nothing to complain about."
       - weight: 1
-        text: "Go outside and enjoy this, it won't last —"
+        text: "Go outside and enjoy this, it won't last."
       - weight: 1
-        text: "Well, darling, isn't this lovely —"
+        text: "Well, darling, isn't this lovely."
       - weight: 1
-        text: "You've got your mother's blessing today —"
+        text: "You've got your mother's blessing today."
       - weight: 1
-        text: "Here's a little thought before you go —"
+        text: "Here's a little thought before you go."
       - weight: 1
-        text: "Even I can keep this brief, love —"
+        text: "Even I can keep this brief, love."
       - weight: 1
-        text: "Come on, sweetheart, the day's waiting —"
+        text: "Come on, sweetheart, the day's waiting."
       - weight: 1
-        text: "Let's get you out the door, then —"
+        text: "Let's get you out the door, then."
       - weight: 1
-        text: "Just between us, I'd say you're all set —"
+        text: "Just between us, I'd say you're all set."
     advice:
       - weight: 1
         text: "Wear whatever makes you happy today, seriously.\nA t-shirt is perfectly fine, I promise I won't say anything."
@@ -392,25 +392,25 @@ conditions:
   warm:
     intro:
       - weight: 2
-        text: "Warming up, which means new worries —"
+        text: "Warming up, which means new worries."
       - weight: 1
-        text: "It's warm, so now I worry about different things —"
+        text: "It's warm, so now I worry about different things."
       - weight: 1
-        text: "Summer worries, my favorite kind —"
+        text: "Summer worries, my favorite kind."
       - weight: 1
-        text: "A quick word from your mum, darling —"
+        text: "A quick word from your mum, darling."
       - weight: 1
-        text: "Before you disappear for the afternoon —"
+        text: "Before you disappear for the afternoon."
       - weight: 1
-        text: "You know me, always thinking ahead —"
+        text: "You know me, always thinking ahead."
       - weight: 1
-        text: "Let me send you off properly, love —"
+        text: "Let me send you off properly, love."
       - weight: 1
-        text: "Just give me a moment, sweetheart —"
+        text: "Just give me a moment, sweetheart."
       - weight: 1
-        text: "I've got a little suggestion for you —"
+        text: "I've got a little suggestion for you."
       - weight: 1
-        text: "Right then, let's see you ready —"
+        text: "Right then, let's see you ready."
     advice:
       - weight: 1
         text: "Shorts and a t-shirt, fine.\nBut sunglasses and sunscreen, non-negotiable — your skin isn't getting any younger."
@@ -457,25 +457,25 @@ conditions:
   hot:
     intro:
       - weight: 2
-        text: "Oh no, the heat, my other nemesis —"
+        text: "Oh no, the heat, my other nemesis."
       - weight: 1
-        text: "Please be careful, I mean it this time —"
+        text: "Please be careful, I mean it this time."
       - weight: 1
-        text: "This heat has me genuinely worried —"
+        text: "This heat has me genuinely worried."
       - weight: 1
-        text: "Sweetheart, a moment before you go —"
+        text: "Sweetheart, a moment before you go."
       - weight: 1
-        text: "Let your mother make one suggestion —"
+        text: "Let your mother make one suggestion."
       - weight: 1
-        text: "I've had a look outside, darling —"
+        text: "I've had a look outside, darling."
       - weight: 1
-        text: "You know I like you properly prepared —"
+        text: "You know I like you properly prepared."
       - weight: 1
-        text: "A little planning first, love —"
+        text: "A little planning first, love."
       - weight: 1
-        text: "Bear with me while I fuss —"
+        text: "Bear with me while I fuss."
       - weight: 1
-        text: "Here's what I'm thinking, sweetheart —"
+        text: "Here's what I'm thinking, sweetheart."
     advice:
       - weight: 1
         text: "The lightest clothes you own, and drink more water than feels necessary.\nSunglasses and sunscreen — both, no shortcuts, I will ask."
@@ -522,25 +522,25 @@ conditions:
   windy_cold:
     intro:
       - weight: 2
-        text: "Cold AND windy, be honest with me here —"
+        text: "Cold AND windy, be honest with me here."
       - weight: 1
-        text: "This is exactly the combination I hate —"
+        text: "This is exactly the combination I hate."
       - weight: 1
-        text: "Bundle up, the wind means business today —"
+        text: "Bundle up, the wind means business today."
       - weight: 1
-        text: "Hold on, sweetheart, a little preparation —"
+        text: "Hold on, sweetheart, a little preparation."
       - weight: 1
-        text: "Your mum has checked the forecast —"
+        text: "Your mum has checked the forecast."
       - weight: 1
-        text: "Before you tell me you'll be fine —"
+        text: "Before you tell me you'll be fine."
       - weight: 1
-        text: "Let's think this through, darling —"
+        text: "Let's think this through, darling."
       - weight: 1
-        text: "A bit of motherly guidance for you —"
+        text: "A bit of motherly guidance for you."
       - weight: 1
-        text: "Give me a minute at the door, love —"
+        text: "Give me a minute at the door, love."
       - weight: 1
-        text: "You know I like to see you sorted —"
+        text: "You know I like to see you sorted."
     advice:
       - weight: 1
         text: "A windproof coat, not just any coat, I mean it this time.\nZip it all the way — every gap is an invitation for a cold."
@@ -587,25 +587,25 @@ conditions:
   windy_frost:
     intro:
       - weight: 2
-        text: "This is serious, sweetie, I'm not joking around today —"
+        text: "This is serious, sweetie, I'm not joking around today."
       - weight: 1
-        text: "Please, please be careful in this —"
+        text: "Please, please be careful in this."
       - weight: 1
-        text: "This is the kind of day I actually lose sleep over —"
+        text: "This is the kind of day I actually lose sleep over."
       - weight: 1
-        text: "Let me help you get ready, darling —"
+        text: "Let me help you get ready, darling."
       - weight: 1
-        text: "A moment of your attention, love —"
+        text: "A moment of your attention, love."
       - weight: 1
-        text: "We're taking our time with this, sweetheart —"
+        text: "We're taking our time with this, sweetheart."
       - weight: 1
-        text: "Here's your mother's advice for today —"
+        text: "Here's your mother's advice for today."
       - weight: 1
-        text: "Before you put your hand on that door —"
+        text: "Before you put your hand on that door."
       - weight: 1
-        text: "Let's make a sensible plan, you and me —"
+        text: "Let's make a sensible plan, you and me."
       - weight: 1
-        text: "I'm asking you to hear me out, darling —"
+        text: "I'm asking you to hear me out, darling."
     advice:
       - weight: 1
         text: "Cover every bit of skin you possibly can.\nHigh collar, real gloves, a hat that actually covers your ears fully."
@@ -652,25 +652,25 @@ conditions:
   windy_hot:
     intro:
       - weight: 1
-        text: "At least there's a breeze, small mercies —"
+        text: "At least there's a breeze, small mercies."
       - weight: 1
-        text: "The wind's helping a little, don't get complacent —"
+        text: "The wind's helping a little, don't get complacent."
       - weight: 1
-        text: "Still hot underneath that breeze, don't be fooled —"
+        text: "Still hot underneath that breeze, don't be fooled."
       - weight: 1
-        text: "A little thought before you head out, love —"
+        text: "A little thought before you head out, love."
       - weight: 1
-        text: "Your mother has a suggestion, naturally —"
+        text: "Your mother has a suggestion, naturally."
       - weight: 1
-        text: "Let's get you sorted, sweetheart —"
+        text: "Let's get you sorted, sweetheart."
       - weight: 1
-        text: "Before you wave me off, darling —"
+        text: "Before you wave me off, darling."
       - weight: 1
-        text: "Give me a moment to fuss over you —"
+        text: "Give me a moment to fuss over you."
       - weight: 1
-        text: "Here's what I'd pick for you today —"
+        text: "Here's what I'd pick for you today."
       - weight: 1
-        text: "One small bit of motherly advice —"
+        text: "One small bit of motherly advice."
     advice:
       - weight: 1
         text: "Light clothes still, the wind is a trick, not a solution.\nYou might skip the hat for once, but not the sunscreen."
@@ -717,25 +717,25 @@ conditions:
   rain:
     intro:
       - weight: 2
-        text: "Take the umbrella, the actual umbrella, not the broken one —"
+        text: "Take the umbrella, the actual umbrella, not the broken one."
       - weight: 1
-        text: "It's raining, please be careful out there —"
+        text: "It's raining, please be careful out there."
       - weight: 1
-        text: "Wet out there, and you know how you get when you're wet and cold —"
+        text: "Wet out there, and you know how you get when you're wet and cold."
       - weight: 1
-        text: "Let's get you ready for this, sweetheart —"
+        text: "Let's get you ready for this, sweetheart."
       - weight: 1
-        text: "A little preparation before you leave, love —"
+        text: "A little preparation before you leave, love."
       - weight: 1
-        text: "Your mother has checked outside —"
+        text: "Your mother has checked outside."
       - weight: 1
-        text: "Before you dash off, darling —"
+        text: "Before you dash off, darling."
       - weight: 1
-        text: "Just give me a minute to help —"
+        text: "Just give me a minute to help."
       - weight: 1
-        text: "Here's my suggestion for today —"
+        text: "Here's my suggestion for today."
       - weight: 1
-        text: "You know I like you properly sorted —"
+        text: "You know I like you properly sorted."
     advice:
       - weight: 1
         text: "A raincoat with a hood, please, not just an umbrella that'll flip inside out.\nWaterproof shoes — wet feet is how a cold starts, I've told you this."
@@ -782,25 +782,25 @@ conditions:
   heavy_rain:
     intro:
       - weight: 2
-        text: "This is not a drizzle, sweetie, this is a Situation —"
+        text: "This is not a drizzle, sweetie, this is a Situation."
       - weight: 1
-        text: "Please just stay dry today, for my sanity —"
+        text: "Please just stay dry today, for my sanity."
       - weight: 1
-        text: "I worry about you out in this, genuinely —"
+        text: "I worry about you out in this, genuinely."
       - weight: 1
-        text: "Let's give this a little thought, darling —"
+        text: "Let's give this a little thought, darling."
       - weight: 1
-        text: "Before you tell me it's only a short trip —"
+        text: "Before you tell me it's only a short trip."
       - weight: 1
-        text: "Your mother would like a word, sweetheart —"
+        text: "Your mother would like a word, sweetheart."
       - weight: 1
-        text: "A bit of preparation first, please —"
+        text: "A bit of preparation first, please."
       - weight: 1
-        text: "Let me help you get sorted, love —"
+        text: "Let me help you get sorted, love."
       - weight: 1
-        text: "Here's what I'd suggest before you leave —"
+        text: "Here's what I'd suggest before you leave."
       - weight: 1
-        text: "We can spare a minute for this, darling —"
+        text: "We can spare a minute for this, darling."
     advice:
       - weight: 1
         text: "Full raincoat, waterproof boots, please, no half-measures today.\nIf you can stay in, sweetie, just stay in, I'm asking nicely."
@@ -847,25 +847,25 @@ conditions:
   rain_cold:
     intro:
       - weight: 2
-        text: "Sweetheart, it's cold and wet —"
+        text: "Sweetheart, it's cold and wet."
       - weight: 1
-        text: "Take an umbrella, honey —"
+        text: "Take an umbrella, honey."
       - weight: 1
-        text: "Listen to your mother —"
+        text: "Listen to your mother."
       - weight: 1
-        text: "Let me have a look before you leave —"
+        text: "Let me have a look before you leave."
       - weight: 1
-        text: "A little care now, darling —"
+        text: "A little care now, darling."
       - weight: 1
-        text: "I've been thinking about your journey —"
+        text: "I've been thinking about your journey."
       - weight: 1
-        text: "Let's sort you out, love —"
+        text: "Let's sort you out, love."
       - weight: 1
-        text: "One practical suggestion, sweetheart —"
+        text: "One practical suggestion, sweetheart."
       - weight: 1
-        text: "Before you say you've got everything —"
+        text: "Before you say you've got everything."
       - weight: 1
-        text: "Give your mum a moment here —"
+        text: "Give your mum a moment here."
     advice:
       - weight: 1
         text: "Put on a warm sweater and a waterproof jacket, and don't forget a hat.\nAnd wear proper shoes, not those canvas ones, I'm begging you."
@@ -912,25 +912,25 @@ conditions:
   heavy_rain_cold:
     intro:
       - weight: 2
-        text: "Sweetheart, it's pouring and cold —"
+        text: "Sweetheart, it's pouring and cold."
       - weight: 1
-        text: "This is not drizzle, honey —"
+        text: "This is not drizzle, honey."
       - weight: 1
-        text: "I'm worried about you out there —"
+        text: "I'm worried about you out there."
       - weight: 1
-        text: "Let's think ahead for a moment, love —"
+        text: "Let's think ahead for a moment, love."
       - weight: 1
-        text: "Before you tell me it's only ten minutes —"
+        text: "Before you tell me it's only ten minutes."
       - weight: 1
-        text: "Your mother would like your attention —"
+        text: "Your mother would like your attention."
       - weight: 1
-        text: "A little preparation first, darling —"
+        text: "A little preparation first, darling."
       - weight: 1
-        text: "Let me help before you head off —"
+        text: "Let me help before you head off."
       - weight: 1
-        text: "Here's what I'd suggest, sweetheart —"
+        text: "Here's what I'd suggest, sweetheart."
       - weight: 1
-        text: "We can take a minute to get this right —"
+        text: "We can take a minute to get this right."
     advice:
       - weight: 1
         text: "Waterproof jacket, a warm layer underneath, and proper boots.\nA regular umbrella might not survive this, so hold it tight."
@@ -977,25 +977,25 @@ conditions:
   snow:
     intro:
       - weight: 2
-        text: "It's snowing, please, please be careful —"
+        text: "It's snowing, please, please be careful."
       - weight: 1
-        text: "Oh, the snow, my favorite thing to worry about —"
+        text: "Oh, the snow, my favorite thing to worry about."
       - weight: 1
-        text: "Dress warm, it's coming down out there —"
+        text: "Dress warm, it's coming down out there."
       - weight: 1
-        text: "Let me see you before you leave, sweetheart —"
+        text: "Let me see you before you leave, sweetheart."
       - weight: 1
-        text: "A little thought now, darling —"
+        text: "A little thought now, darling."
       - weight: 1
-        text: "Your mum has a few suggestions —"
+        text: "Your mum has a few suggestions."
       - weight: 1
-        text: "Before you tell me you've handled it —"
+        text: "Before you tell me you've handled it."
       - weight: 1
-        text: "Let's get you properly ready, love —"
+        text: "Let's get you properly ready, love."
       - weight: 1
-        text: "Spare a moment for your mother —"
+        text: "Spare a moment for your mother."
       - weight: 1
-        text: "Here's what I'd choose for you today —"
+        text: "Here's what I'd choose for you today."
     advice:
       - weight: 1
         text: "Boots with real grip, please, not the smooth-soled ones you love so much.\nGloves, a hat — you know the drill by now, we've done this before."
@@ -1042,25 +1042,25 @@ conditions:
   storm:
     intro:
       - weight: 2
-        text: "Please stay in if you possibly can, honey —"
+        text: "Please stay in if you possibly can, honey."
       - weight: 1
-        text: "This storm has me genuinely worried, not the usual kind —"
+        text: "This storm has me genuinely worried, not the usual kind."
       - weight: 1
-        text: "I don't like this weather at all, and I'm telling you that plainly —"
+        text: "I don't like this weather at all, and I'm telling you that plainly."
       - weight: 1
-        text: "Give me your attention for a moment, love —"
+        text: "Give me your attention for a moment, love."
       - weight: 1
-        text: "Let's think this through together, darling —"
+        text: "Let's think this through together, darling."
       - weight: 1
-        text: "Before you reach for your keys, sweetheart —"
+        text: "Before you reach for your keys, sweetheart."
       - weight: 1
-        text: "Your mother has something to say —"
+        text: "Your mother has something to say."
       - weight: 1
-        text: "A little preparation first, please —"
+        text: "A little preparation first, please."
       - weight: 1
-        text: "Let me help you make a sensible plan —"
+        text: "Let me help you make a sensible plan."
       - weight: 1
-        text: "Hear me out before you decide, honey —"
+        text: "Hear me out before you decide, honey."
     advice:
       - weight: 1
         text: "If you truly must go out, dress fully waterproof and windproof, no exceptions.\nBut honestly, sweetie, please just stay home if you can, I'm asking you directly."

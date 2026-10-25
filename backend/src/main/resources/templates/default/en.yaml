@@ -2,25 +2,25 @@ conditions:
   frost:
     intro:
       - weight: 2
-        text: "Brace yourself —"
+        text: "Brace yourself."
       - weight: 1
-        text: "Arctic mode activated —"
+        text: "Arctic mode activated."
       - weight: 1
-        text: "Nature's fridge is open —"
+        text: "Nature's fridge is open."
       - weight: 1
-        text: "This is not a drill —"
+        text: "This is not a drill."
       - weight: 1
-        text: "Here's the frosty forecast —"
+        text: "Here's the frosty forecast."
       - weight: 1
-        text: "A quick winter briefing —"
+        text: "A quick winter briefing."
       - weight: 1
-        text: "Before you head outside —"
+        text: "Before you head outside."
       - weight: 1
-        text: "Today's weather has a crisp edge —"
+        text: "Today's weather has a crisp edge."
       - weight: 1
-        text: "Time for a wardrobe check —"
+        text: "Time for a wardrobe check."
       - weight: 1
-        text: "The temperature has spoken —"
+        text: "The temperature has spoken."
     advice:
       - weight: 1
         text: "Layer up properly: thermal base, wool sweater, real winter coat.\nSkip the fashion jacket — this is survival gear weather."
@@ -67,25 +67,25 @@ conditions:
   cold:
     intro:
       - weight: 3
-        text: "Bundle up —"
+        text: "Bundle up."
       - weight: 1
-        text: "Heads up —"
+        text: "Heads up."
       - weight: 1
-        text: "Winter's not done with us —"
+        text: "Winter's not done with us."
       - weight: 1
-        text: "Not messing around today —"
+        text: "Not messing around today."
       - weight: 1
-        text: "Before you get going —"
+        text: "Before you get going."
       - weight: 1
-        text: "A little preparation pays off —"
+        text: "A little preparation pays off."
       - weight: 1
-        text: "Here's your forecast briefing —"
+        text: "Here's your forecast briefing."
       - weight: 1
-        text: "The chill has settled in —"
+        text: "The chill has settled in."
       - weight: 1
-        text: "Time to dress for the temperature —"
+        text: "Time to dress for the temperature."
       - weight: 1
-        text: "One quick wardrobe note —"
+        text: "One quick wardrobe note."
     advice:
       - weight: 1
         text: "It's cold out there — grab a warm coat.\nDon't skip the gloves, your hands will remind you later."
@@ -132,25 +132,25 @@ conditions:
   chilly:
     intro:
       - weight: 2
-        text: "Getting nippy —"
+        text: "Getting nippy."
       - weight: 1
-        text: "A bit brisk —"
+        text: "A bit brisk."
       - weight: 1
-        text: "Cooling off fast —"
+        text: "Cooling off fast."
       - weight: 1
-        text: "A little chill in the air —"
+        text: "A little chill in the air."
       - weight: 1
-        text: "Before you step out —"
+        text: "Before you step out."
       - weight: 1
-        text: "Time for a quick forecast check —"
+        text: "Time for a quick forecast check."
       - weight: 1
-        text: "On the cooler side today —"
+        text: "On the cooler side today."
       - weight: 1
-        text: "Something to dress for —"
+        text: "Something to dress for."
       - weight: 1
-        text: "Here's the outdoor outlook —"
+        text: "Here's the outdoor outlook."
       - weight: 1
-        text: "Worth a moment at the wardrobe —"
+        text: "Worth a moment at the wardrobe."
     advice:
       - weight: 1
         text: "A mid-weight coat or a thick sweater under a jacket works.\nBare hands will start complaining after ten minutes."
@@ -197,25 +197,25 @@ conditions:
   cool:
     intro:
       - weight: 2
-        text: "Not too bad —"
+        text: "Not too bad."
       - weight: 1
-        text: "Mild chill —"
+        text: "Mild chill."
       - weight: 1
-        text: "Nothing dramatic —"
+        text: "Nothing dramatic."
       - weight: 1
-        text: "On the fresh side —"
+        text: "On the fresh side."
       - weight: 1
-        text: "Here's the outlook —"
+        text: "Here's the outlook."
       - weight: 1
-        text: "Before you head out —"
+        text: "Before you head out."
       - weight: 1
-        text: "A small wardrobe note —"
+        text: "A small wardrobe note."
       - weight: 1
-        text: "Keeping things comfortable —"
+        text: "Keeping things comfortable."
       - weight: 1
-        text: "Today's temperature check —"
+        text: "Today's temperature check."
       - weight: 1
-        text: "A little planning goes a long way —"
+        text: "A little planning goes a long way."
     advice:
       - weight: 1
         text: "A light jacket should do the trick.\nMaybe a scarf too, if you're sensitive to wind."
@@ -262,25 +262,25 @@ conditions:
   mild:
     intro:
       - weight: 2
-        text: "Pleasant enough —"
+        text: "Pleasant enough."
       - weight: 1
-        text: "Easy weather —"
+        text: "Easy weather."
       - weight: 1
-        text: "Nothing to plan around —"
+        text: "Nothing to plan around."
       - weight: 1
-        text: "A comfortable forecast —"
+        text: "A comfortable forecast."
       - weight: 1
-        text: "Looking rather agreeable —"
+        text: "Looking rather agreeable."
       - weight: 1
-        text: "Keeping it simple today —"
+        text: "Keeping it simple today."
       - weight: 1
-        text: "Before you make tracks —"
+        text: "Before you make tracks."
       - weight: 1
-        text: "A quick note for heading out —"
+        text: "A quick note for heading out."
       - weight: 1
-        text: "The temperature is cooperating —"
+        text: "The temperature is cooperating."
       - weight: 1
-        text: "Here's your daily outlook —"
+        text: "Here's your daily outlook."
     advice:
       - weight: 1
         text: "A light jacket or a long-sleeve shirt is plenty.\nNo need to overthink this one."
@@ -327,25 +327,25 @@ conditions:
   comfortable:
     intro:
       - weight: 2
-        text: "Nice out —"
+        text: "Nice out."
       - weight: 1
-        text: "About as good as it gets —"
+        text: "About as good as it gets."
       - weight: 1
-        text: "Textbook weather —"
+        text: "Textbook weather."
       - weight: 1
-        text: "Looking good out there —"
+        text: "Looking good out there."
       - weight: 1
-        text: "An agreeable forecast —"
+        text: "An agreeable forecast."
       - weight: 1
-        text: "The outdoors is calling —"
+        text: "The outdoors is calling."
       - weight: 1
-        text: "A friendly temperature check —"
+        text: "A friendly temperature check."
       - weight: 1
-        text: "Conditions are playing along —"
+        text: "Conditions are playing along."
       - weight: 1
-        text: "Here's the pleasant part —"
+        text: "Here's the pleasant part."
       - weight: 1
-        text: "All rather civilised today —"
+        text: "All rather civilised today."
     advice:
       - weight: 1
         text: "Dress however you like today.\nA t-shirt or light shirt will do just fine."
@@ -392,25 +392,25 @@ conditions:
   warm:
     intro:
       - weight: 2
-        text: "Warming up —"
+        text: "Warming up."
       - weight: 1
-        text: "Summer's knocking —"
+        text: "Summer's knocking."
       - weight: 1
-        text: "Getting toasty —"
+        text: "Getting toasty."
       - weight: 1
-        text: "Warmth is on the menu —"
+        text: "Warmth is on the menu."
       - weight: 1
-        text: "The forecast has a sunny disposition —"
+        text: "The forecast has a sunny disposition."
       - weight: 1
-        text: "A quick note before you go —"
+        text: "A quick note before you go."
       - weight: 1
-        text: "Time for the daily wardrobe check —"
+        text: "Time for the daily wardrobe check."
       - weight: 1
-        text: "The temperature is making itself known —"
+        text: "The temperature is making itself known."
       - weight: 1
-        text: "Here's the outdoor briefing —"
+        text: "Here's the outdoor briefing."
       - weight: 1
-        text: "Today's outlook is looking summery —"
+        text: "Today's outlook is looking summery."
     advice:
       - weight: 1
         text: "Shorts and a t-shirt are your friends.\nSunglasses wouldn't hurt either."
@@ -457,25 +457,25 @@ conditions:
   hot:
     intro:
       - weight: 2
-        text: "Whew —"
+        text: "Whew."
       - weight: 1
-        text: "It's a scorcher —"
+        text: "It's a scorcher."
       - weight: 1
-        text: "Full send summer —"
+        text: "Full send summer."
       - weight: 1
-        text: "The heat is on —"
+        text: "The heat is on."
       - weight: 1
-        text: "A rather tropical outlook —"
+        text: "A rather tropical outlook."
       - weight: 1
-        text: "Today's forecast means business —"
+        text: "Today's forecast means business."
       - weight: 1
-        text: "Summer has turned up the dial —"
+        text: "Summer has turned up the dial."
       - weight: 1
-        text: "Before you brave the outdoors —"
+        text: "Before you brave the outdoors."
       - weight: 1
-        text: "A quick hot-weather briefing —"
+        text: "A quick hot-weather briefing."
       - weight: 1
-        text: "The temperature isn't being subtle —"
+        text: "The temperature isn't being subtle."
     advice:
       - weight: 1
         text: "It's properly hot — stay hydrated.\nWear the lightest fabrics you own, and grab sunglasses."
@@ -522,25 +522,25 @@ conditions:
   windy_cold:
     intro:
       - weight: 2
-        text: "Bundle up —"
+        text: "Bundle up."
       - weight: 1
-        text: "Wind's picking a fight —"
+        text: "Wind's picking a fight."
       - weight: 1
-        text: "Cold with an attitude —"
+        text: "Cold with an attitude."
       - weight: 1
-        text: "The wind found your one weak spot —"
+        text: "The wind found your one weak spot."
       - weight: 1
-        text: "A blustery outlook —"
+        text: "A blustery outlook."
       - weight: 1
-        text: "Before you step into this —"
+        text: "Before you step into this."
       - weight: 1
-        text: "Today's forecast has an edge —"
+        text: "Today's forecast has an edge."
       - weight: 1
-        text: "Time for a weather check —"
+        text: "Time for a weather check."
       - weight: 1
-        text: "Rather brisk out there —"
+        text: "Rather brisk out there."
       - weight: 1
-        text: "A little preparation is in order —"
+        text: "A little preparation is in order."
     advice:
       - weight: 1
         text: "It's freezing and windy out there.\nA windproof shell over your coat is worth it."
@@ -587,25 +587,25 @@ conditions:
   windy_frost:
     intro:
       - weight: 2
-        text: "Wind chill is brutal —"
+        text: "Wind chill is brutal."
       - weight: 1
-        text: "This is punishing —"
+        text: "This is punishing."
       - weight: 1
-        text: "Nature's really trying today —"
+        text: "Nature's really trying today."
       - weight: 1
-        text: "Skin-freezing territory —"
+        text: "Skin-freezing territory."
       - weight: 1
-        text: "A serious winter briefing —"
+        text: "A serious winter briefing."
       - weight: 1
-        text: "Before you face the elements —"
+        text: "Before you face the elements."
       - weight: 1
-        text: "The forecast deserves your attention —"
+        text: "The forecast deserves your attention."
       - weight: 1
-        text: "Winter has raised the stakes —"
+        text: "Winter has raised the stakes."
       - weight: 1
-        text: "Conditions are feeling decidedly hostile —"
+        text: "Conditions are feeling decidedly hostile."
       - weight: 1
-        text: "Time for a thorough wardrobe check —"
+        text: "Time for a thorough wardrobe check."
     advice:
       - weight: 1
         text: "Every gap in your clothing will find the wind.\nSeal it up: high collar, tucked-in scarf, gloves that actually fit."
@@ -652,25 +652,25 @@ conditions:
   windy_hot:
     intro:
       - weight: 2
-        text: "At least there's a breeze —"
+        text: "At least there's a breeze."
       - weight: 1
-        text: "Silver lining: wind —"
+        text: "Silver lining: wind."
       - weight: 1
-        text: "Hot, but moving —"
+        text: "Hot, but moving."
       - weight: 1
-        text: "The wind's trying to help —"
+        text: "The wind's trying to help."
       - weight: 1
-        text: "A blustery summer outlook —"
+        text: "A blustery summer outlook."
       - weight: 1
-        text: "Before you head into the heat —"
+        text: "Before you head into the heat."
       - weight: 1
-        text: "Today's forecast has some energy —"
+        text: "Today's forecast has some energy."
       - weight: 1
-        text: "A quick outdoor briefing —"
+        text: "A quick outdoor briefing."
       - weight: 1
-        text: "Summer is stirring things up —"
+        text: "Summer is stirring things up."
       - weight: 1
-        text: "Time for a warm-weather check —"
+        text: "Time for a warm-weather check."
     advice:
       - weight: 1
         text: "Still wear light fabrics.\nYou might get away without the hat for once, thanks to the breeze."
@@ -717,25 +717,25 @@ conditions:
   rain:
     intro:
       - weight: 2
-        text: "Grab the umbrella —"
+        text: "Grab the umbrella."
       - weight: 1
-        text: "Bit of a drizzle —"
+        text: "Bit of a drizzle."
       - weight: 1
-        text: "Wet out there —"
+        text: "Wet out there."
       - weight: 1
-        text: "Sky's leaking —"
+        text: "Sky's leaking."
       - weight: 1
-        text: "A damp outlook —"
+        text: "A damp outlook."
       - weight: 1
-        text: "Rain is joining the plans —"
+        text: "Rain is joining the plans."
       - weight: 1
-        text: "Before you splash off —"
+        text: "Before you splash off."
       - weight: 1
-        text: "Today's forecast comes with droplets —"
+        text: "Today's forecast comes with droplets."
       - weight: 1
-        text: "A quick wet-weather briefing —"
+        text: "A quick wet-weather briefing."
       - weight: 1
-        text: "The clouds have something to contribute —"
+        text: "The clouds have something to contribute."
     advice:
       - weight: 1
         text: "A light raincoat or a jacket with a hood will keep you dry enough.\nNothing fancy needed for this one."
@@ -782,25 +782,25 @@ conditions:
   heavy_rain:
     intro:
       - weight: 2
-        text: "This isn't a drizzle —"
+        text: "This isn't a drizzle."
       - weight: 1
-        text: "Proper downpour —"
+        text: "Proper downpour."
       - weight: 1
-        text: "Batten down —"
+        text: "Batten down."
       - weight: 1
-        text: "The sky gave up subtlety —"
+        text: "The sky gave up subtlety."
       - weight: 1
-        text: "Rain has taken centre stage —"
+        text: "Rain has taken centre stage."
       - weight: 1
-        text: "A thoroughly soggy outlook —"
+        text: "A thoroughly soggy outlook."
       - weight: 1
-        text: "Before you venture out —"
+        text: "Before you venture out."
       - weight: 1
-        text: "The clouds aren't holding back —"
+        text: "The clouds aren't holding back."
       - weight: 1
-        text: "Today's forecast deserves a moment —"
+        text: "Today's forecast deserves a moment."
       - weight: 1
-        text: "Wet weather means business —"
+        text: "Wet weather means business."
     advice:
       - weight: 1
         text: "Full raincoat, waterproof boots, and an umbrella that can survive wind.\nA poncho isn't overkill today."
@@ -847,25 +847,25 @@ conditions:
   rain_cold:
     intro:
       - weight: 2
-        text: "Cold and wet —"
+        text: "Cold and wet."
       - weight: 1
-        text: "Grab the umbrella —"
+        text: "Grab the umbrella."
       - weight: 1
-        text: "Dreary out there —"
+        text: "Dreary out there."
       - weight: 1
-        text: "A rather damp chill —"
+        text: "A rather damp chill."
       - weight: 1
-        text: "The forecast calls for some thought —"
+        text: "The forecast calls for some thought."
       - weight: 1
-        text: "Before you face the drizzle —"
+        text: "Before you face the drizzle."
       - weight: 1
-        text: "Two kinds of uninviting —"
+        text: "Two kinds of uninviting."
       - weight: 1
-        text: "A quick outdoor check —"
+        text: "A quick outdoor check."
       - weight: 1
-        text: "The clouds have brought company —"
+        text: "The clouds have brought company."
       - weight: 1
-        text: "Not the warmest welcome outside —"
+        text: "Not the warmest welcome outside."
     advice:
       - weight: 1
         text: "Waterproof jacket over a warm layer, and a hat.\nShoes with real soles, canvas will soak through in minutes."
@@ -912,25 +912,25 @@ conditions:
   heavy_rain_cold:
     intro:
       - weight: 2
-        text: "Cold downpour —"
+        text: "Cold downpour."
       - weight: 1
-        text: "This isn't a drizzle —"
+        text: "This isn't a drizzle."
       - weight: 1
-        text: "Proper wall of water —"
+        text: "Proper wall of water."
       - weight: 1
-        text: "An unwelcoming forecast —"
+        text: "An unwelcoming forecast."
       - weight: 1
-        text: "The elements are teaming up —"
+        text: "The elements are teaming up."
       - weight: 1
-        text: "Before you open that door —"
+        text: "Before you open that door."
       - weight: 1
-        text: "A thoroughly wintry soaking —"
+        text: "A thoroughly wintry soaking."
       - weight: 1
-        text: "Today's outlook needs attention —"
+        text: "Today's outlook needs attention."
       - weight: 1
-        text: "The clouds have dropped all restraint —"
+        text: "The clouds have dropped all restraint."
       - weight: 1
-        text: "Outdoor conditions are making demands —"
+        text: "Outdoor conditions are making demands."
     advice:
       - weight: 1
         text: "Full waterproof jacket, warm layer underneath, waterproof boots.\nA regular umbrella may not hold up against this."
@@ -977,25 +977,25 @@ conditions:
   snow:
     intro:
       - weight: 2
-        text: "Snow's falling —"
+        text: "Snow's falling."
       - weight: 1
-        text: "Winter wonderland, or just an inconvenience —"
+        text: "Winter wonderland, or just an inconvenience."
       - weight: 1
-        text: "It's coming down —"
+        text: "It's coming down."
       - weight: 1
-        text: "White out there —"
+        text: "White out there."
       - weight: 1
-        text: "The forecast comes with flakes —"
+        text: "The forecast comes with flakes."
       - weight: 1
-        text: "Winter is setting the scene —"
+        text: "Winter is setting the scene."
       - weight: 1
-        text: "A snowy outlook today —"
+        text: "A snowy outlook today."
       - weight: 1
-        text: "Before you leave the doorstep —"
+        text: "Before you leave the doorstep."
       - weight: 1
-        text: "A little seasonal preparation —"
+        text: "A little seasonal preparation."
       - weight: 1
-        text: "The clouds are decorating —"
+        text: "The clouds are decorating."
     advice:
       - weight: 1
         text: "Waterproof boots with real grip, insulated gloves, and a hat.\nSlush is not your friend, no matter how pretty the snow looks."
@@ -1042,25 +1042,25 @@ conditions:
   storm:
     intro:
       - weight: 2
-        text: "Storm's rolling in —"
+        text: "Storm's rolling in."
       - weight: 1
-        text: "This is not a walking day —"
+        text: "This is not a walking day."
       - weight: 1
-        text: "Hold onto something —"
+        text: "Hold onto something."
       - weight: 1
-        text: "Full drama from the sky today —"
+        text: "Full drama from the sky today."
       - weight: 1
-        text: "The forecast deserves your attention —"
+        text: "The forecast deserves your attention."
       - weight: 1
-        text: "Rough conditions ahead —"
+        text: "Rough conditions ahead."
       - weight: 1
-        text: "The elements are getting restless —"
+        text: "The elements are getting restless."
       - weight: 1
-        text: "Before you make outdoor plans —"
+        text: "Before you make outdoor plans."
       - weight: 1
-        text: "A decidedly unsettled outlook —"
+        text: "A decidedly unsettled outlook."
       - weight: 1
-        text: "Time for a serious weather check —"
+        text: "Time for a serious weather check."
     advice:
       - weight: 1
         text: "If you can stay in, stay in.\nIf not, a proper waterproof jacket and sturdy shoes — skip the umbrella, it'll just turn inside out."
