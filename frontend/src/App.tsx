@@ -69,6 +69,7 @@ function App() {
   const [tonePickerOpen, setTonePickerOpen] = useState(false);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [retryKey, setRetryKey] = useState(0);
   const [expanded, setExpanded] = useState(false);
   const [sharing, setSharing] = useState(false);
   const shareCardRef = useRef<HTMLDivElement>(null);
@@ -107,7 +108,7 @@ function App() {
         console.error('Failed to fetch advice', err instanceof ApiError ? err.status : err);
         setAdviceStatus('error');
       });
-  }, [coords, hasLocation, period, tone, i18n.language]);
+  }, [coords, hasLocation, period, tone, i18n.language, retryKey]);
 
   function handleManualCitySelect(newCoords: Coordinates, label: string) {
     setManualCoords(newCoords);
@@ -260,7 +261,7 @@ function App() {
       {adviceStatus === 'error' && (
         <div className="status-text">
           <p>{t('error.generic')}</p>
-          <button type="button" onClick={() => setPeriod((p) => p)}>
+          <button type="button" onClick={() => setRetryKey((k) => k + 1)}>
             {t('action.retry')}
           </button>
         </div>
