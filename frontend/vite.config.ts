@@ -12,8 +12,8 @@ export default defineConfig({
         name: 'EgoCast',
         short_name: 'EgoCast',
         description: 'Weather advisory with personality-driven tone packs',
-        theme_color: '#0f172a',
-        background_color: '#0f172a',
+        theme_color: '#2b3a55',
+        background_color: '#4a4e69',
         display: 'standalone',
         start_url: '/',
         icons: [
