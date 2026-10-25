@@ -12,6 +12,7 @@ import type { AdviceResponse, Period, WeatherData, Coordinates, ToneInfo } from 
 import './App.css';
 
 const DEFAULT_TONE = 'default';
+const TONE_STORAGE_KEY = 'egocast.tone';
 
 const EXPAND_ICONS: Record<string, LucideIcon> = {
   temp: Thermometer,
@@ -21,6 +22,22 @@ const EXPAND_ICONS: Record<string, LucideIcon> = {
   precipitation: CloudRain,
   uv: Sun,
 };
+
+function loadSavedTone(): string {
+  try {
+    return localStorage.getItem(TONE_STORAGE_KEY) ?? DEFAULT_TONE;
+  } catch {
+    return DEFAULT_TONE;
+  }
+}
+
+function saveTone(toneId: string): void {
+  try {
+    localStorage.setItem(TONE_STORAGE_KEY, toneId);
+  } catch {
+    // хранилище недоступно (приватный режим и т.п.) — просто не сохраняем
+  }
+}
 
 function capitalizeSentences(text: string): string {
   return text.replace(/(^|[.!?]\s+)([a-z])/g, (_, prefix, letter) => prefix + letter.toUpperCase());
@@ -47,7 +64,7 @@ function App() {
   const [locationLabel, setLocationLabel] = useState<string | null>(null);
   const [locationPickerOpen, setLocationPickerOpen] = useState(false);
   const [period, setPeriod] = useState<Period>('today');
-  const [tone, setTone] = useState<string>(DEFAULT_TONE);
+  const [tone, setTone] = useState<string>(loadSavedTone);
   const [tones, setTones] = useState<ToneInfo[]>([{ id: DEFAULT_TONE, premium: false }]);
   const [tonePickerOpen, setTonePickerOpen] = useState(false);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
@@ -61,9 +78,17 @@ function App() {
 
   useEffect(() => {
     getTones()
-      .then(setTones)
+      .then((list) => {
+        setTones(list);
+        // если сохранённого пака больше нет в списке — откатываемся на дефолт
+        setTone((prev) => (list.some((item) => item.id === prev) ? prev : DEFAULT_TONE));
+      })
       .catch((err) => console.error('Failed to fetch tones', err));
   }, []);
+
+  useEffect(() => {
+    saveTone(tone);
+  }, [tone]);
 
   useEffect(() => {
     if (!hasLocation || !coords) return;
