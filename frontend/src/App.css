@@ -23,18 +23,24 @@ html, body, #root {
 
 body {
   font-family: var(--font-body);
-  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+  background-color: var(--sky-bottom);
+  background-image: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+  background-repeat: no-repeat;
   color: var(--ink-light);
 }
 
 .screen {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.75rem;
-  padding: 2rem 1.25rem;
+  padding-top: calc(2rem + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+  padding-left: calc(1.25rem + env(safe-area-inset-left, 0px));
+  padding-right: calc(1.25rem + env(safe-area-inset-right, 0px));
   max-width: 32rem;
   margin: 0 auto;
   text-align: center;
@@ -91,6 +97,7 @@ body {
   color: var(--ink-light);
   margin: 0;
   white-space: pre-line;
+  overflow-wrap: anywhere;
 }
 
 .expand-toggle {
@@ -138,6 +145,7 @@ body {
     transition: none !important;
   }
 }
+
 .brand {
   font-family: var(--font-body);
   font-size: 0.85rem;
@@ -148,6 +156,7 @@ body {
   opacity: 0.6;
   margin: 0;
 }
+
 .city-search {
   width: 100%;
   text-align: left;
@@ -209,6 +218,7 @@ body {
 .city-search-results button:focus-visible {
   background: rgba(232, 163, 61, 0.15);
 }
+
 .expand-line {
   display: flex;
   align-items: flex-start;
@@ -221,71 +231,7 @@ body {
   color: var(--paper-ink-dim);
   opacity: 0.55;
 }
-.app-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header-header-right {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.header-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: none;
-  border-radius: 999px;
-  padding: 0.35rem 0.7rem;
-  color: var(--ink-light);
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.header-pill:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.account-button {
-  width: 1.75rem;
-  height: 1.75rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink-light-dim);
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.account-button:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.header-pill:focus-visible,
-.account-button:focus-visible {
-  outline: 2px solid var(--accent-amber);
-  outline-offset: 2px;
-}
-
-.ad-slot {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 0.75rem;
-  padding: 0.6rem 1rem;
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--ink-light-dim);
-}
 .app-header {
   width: 100%;
   display: flex;
@@ -380,6 +326,7 @@ body {
   outline: 2px solid var(--accent-amber);
   outline-offset: 2px;
 }
+
 .location-pill {
   display: inline-flex;
   align-items: center;
@@ -418,6 +365,7 @@ body {
 .city-search-back:hover {
   color: var(--ink-light);
 }
+
 .tone-picker {
   width: 100%;
   text-align: left;
@@ -607,4 +555,25 @@ body {
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #e3a94b;
+}
+
+/* Короткие экраны (ландшафт, маленькие телефоны): сжимаем отступы и кота,
+   чтобы лишний вертикальный скролл не появлялся. */
+@media (max-height: 640px) {
+  .screen {
+    gap: 1rem;
+    padding-top: calc(1rem + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .cat-mascot {
+    font-size: 3rem;
+  }
+}
+
+/* Узкие экраны (320-360px): чуть меньше основной текст. */
+@media (max-width: 360px) {
+  .advice-text {
+    font-size: 1.3rem;
+  }
 }
