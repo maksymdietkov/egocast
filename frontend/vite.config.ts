@@ -9,8 +9,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       workbox: {
-        // вход через Google и API не должны перехватываться service worker'ом
-        navigateFallbackDenylist: [/^\/api\//, /^\/oauth2\//, /^\/login\//],
+        // вход через Google, API и статичная privacy-страница не должны перехватываться service worker'ом
+        navigateFallbackDenylist: [/^\/api\//, /^\/oauth2\//, /^\/login\//, /^\/privacy\.html$/],
+        globIgnores: ['**/privacy.html'],
       },
       manifest: {
         name: 'EgoCast',
