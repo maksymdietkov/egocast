@@ -672,3 +672,11 @@ body {
 .app-info a {
   color: inherit;
 }
+.intro {
+  max-width: 420px;
+  margin: 0 auto 16px;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}

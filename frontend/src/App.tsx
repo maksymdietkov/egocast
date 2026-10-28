@@ -202,6 +202,7 @@ function App() {
     return (
       <main className="screen">
         <h1 className="brand">EgoCast</h1>
+        <p className="intro">{t('info.about')}</p>
         <p className="status-text">{t('loading.location')}</p>
       </main>
     );
@@ -211,6 +212,7 @@ function App() {
     return (
       <main className="screen">
         <h1 className="brand">EgoCast</h1>
+        <p className="intro">{t('info.about')}</p>
         <p className="status-text">{t(`error.${geoError}`)}</p>
         <CitySearch onSelect={handleManualCitySelect} />
       </main>
