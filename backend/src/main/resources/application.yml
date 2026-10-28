@@ -1,5 +1,14 @@
 server:
   port: 8080
+  # Бэк стоит за Nginx: берём схему/хост из X-Forwarded-*, иначе redirect_uri для Google будет http://
+  forward-headers-strategy: framework
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        same-site: lax
+        secure: ${SESSION_COOKIE_SECURE:false}
+        max-age: 30d
 
 spring:
   application:
@@ -18,6 +27,20 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+  session:
+    timeout: 30d
+    jdbc:
+      initialize-schema: always # таблицы spring_session создаются автоматически
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID:missing-client-id}
+            client-secret: ${GOOGLE_CLIENT_SECRET:missing-client-secret}
+            scope: openid,profile,email
 
 weather:
   open-meteo:

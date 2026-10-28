@@ -35,5 +35,11 @@
     "share": "Поделиться",
     "sharing": "Готовим...",
     "account": "Аккаунт"
+  },
+  "account": {
+    "title": "Аккаунт",
+    "back": "Назад",
+    "signIn": "Войти через Google",
+    "signOut": "Выйти"
   }
 }

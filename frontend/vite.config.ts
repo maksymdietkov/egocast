@@ -8,6 +8,10 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
+      workbox: {
+        // вход через Google и API не должны перехватываться service worker'ом
+        navigateFallbackDenylist: [/^\/api\//, /^\/oauth2\//, /^\/login\//],
+      },
       manifest: {
         name: 'EgoCast',
         short_name: 'EgoCast',
@@ -42,6 +46,15 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:8080',
         changeOrigin: true,
+      },
+      // changeOrigin: false, чтобы Spring видел Host localhost:5173 и строил правильный redirect_uri
+      '/oauth2': {
+        target: 'http://localhost:8080',
+        changeOrigin: false,
+      },
+      '/login': {
+        target: 'http://localhost:8080',
+        changeOrigin: false,
       },
     },
   },

@@ -3,10 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Globe, ChevronDown, User, MapPin, Share2, Thermometer, Wind, Droplets, CloudRain, Sun, type LucideIcon } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { useGeolocation } from './hooks/useGeolocation';
+import { useAuth } from './hooks/useAuth';
 import { getAdvice, getTones, ApiError } from './api/client';
 import { CitySearch } from './components/CitySearch';
 import { TonePicker } from './components/TonePicker';
 import { ShareCard } from './components/ShareCard';
+import { AccountScreen } from './components/AccountScreen';
 import { toneLabel } from './data/toneMeta';
 import type { AdviceResponse, Period, WeatherData, Coordinates, ToneInfo } from './types/weather';
 import './App.css';
@@ -87,6 +89,7 @@ function catMood(w: WeatherData): string {
 function App() {
   const { t, i18n } = useTranslation();
   const { coords: geoCoords, status: geoStatus, error: geoError } = useGeolocation();
+  const { user, loading: authLoading, logout } = useAuth();
 
   const [savedLocation] = useState<SavedLocation | null>(loadSavedLocation);
   const [manualCoords, setManualCoords] = useState<Coordinates | null>(savedLocation?.coords ?? null);
@@ -96,6 +99,7 @@ function App() {
   const [tone, setTone] = useState<string>(loadSavedTone);
   const [tones, setTones] = useState<ToneInfo[]>([{ id: DEFAULT_TONE, premium: false }]);
   const [tonePickerOpen, setTonePickerOpen] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [retryKey, setRetryKey] = useState(0);
@@ -149,6 +153,15 @@ function App() {
   function handleToneSelect(toneId: string) {
     setTone(toneId);
     setTonePickerOpen(false);
+  }
+
+  async function handleLogout() {
+    try {
+      await logout();
+      setAccountOpen(false);
+    } catch (err) {
+      console.error('Failed to log out', err);
+    }
   }
 
   async function handleShare() {
@@ -225,6 +238,19 @@ function App() {
     );
   }
 
+  if (accountOpen) {
+    return (
+      <main className="screen">
+        <AccountScreen
+          user={user}
+          loading={authLoading}
+          onBack={() => setAccountOpen(false)}
+          onLogout={handleLogout}
+        />
+      </main>
+    );
+  }
+
   const currentLangLabel = i18n.language.split('-')[0].toUpperCase();
   const currentToneLabel = toneLabel(tone);
   const displayedLocation = locationLabel ?? 'My location';
@@ -250,9 +276,13 @@ function App() {
             type="button"
             className="account-button"
             aria-label={t('action.account')}
-            onClick={() => {/* TODO: personal account / premium */}}
+            onClick={() => setAccountOpen(true)}
           >
-            <User size={14} aria-hidden="true" />
+            {user?.pictureUrl ? (
+              <img src={user.pictureUrl} alt="" referrerPolicy="no-referrer" />
+            ) : (
+              <User size={14} aria-hidden="true" />
+            )}
           </button>
         </div>
       </div>
