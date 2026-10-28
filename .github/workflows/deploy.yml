@@ -72,4 +72,4 @@ jobs:
             echo "IMAGE_TAG=$IMAGE_TAG" > .env.tag
             docker compose --env-file .env --env-file .env.tag pull
             docker compose --env-file .env --env-file .env.tag up -d
-            docker image prune -f
+            docker image prune -a -f
