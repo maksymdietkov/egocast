@@ -10,11 +10,26 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="description" content="Weather advisory with personality-driven tone packs" />
-    <title>EgoCast</title>
+    <meta name="description" content="EgoCast turns the weather forecast for your location into short, personality-driven advice: what to wear, whether to take an umbrella. Pick a tone: Classic, Mom or Angry Bro." />
+    <title>EgoCast — weather advice with attitude</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Статичное описание для поисковых и проверочных роботов; React заменяет его при запуске -->
+      <main style="min-height:100vh;box-sizing:border-box;padding:48px 20px;background:#4a4e69;color:#f2f2f7;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.6;text-align:center;">
+        <h1>EgoCast</h1>
+        <p style="max-width:560px;margin:0 auto 16px;">
+          EgoCast is a weather advisory web app. It turns the forecast for your location into short,
+          personality-driven advice, such as what to wear and whether to take an umbrella, in a tone
+          you choose: Classic, Mom or Angry Bro.
+        </p>
+        <p style="max-width:560px;margin:0 auto 16px;">
+          Signing in with Google is optional. We use your Google name, email and profile picture only
+          to recognise you when you come back.
+        </p>
+        <p><a href="/privacy.html" style="color:#fff;">Privacy Policy</a></p>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

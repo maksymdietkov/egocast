@@ -35,5 +35,17 @@
     "share": "Share",
     "sharing": "Preparing...",
     "account": "Account"
+  },
+  "account": {
+    "title": "Account",
+    "back": "Back",
+    "signIn": "Sign in with Google",
+    "signOut": "Sign out"
+  },
+  "info": {
+    "title": "About EgoCast",
+    "about": "EgoCast is a weather advisory app. It turns the forecast for your location into short, personality-driven advice, such as what to wear and whether to take an umbrella, in a tone you choose: Classic, Mom or Angry Bro.",
+    "signIn": "Signing in with Google is optional. We use your Google name, email and profile picture only to recognise you when you come back.",
+    "privacy": "Privacy Policy"
   }
 }

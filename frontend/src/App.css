@@ -653,3 +653,22 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+.app-info {
+  box-sizing: border-box;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.app-info-title {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.app-info a {
+  color: inherit;
+}
