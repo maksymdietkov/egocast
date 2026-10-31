@@ -42,6 +42,12 @@ spring:
             client-secret: ${GOOGLE_CLIENT_SECRET:missing-client-secret}
             scope: openid,profile,email
 
+egocast:
+  # email-ы админов через запятую (env ADMIN_EMAILS), им доступен /api/v1/stats/summary
+  admin-emails: ${ADMIN_EMAILS:}
+  stats:
+    zone: Europe/Prague # по какой таймзоне считаем «день» в статистике
+
 weather:
   open-meteo:
     base-url: https://api.open-meteo.com

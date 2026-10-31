@@ -25,7 +25,10 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf
                         .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-                        .csrfTokenRequestHandler(csrfHandler))
+                        .csrfTokenRequestHandler(csrfHandler)
+                        // анонимный счётчик визитов: первый запрос приходит раньше, чем кука XSRF-TOKEN,
+                        // а подделка «визита» ничего не меняет — CSRF тут не нужен
+                        .ignoringRequestMatchers("/api/v1/stats/visit"))
                 // погода/советы/тоны остаются публичными, авторизация нужна только для личных эндпоинтов (позже)
                 .authorizeHttpRequests(auth -> auth.anyRequest().permitAll())
                 .oauth2Login(oauth -> oauth

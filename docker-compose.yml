@@ -29,6 +29,8 @@ services:
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-missing-client-id}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-missing-client-secret}
       SESSION_COOKIE_SECURE: "true"
+      # email-ы админов через запятую — им открыт экран статистики
+      ADMIN_EMAILS: ${ADMIN_EMAILS:-}
       # Инстанс 1 GB RAM: жёстко держим JVM в рамках, чтобы не съесть всю память хоста
       JAVA_TOOL_OPTIONS: >-
         -Xms128m -Xmx256m
