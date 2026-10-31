@@ -106,6 +106,8 @@ function App() {
   const [expanded, setExpanded] = useState(false);
   const [sharing, setSharing] = useState(false);
   const shareCardRef = useRef<HTMLDivElement>(null);
+  // кэш советов на время сессии: переключение Сегодня/Завтра не рероллит текст
+  const adviceCacheRef = useRef<Map<string, AdviceResponse>>(new Map());
 
   const coords = manualCoords ?? geoCoords;
   const hasLocation = coords !== null;
@@ -127,20 +129,37 @@ function App() {
   useEffect(() => {
     if (!hasLocation || !coords) return;
 
-    setAdviceStatus('loading');
     setExpanded(false);
 
     const lang = i18n.language.split('-')[0];
+    const cacheKey = `${coords.lat},${coords.lon}|${tone}|${lang}|${period}`;
+    const cached = adviceCacheRef.current.get(cacheKey);
+
+    if (cached) {
+      setAdvice(cached);
+      setAdviceStatus('success');
+      return;
+    }
+
+    let cancelled = false;
+    setAdviceStatus('loading');
 
     getAdvice(coords, tone, lang, period)
       .then((result) => {
+        adviceCacheRef.current.set(cacheKey, result);
+        if (cancelled) return;
         setAdvice(result);
         setAdviceStatus('success');
       })
       .catch((err) => {
+        if (cancelled) return;
         console.error('Failed to fetch advice', err instanceof ApiError ? err.status : err);
         setAdviceStatus('error');
       });
+
+    return () => {
+      cancelled = true;
+    };
   }, [coords, hasLocation, period, tone, i18n.language, retryKey]);
 
   function handleManualCitySelect(newCoords: Coordinates, label: string) {
