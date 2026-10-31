@@ -3,6 +3,7 @@ export interface AuthUser {
   email: string;
   name: string | null;
   pictureUrl: string | null;
+  admin: boolean;
 }
 
 export const GOOGLE_LOGIN_URL = '/oauth2/authorization/google';
