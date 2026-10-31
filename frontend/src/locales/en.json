@@ -47,5 +47,39 @@
     "about": "EgoCast is a weather advisory app. It turns the forecast for your location into short, personality-driven advice, such as what to wear and whether to take an umbrella, in a tone you choose: Classic, Mom or Angry Bro.",
     "signIn": "Signing in with Google is optional. We use your Google name, email and profile picture only to recognise you when you come back.",
     "privacy": "Privacy Policy"
+  },
+  "stats": {
+    "title": "Statistics",
+    "loading": "Counting visitors...",
+    "refresh": "Refresh",
+    "error401": "Sign in to see statistics.",
+    "error403": "Statistics are for admins only.",
+    "kpiToday": "Today",
+    "kpi7d": "7 days",
+    "kpi30d": "30 days",
+    "kpiNew30d": "New, 30 days",
+    "kpiReturningHint_one": "+{{count}} returning",
+    "kpiReturningHint_other": "+{{count}} returning",
+    "kpiTotal": "All time",
+    "kpiUsers": "Signed in",
+    "chartTitle": "Visitors, 30 days",
+    "new": "New",
+    "returning": "Returning",
+    "dayVisitors_one": "{{count}} visitor",
+    "dayVisitors_other": "{{count}} visitors",
+    "dayNew_one": "{{count}} new",
+    "dayNew_other": "{{count}} new",
+    "tones": "Tones, 30 days",
+    "langs": "Languages, 30 days",
+    "platforms": "Platforms, 30 days",
+    "platform": {
+      "web": "Browser",
+      "pwa": "Installed app (PWA)",
+      "twa": "Android app",
+      "other": "Other"
+    },
+    "unknown": "Unknown",
+    "noData": "No data yet.",
+    "footnote": "A visitor is one browser (anonymous id). Breakdowns count unique visitors over 30 days; one visitor can appear in several rows."
   }
 }

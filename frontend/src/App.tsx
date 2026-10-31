@@ -9,6 +9,7 @@ import { CitySearch } from './components/CitySearch';
 import { TonePicker } from './components/TonePicker';
 import { ShareCard } from './components/ShareCard';
 import { AccountScreen } from './components/AccountScreen';
+import { StatsScreen } from './components/StatsScreen';
 import { toneLabel } from './data/toneMeta';
 import type { AdviceResponse, Period, WeatherData, Coordinates, ToneInfo } from './types/weather';
 import './App.css';
@@ -100,6 +101,7 @@ function App() {
   const [tones, setTones] = useState<ToneInfo[]>([{ id: DEFAULT_TONE, premium: false }]);
   const [tonePickerOpen, setTonePickerOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
+  const [statsOpen, setStatsOpen] = useState(false);
   const [advice, setAdvice] = useState<AdviceResponse | null>(null);
   const [adviceStatus, setAdviceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [retryKey, setRetryKey] = useState(0);
@@ -177,6 +179,7 @@ function App() {
   async function handleLogout() {
     try {
       await logout();
+      setStatsOpen(false);
       setAccountOpen(false);
     } catch (err) {
       console.error('Failed to log out', err);
@@ -259,6 +262,14 @@ function App() {
     );
   }
 
+  if (statsOpen && user?.admin) {
+    return (
+      <main className="screen">
+        <StatsScreen onBack={() => setStatsOpen(false)} />
+      </main>
+    );
+  }
+
   if (accountOpen) {
     return (
       <main className="screen">
@@ -267,6 +278,7 @@ function App() {
           loading={authLoading}
           onBack={() => setAccountOpen(false)}
           onLogout={handleLogout}
+          onOpenStats={() => setStatsOpen(true)}
         />
       </main>
     );

@@ -1,0 +1,342 @@
+/* Экран статистики (только для админа). Цвета — из токенов App.css. */
+
+.stats-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  text-align: left;
+}
+
+.stats-screen .account-title {
+  text-align: center;
+  font-family: var(--font-display);
+}
+
+.stats-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-refresh {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(245, 243, 239, 0.25);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-light-dim);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.stats-refresh:hover:not(:disabled) {
+  border-color: var(--accent-amber);
+  color: var(--ink-light);
+}
+
+.stats-refresh:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.stats-refresh:focus-visible,
+.stats-retry:focus-visible,
+.account-stats:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 2px;
+}
+
+.spinning {
+  animation: stats-spin 0.9s linear infinite;
+}
+
+@keyframes stats-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinning {
+    animation: none;
+  }
+}
+
+.stats-screen .status-text {
+  text-align: center;
+}
+
+.stats-retry {
+  margin-top: 12px;
+  border: 1px solid rgba(245, 243, 239, 0.35);
+  background: transparent;
+  color: var(--ink-light);
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* ---------- KPI ---------- */
+
+.stats-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.stats-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  min-width: 0;
+}
+
+.stats-kpi-value {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1.1;
+  color: var(--ink-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats-kpi-label {
+  font-size: 0.75rem;
+  color: var(--ink-light-dim);
+  line-height: 1.25;
+}
+
+.stats-kpi-hint {
+  font-size: 0.7rem;
+  color: var(--accent-amber);
+  line-height: 1.25;
+}
+
+/* ---------- Карточки ---------- */
+
+.stats-card {
+  padding: 14px 16px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.stats-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stats-card-title {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-light-dim);
+}
+
+.stats-empty {
+  font-size: 0.9rem;
+  color: var(--ink-light-dim);
+}
+
+/* ---------- График ---------- */
+
+.stats-legend {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  color: var(--ink-light-dim);
+}
+
+.stats-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stats-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.stats-swatch--returning {
+  background: rgba(201, 199, 217, 0.45);
+}
+
+.stats-swatch--new {
+  background: var(--accent-amber);
+}
+
+.stats-chart-readout {
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: var(--ink-light-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats-chart-readout strong {
+  color: var(--ink-light);
+  font-weight: 600;
+}
+
+.stats-chart {
+  position: relative;
+  padding-top: 16px;
+}
+
+.stats-chart svg {
+  display: block;
+  width: 100%;
+  height: 140px;
+  overflow: visible;
+}
+
+.stats-chart-max {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.7rem;
+  color: var(--ink-light-dim);
+  opacity: 0.8;
+}
+
+.stats-gridline {
+  stroke: rgba(245, 243, 239, 0.12);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.stats-bar {
+  cursor: pointer;
+}
+
+.stats-bar-returning {
+  fill: rgba(201, 199, 217, 0.45);
+  transition: fill 0.15s ease;
+}
+
+.stats-bar-new {
+  fill: var(--accent-amber);
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+
+.stats-bar-empty {
+  fill: rgba(245, 243, 239, 0.18);
+}
+
+.stats-bar--active .stats-bar-returning {
+  fill: rgba(245, 243, 239, 0.85);
+}
+
+.stats-bar--active .stats-bar-new {
+  opacity: 1;
+}
+
+.stats-bar--active .stats-bar-empty {
+  fill: rgba(245, 243, 239, 0.6);
+}
+
+.stats-chart-axis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 0.7rem;
+  color: var(--ink-light-dim);
+}
+
+/* ---------- Полоски разбивок ---------- */
+
+.stats-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stats-row-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.stats-row-label {
+  color: var(--ink-light);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stats-row-value {
+  color: var(--ink-light-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.stats-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.stats-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent-amber);
+}
+
+.stats-footnote {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--ink-light-dim);
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* ---------- Кнопка в AccountScreen ---------- */
+
+.account-stats {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid rgba(232, 163, 61, 0.6);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-light);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.account-stats:hover {
+  background: rgba(232, 163, 61, 0.15);
+}
+
+@media (max-width: 360px) {
+  .stats-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

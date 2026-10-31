@@ -1,4 +1,4 @@
-import { ArrowLeft, LogOut } from 'lucide-react';
+import { ArrowLeft, BarChart3, LogOut } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { GOOGLE_LOGIN_URL, type AuthUser } from '../api/auth';
 
@@ -7,9 +7,10 @@ interface AccountScreenProps {
   loading: boolean;
   onBack: () => void;
   onLogout: () => void;
+  onOpenStats: () => void;
 }
 
-export function AccountScreen({ user, loading, onBack, onLogout }: AccountScreenProps) {
+export function AccountScreen({ user, loading, onBack, onLogout, onOpenStats }: AccountScreenProps) {
   const { t } = useTranslation();
 
   return (
@@ -33,6 +34,12 @@ export function AccountScreen({ user, loading, onBack, onLogout }: AccountScreen
           )}
           {user.name && <p className="account-name">{user.name}</p>}
           <p className="account-email">{user.email}</p>
+          {user.admin && (
+            <button type="button" className="account-stats" onClick={onOpenStats}>
+              <BarChart3 size={16} aria-hidden="true" />
+              {t('stats.title')}
+            </button>
+          )}
           <button type="button" className="account-logout" onClick={onLogout}>
             <LogOut size={16} aria-hidden="true" />
             {t('account.signOut')}

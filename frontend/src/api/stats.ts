@@ -5,6 +5,42 @@ const TONE_STORAGE_KEY = 'egocast.tone';
 
 export type Platform = 'web' | 'pwa' | 'twa';
 
+export interface DailyPoint {
+  date: string; // YYYY-MM-DD
+  visitors: number;
+  newVisitors: number;
+}
+
+export interface Slice {
+  key: string;
+  visitors: number;
+}
+
+export interface StatsSummary {
+  today: string;
+  visitorsToday: number;
+  visitors7d: number;
+  visitors30d: number;
+  new30d: number;
+  returning30d: number;
+  totalVisitors: number;
+  signedInUsers: number;
+  daily: DailyPoint[];
+  tones: Slice[];
+  langs: Slice[];
+  platforms: Slice[];
+}
+
+export class StatsError extends Error {
+  status: number;
+
+  constructor(status: number) {
+    super(`stats/summary failed: ${status}`);
+    this.name = 'StatsError';
+    this.status = status;
+  }
+}
+
 let sent = false; // StrictMode в dev дёргает эффекты дважды — шлём один раз за загрузку страницы
 
 function randomId(): string {
@@ -67,4 +103,11 @@ export function trackVisit(): void {
   }).catch(() => {
     // офлайн / бек недоступен — просто пропускаем
   });
+}
+
+/** Сводка для админа. 401 — не залогинен, 403 — не админ. */
+export async function fetchStatsSummary(signal?: AbortSignal): Promise<StatsSummary> {
+  const res = await fetch('/api/v1/stats/summary', { signal, cache: 'no-store' });
+  if (!res.ok) throw new StatsError(res.status);
+  return res.json();
 }
