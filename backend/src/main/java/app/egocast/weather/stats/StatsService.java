@@ -19,6 +19,10 @@ public class StatsService {
     private static final Pattern TONE_PATTERN = Pattern.compile("[a-z0-9_]{1,32}");
     private static final Pattern LANG_PATTERN = Pattern.compile("[a-z]{2,8}");
     private static final Set<String> PLATFORMS = Set.of("web", "pwa", "twa");
+    private static final Pattern BOT_UA = Pattern.compile(
+            "bot|crawl|spider|slurp|headless|lighthouse|pagespeed|preview|scanner|python|curl|wget"
+                    + "|phantom|selenium|puppeteer|playwright|java/|go-http|okhttp|axios|node-fetch",
+            Pattern.CASE_INSENSITIVE);
 
     private final JdbcTemplate jdbc;
     private final ZoneId zone;
@@ -123,6 +127,11 @@ public class StatsService {
                 """.formatted(column),
                 (rs, i) -> new StatsSummary.Slice(rs.getString("k"), rs.getLong("n")),
                 from);
+    }
+
+    /** Пустой UA или UA, похожий на робота/скрипт. Хитрых сканеров с обычным UA отсекает фронт (ждёт взаимодействия). */
+    public static boolean isBot(String userAgent) {
+        return userAgent == null || userAgent.isBlank() || BOT_UA.matcher(userAgent).find();
     }
 
     private LocalDate today() {

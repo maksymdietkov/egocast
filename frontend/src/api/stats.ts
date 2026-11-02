@@ -83,14 +83,19 @@ export function detectPlatform(): Platform {
   return standalone ? 'pwa' : 'web';
 }
 
-/** Отметить визит. Ошибки глотаем — статистика никогда не должна ломать приложение. */
-export function trackVisit(): void {
-  if (sent) return;
-  sent = true;
+const BOT_UA = /bot|crawl|spider|slurp|headless|lighthouse|pagespeed|preview|scanner|python|curl|wget|phantom|selenium|puppeteer|playwright/i;
+const VISIBLE_MS_REQUIRED = 8000;
+const INTERACTION_EVENTS = ['pointerdown', 'keydown', 'wheel', 'touchstart', 'scroll'] as const;
 
+function looksAutomated(): boolean {
+  if ((navigator as Navigator & { webdriver?: boolean }).webdriver) return true;
+  return BOT_UA.test(navigator.userAgent);
+}
+
+function sendVisit(): void {
   const body = JSON.stringify({
     visitorId: getVisitorId(),
-    tone: readTone(),
+    tone: readTone(), // читаем в момент отправки — юзер мог успеть сменить тон
     lang: (i18n.language || 'en').split('-')[0],
     platform: detectPlatform(),
   });
@@ -103,6 +108,56 @@ export function trackVisit(): void {
   }).catch(() => {
     // офлайн / бек недоступен — просто пропускаем
   });
+}
+
+/**
+ * Отметить визит, но только когда на странице реально человек:
+ * первое касание / клик / скролл / клавиша ИЛИ вкладка была видима суммарно 8 секунд.
+ * Сканеры рендерят страницу пару секунд и уходят без взаимодействия — их не считаем.
+ * Ошибки глотаем — статистика никогда не должна ломать приложение.
+ */
+export function trackVisit(): void {
+  if (sent) return;
+  sent = true;
+  if (looksAutomated()) return;
+
+  let done = false;
+  let visibleMs = 0;
+  let visibleSince: number | null = document.visibilityState === 'visible' ? Date.now() : null;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+
+  const cleanup = () => {
+    if (timer) clearTimeout(timer);
+    INTERACTION_EVENTS.forEach((e) => window.removeEventListener(e, fire, true));
+    document.removeEventListener('visibilitychange', onVisibility);
+  };
+
+  function fire() {
+    if (done) return;
+    done = true;
+    cleanup();
+    sendVisit();
+  }
+
+  function armTimer() {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(fire, Math.max(0, VISIBLE_MS_REQUIRED - visibleMs));
+  }
+
+  function onVisibility() {
+    if (document.visibilityState === 'visible') {
+      visibleSince = Date.now();
+      armTimer();
+    } else {
+      if (visibleSince !== null) visibleMs += Date.now() - visibleSince;
+      visibleSince = null;
+      if (timer) clearTimeout(timer);
+    }
+  }
+
+  INTERACTION_EVENTS.forEach((e) => window.addEventListener(e, fire, { capture: true, passive: true }));
+  document.addEventListener('visibilitychange', onVisibility);
+  if (visibleSince !== null) armTimer();
 }
 
 /** Сводка для админа. 401 — не залогинен, 403 — не админ. */
