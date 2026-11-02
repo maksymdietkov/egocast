@@ -73,6 +73,15 @@ public class StatsService {
                 """, Long.class, from30);
         long new30d = new30 == null ? 0 : new30;
 
+        // вернувшийся = заходил за 30 дней хотя бы в 2 разных дня (совпадает с серыми столбиками графика)
+        Long returning30 = jdbc.queryForObject("""
+                SELECT COUNT(*) FROM (
+                    SELECT visitor_id FROM visits WHERE visit_date >= ?
+                    GROUP BY visitor_id HAVING COUNT(DISTINCT visit_date) >= 2
+                ) t
+                """, Long.class, from30);
+        long returning30d = returning30 == null ? 0 : returning30;
+
         Long total = jdbc.queryForObject("SELECT COUNT(DISTINCT visitor_id) FROM visits", Long.class);
         Long users = jdbc.queryForObject("SELECT COUNT(*) FROM users", Long.class);
 
@@ -101,7 +110,7 @@ public class StatsService {
                 visitors7d,
                 visitors30d,
                 new30d,
-                Math.max(0, visitors30d - new30d),
+                returning30d,
                 total == null ? 0 : total,
                 users == null ? 0 : users,
                 daily,
