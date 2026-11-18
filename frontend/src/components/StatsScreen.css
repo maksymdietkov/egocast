@@ -25,8 +25,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   border: 1px solid rgba(245, 243, 239, 0.25);
   border-radius: 50%;
   background: transparent;
@@ -333,6 +333,13 @@
 
 .account-stats:hover {
   background: rgba(232, 163, 61, 0.15);
+}
+
+/* Планшеты и десктоп: экран статистики шире, график читабельнее. */
+@media (min-width: 768px) {
+  .stats-screen {
+    max-width: 520px;
+  }
 }
 
 @media (max-width: 360px) {
