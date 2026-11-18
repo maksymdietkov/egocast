@@ -85,14 +85,16 @@ body {
 }
 
 .cat-mascot {
-  font-size: 4rem;
+  /* Плавно растёт от маленьких телефонов к десктопу */
+  font-size: clamp(3.25rem, 2.6rem + 3vw, 5rem);
   line-height: 1;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
 }
 
 .advice-text {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  /* ~21px на 320px, ~24px на обычном телефоне, до 28px на планшете/десктопе */
+  font-size: clamp(1.3rem, 1.1rem + 1vw, 1.75rem);
   line-height: 1.45;
   color: var(--ink-light);
   margin: 0;
@@ -253,6 +255,7 @@ body {
   border: none;
   border-radius: 999px;
   padding: 0.35rem 0.7rem;
+  position: relative;
   color: var(--ink-light);
   font-family: var(--font-body);
   font-size: 0.75rem;
@@ -273,6 +276,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   color: var(--ink-light-dim);
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -337,8 +341,19 @@ body {
   font-family: var(--font-body);
   font-size: 0.75rem;
   padding: 0.15rem 0.4rem;
+  position: relative;
   cursor: pointer;
   opacity: 0.85;
+}
+
+/* Мелкие кнопки выглядят как раньше, но зона нажатия больше (~40-44px по высоте):
+   невидимый слой выходит за границы кнопки. */
+.header-pill::after,
+.account-button::after,
+.location-pill::after {
+  content: '';
+  position: absolute;
+  inset: -8px -2px;
 }
 
 .location-pill:hover {
@@ -571,10 +586,11 @@ body {
   }
 }
 
-/* Узкие экраны (320-360px): чуть меньше основной текст. */
-@media (max-width: 360px) {
-  .advice-text {
-    font-size: 1.3rem;
+/* Планшеты и десктоп: колонка чуть шире и воздушнее. */
+@media (min-width: 768px) {
+  .screen {
+    max-width: 36rem;
+    gap: 2rem;
   }
 }
 .account-screen {
