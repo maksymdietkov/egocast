@@ -36,9 +36,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.75rem;
-  padding-top: calc(2rem + env(safe-area-inset-top, 0px));
-  padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+  /* Вертикальные отступы зависят от высоты экрана: на высоких — просторно,
+     на обычных телефонах (особенно в браузере с панелями) — плотнее, без скролла.
+     Первая строка — запасной вариант для браузеров без dvh. */
+  gap: clamp(0.75rem, 1.8vh, 1.75rem);
+  gap: clamp(0.75rem, 1.8dvh, 1.75rem);
+  padding-top: calc(clamp(1rem, 2.5vh, 2rem) + env(safe-area-inset-top, 0px));
+  padding-top: calc(clamp(1rem, 2.5dvh, 2rem) + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(clamp(1rem, 2.5vh, 2rem) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(clamp(1rem, 2.5dvh, 2rem) + env(safe-area-inset-bottom, 0px));
   padding-left: calc(1.25rem + env(safe-area-inset-left, 0px));
   padding-right: calc(1.25rem + env(safe-area-inset-right, 0px));
   max-width: 32rem;
@@ -572,15 +578,9 @@ body {
   color: #e3a94b;
 }
 
-/* Короткие экраны (ландшафт, маленькие телефоны): сжимаем отступы и кота,
-   чтобы лишний вертикальный скролл не появлялся. */
+/* Короткие экраны (ландшафт, маленькие телефоны): уменьшаем кота.
+   Отступы уже сжимаются сами через clamp в .screen. */
 @media (max-height: 640px) {
-  .screen {
-    gap: 1rem;
-    padding-top: calc(1rem + env(safe-area-inset-top, 0px));
-    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
-  }
-
   .cat-mascot {
     font-size: 3rem;
   }
