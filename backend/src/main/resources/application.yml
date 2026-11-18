@@ -22,7 +22,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: validate # миграции руками, как в MyCarLog — без сюрпризов
+      ddl-auto: validate # схему меняет только Flyway, Hibernate лишь сверяет
     open-in-view: false
     properties:
       hibernate:
@@ -31,7 +31,13 @@ spring:
   session:
     timeout: 30d
     jdbc:
-      initialize-schema: always # таблицы spring_session создаются автоматически
+      initialize-schema: never # таблицы spring_session создаёт Flyway (V1__baseline.sql)
+
+  flyway:
+    # существующие базы без flyway_schema_history (прод, локалка) помечаются как V1,
+    # V1__baseline.sql на них не выполняется; на пустой базе выполняется всё
+    baseline-on-migrate: true
+    baseline-version: 1
 
   security:
     oauth2:
